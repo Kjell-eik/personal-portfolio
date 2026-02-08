@@ -2,13 +2,6 @@
 type: PageLayout
 title: Home
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 75
 
 sections:
   - elementId: ''
@@ -17,8 +10,8 @@ sections:
     title: >-
       Stefan Jahren – Informatikkstudent og utvikler
     subtitle: >-
-      Jeg kombinerer akademisk kunnskap med praktisk erfaring i utvikling.
-      Spesialisert i moderne webteknologi og fullstack-løsninger.
+      Jeg bygger tekniske og digitale prosjekter, og jobber stadig med nye løsninger både innen programmering og praktisk utviklingsarbeid. Hobby investeringer og prosjekter innen oppussing og utleie. Her finner du prosjekter, erfaring og arbeid jeg har gjort så langt.
+
     styles:
       self:
         height: auto
@@ -97,7 +90,7 @@ sections:
   - type: ContactSection
     colors: colors-f
     backgroundSize: full
-    title: 'Har du et prosjekt eller en mulighet? Ta kontakt 💬'
+    title: 'Har du et prosjekt du vil jeg skal se pa? Ta kontakt 💬'
     form:
       type: FormBlock
       elementId: sign-up-form
@@ -130,12 +123,7 @@ sections:
           isRequired: true
           width: 1/2
           type: TextFormControl
-        - name: updatesConsent
-          label: Jeg ønsker oppdateringer
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: 'Send melding 🚀'
+      submitLabel: 'Send melding'
       styles:
         self:
           textAlign: center

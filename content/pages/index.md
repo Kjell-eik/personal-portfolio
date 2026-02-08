@@ -2,25 +2,16 @@
 type: PageLayout
 title: Home
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg1.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 75
 
 sections:
   - elementId: ''
     colors: colors-f
     backgroundSize: full
     title: >-
-      Hei, jeg er Stefan Jahren – informatikkstudent og utvikler med interesse
-      for teknologi, programmering og praktiske løsninger.
+      Informatikkstudent og utvikler med interesse for teknologi, praktiske løsninger og entrepenørskap.
     subtitle: >-
-      Her finner du informasjon om prosjektene jeg har jobbet med,
-      arbeidserfaringen min og ferdighetene jeg bygger gjennom studier og
-      praktisk arbeid. Scroll videre for å se prosjekter og erfaring.
+      Her finner du informasjon om prosjektene jeg har jobbet med, arbeidserfaringen min og ferdighetene jeg bygger gjennom studier og praktisk arbeid.
+
     styles:
       self:
         height: auto

@@ -159,3 +159,11 @@ layer(base);
         background-size: 100% 100%;
     }
 }
+/* Modern minimalist gradient background */
+.gradient-background {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f1419 100%);
+}
+
+.gradient-background-warm {
+    background: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 50%, #1f1f1f 100%);
+}

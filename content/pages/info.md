@@ -4,7 +4,7 @@ title: Home
 colors: colors-a
 backgroundImage:
   type: BackgroundImage
-  url: /images/bg1.jpg
+  url: /images/bg3.jpg
   backgroundSize: cover
   backgroundPosition: center
   backgroundRepeat: no-repeat
@@ -15,12 +15,10 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      Hei, jeg er Stefan Jahren – informatikkstudent og utvikler med interesse
-      for teknologi, programmering og praktiske løsninger.
+      Stefan Jahren – Informatikkstudent og utvikler
     subtitle: >-
-      Her finner du informasjon om prosjektene jeg har jobbet med,
-      arbeidserfaringen min og ferdighetene jeg bygger gjennom studier og
-      praktisk arbeid. Scroll videre for å se prosjekter og erfaring.
+      Jeg kombinerer akademisk kunnskap med praktisk erfaring i utvikling.
+      Spesialisert i moderne webteknologi og fullstack-løsninger.
     styles:
       self:
         height: auto

@@ -76,24 +76,19 @@
         ],
         "contacts": {
             "type": "ContactBlock",
-            "title": "Contact details",
-            "phoneNumber": "850-123-5021",
-            "phoneAltText": "My phone number",
-            "email": "thisismyemail.@myemail.me",
-            "emailAltText": "My email",
-            "address": "312 Lovely Street, Brooklyn, NY, 123456",
-            "addressAltText": "My address"
+            "title": "Kontaktinformasjon",
+            "phoneNumber": "+47 40091590",
+            "phoneAltText": "Telefonnummer",
+            "email": "stefanbringaker@gmail.com",
+            "emailAltText": "E-post",
+            "address": "Aasenveien 1, 3095 Eidsfoss, Norge",
+            "addressAltText": "Adresse"
         },
-        "copyrightText": "Powered by [Netlify](https://www.netlify.com/)",
+        "copyrightText": "© 2026 Stefan Jahren",
         "styles": {
             "self": {
                 "width": "narrow",
-                "padding": [
-                    "pt-16",
-                    "pb-16",
-                    "pr-4",
-                    "pl-4"
-                ]
+                "padding": ["pt-16", "pb-16", "pr-4", "pl-4"]
             }
         }
     }

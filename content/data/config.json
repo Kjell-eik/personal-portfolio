@@ -5,7 +5,7 @@
         "type": "Header",
         "headerVariant": "variant-c",
         "isSticky": false,
-        "title": "Personal",
+        "title": "Personlig",
         "isTitleVisible": true,
         "primaryLinks": [
             {
@@ -15,7 +15,7 @@
             },
             {
                 "type": "Link",
-                "label": "Projects",
+                "label": "Prosjekter",
                 "url": "/projects"
             },
             {
@@ -27,17 +27,24 @@
         "socialLinks": [
             {
                 "type": "Social",
-                "altText": "Twitter",
-                "label": "Twitter",
-                "url": "https://twitter.com/netlify",
-                "icon": "twitter"
+                "altText": "Facebook",
+                "label": "Facebook",
+                "url": "https://www.facebook.com/stefan.jaharen",
+                "icon": "facebook"
             },
             {
                 "type": "Social",
                 "altText": "GitHub",
                 "label": "GitHub",
-                "url": "https://github.com/netlify-templates",
+                "url": "https://github.com/Kjell-eik",
                 "icon": "github"
+            }
+            {
+                "type": "Social",
+                "altText": "LinkedIn",
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/stefan-jahren-9b1a2520a/",
+                "icon": "linkedin"
             }
         ],
         "styles": {
@@ -57,8 +64,8 @@
             },
             {
                 "type": "Link",
-                "label": "Contact",
-                "url": "mailto:thisismyemail.@myemail.me",
+                "label": "Kontakt",
+                "url": "mailto:stefanbringaker@gmail.com",
                 "altText": ""
             },
             {

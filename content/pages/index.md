@@ -90,7 +90,7 @@ sections:
   - type: ContactSection
     colors: colors-f
     backgroundSize: full
-    title: 'Har du et prosjekt eller en mulighet? Ta kontakt 💬'
+    title: 'Har du et prosjekt du vil jeg skal se pa? Ta kontakt 💬'
     form:
       type: FormBlock
       elementId: sign-up-form
@@ -123,12 +123,7 @@ sections:
           isRequired: true
           width: 1/2
           type: TextFormControl
-        - name: updatesConsent
-          label: Jeg ønsker oppdateringer
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: 'Send melding 🚀'
+      submitLabel: 'Send melding'
       styles:
         self:
           textAlign: center

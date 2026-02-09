@@ -29,60 +29,171 @@ sections:
         flexDirection: row-reverse
         textAlign: left
     type: HeroSection
-    actions: []
-
-  - colors: colors-f
-    type: FeaturedProjectsSection
-    elementId: ''
     actions:
-      - type: Link
-        label: Se alle prosjekter
-        url: /projects
-    showDate: false
-    showDescription: true
-    showFeaturedImage: true
-    showReadMoreLink: true
-    variant: variant-b
-    projects:
-      - content/pages/projects/project-two.md
-      - content/pages/projects/project-three.md
-      - content/pages/projects/project-one.md
-    styles:
-      self:
-        height: auto
-        width: wide
-        padding:
-          - pt-24
-          - pb-24
-          - pl-4
-          - pr-4
-        textAlign: left
-    subtitle: Prosjekter
+      - type: Button
+        label: Last ned CV (PDF)
+        url: /cv.pdf
+        showIcon: true
+        icon: arrow-right
+        iconPosition: right
+        style: primary
+        elementId: ''
 
-  - type: FeaturedPostsSection
-    elementId: ''
+  - type: TextSection
     colors: colors-f
-    variant: variant-d
-    subtitle: Artikler og innlegg
-    showFeaturedImage: false
-    actions:
-      - type: Link
-        label: Se alle innlegg
-        url: /blog
-    posts:
-      - content/pages/blog/post-six.md
-      - content/pages/blog/post-four.md
-      - content/pages/blog/post-three.md
-    showDate: true
-    showExcerpt: true
-    showReadMoreLink: true
+    variant: variant-a
+    title: Om meg
+    subtitle: ''
+    text: |
+      Jeg er en passionert teknologi-entusiast med erfaring fra både praktisk teknisk arbeid og akademiske studier. Mine interesser spenner fra programmering og webutvikling til eiendomsinvesteringer og oppussingsprosjekter. Jeg trives med å kombinere teknisk kunnskap med praktiske løsninger, og liker å ta på meg utfordringer som krever både analytisk tenkning og hands-on arbeid.
+
+      Gjennom mine studier i Computer Science og arbeidserfaringen fra Nordisk Vannteknikk AS har jeg utviklet solide ferdigheter innen problemløsning, prosjektledelse og teknisk kompetanse. På fritiden driver jeg med investeringer og eiendomsutvikling.
+    elementId: ''
     styles:
       self:
         height: auto
         width: narrow
         padding:
           - pt-28
-          - pb-48
+          - pb-28
+          - pl-4
+          - pr-4
+        textAlign: left
+
+  - type: TextSection
+    colors: colors-f
+    variant: variant-a
+    title: Arbeidserfaring
+    subtitle: ''
+    text: |
+      ### Tekniker – Nordisk Vannteknikk AS
+      **2021 - 2024**
+
+      Teknisk ansvarlig for installasjon, drift og vedlikehold av mobile vannbehandlingssystemer. Jobbet med avanserte tekniske installasjoner, feilsøking og optimalisering av systemer. Prosjektet krevde omfattende teknisk kompetanse, problemløsningsevner og evne til å jobbe selvstendig.
+
+      * Installasjon og vedlikehold av vannbehandlingssystemer
+      * Teknisk feilsøking og problemløsning
+      * Prosjektledelse og kundeoppfølging
+      * Dokumentasjon og rapportering
+
+      ---
+
+      ### Vikar – Bringaker Bygg
+      **2018 - 2021**
+
+      Deltatt i ulike byggeprosjekter med fokus på rehabilitering og oppussing. Erfaring med praktisk byggearbeid, prosjektplanlegging og gjennomføring.
+
+      * Oppussing og rehabilitering
+      * Byggeprosjekter og renovering
+      * Praktisk håndverksarbeid
+    elementId: ''
+    styles:
+      self:
+        height: auto
+        width: narrow
+        padding:
+          - pt-16
+          - pb-16
+          - pl-4
+          - pr-4
+        textAlign: left
+
+  - type: TextSection
+    colors: colors-f
+    variant: variant-a
+    title: Utdanning
+    subtitle: ''
+    text: |
+      ### Bachelor i Computer Science
+      **European University Cyprus – 2022 til i dag**
+
+      Gjennomfører bachelor i Computer Science med fokus på programvareutvikling, algoritmer, datastrukturer og systemutvikling. Aktiv deltaker i robotikklubb og IEEE (Institute of Electrical and Electronics Engineers).
+
+      **Nøkkelfag:**
+      * Programmering (Python, Java, C++)
+      * Webutvikling (HTML, CSS, JavaScript, React, Next.js)
+      * Datastrukturer og algoritmer
+      * Databasesystemer
+      * Software Engineering
+      * Virksomhet og ledelse (valgfag)
+
+      **Ekstraaktiviteter:**
+      * Medlem av IEEE student chapter
+      * Robotikklubb
+      * Teknologiprosjekter og hackathons
+    elementId: ''
+    styles:
+      self:
+        height: auto
+        width: narrow
+        padding:
+          - pt-16
+          - pb-16
+          - pl-4
+          - pr-4
+        textAlign: left
+
+  - type: TextSection
+    colors: colors-f
+    variant: variant-a
+    title: Ferdigheter
+    subtitle: ''
+    text: |
+      ### Tekniske ferdigheter
+      * **Programmering:** Python, JavaScript, TypeScript, Java, C++
+      * **Webutvikling:** React, Next.js, HTML/CSS, Tailwind CSS
+      * **Verktøy:** Git, VS Code, Node.js, npm
+      * **Databaser:** SQL, NoSQL
+      * **Annet:** Linux, Windows, Microsoft Office
+
+      ### Praktiske ferdigheter
+      * Prosjektledelse og planlegging
+      * Teknisk feilsøking og problemløsning
+      * Bygg og oppussing
+      * Vannbehandlingssystemer
+      * Kundeservice og kommunikasjon
+
+      ### Personlige egenskaper
+      * Selvdrevet og målrettet
+      * God problemløser
+      * Lærevillig og nysgjerrig
+      * Strukturert og organisert
+      * Godt samarbeidsevner
+    elementId: ''
+    styles:
+      self:
+        height: auto
+        width: narrow
+        padding:
+          - pt-16
+          - pb-16
+          - pl-4
+          - pr-4
+        textAlign: left
+
+  - type: TextSection
+    colors: colors-f
+    variant: variant-a
+    title: Frivillighet og engasjement
+    subtitle: ''
+    text: |
+      ### IEEE Student Member
+      **2022 - i dag**
+
+      Aktivt medlem i IEEE (Institute of Electrical and Electronics Engineers) student chapter ved European University Cyprus. Deltar i tekniske workshops, foredrag og nettverksarrangementer.
+
+      ### Robotikklubb
+      **2022 - i dag**
+
+      Medlem av universitetets robotikklubb hvor vi jobber med programmeringsprosjekter, robotikk og teknologiutvikling. Deltar i konkurranser og prosjektarbeid.
+    elementId: ''
+    styles:
+      self:
+        height: auto
+        width: narrow
+        padding:
+          - pt-16
+          - pb-28
           - pl-4
           - pr-4
         textAlign: left

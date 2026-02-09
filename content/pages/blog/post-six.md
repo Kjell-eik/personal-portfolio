@@ -1,15 +1,15 @@
 ---
 type: PostLayout
-title: How to Structure and Organize a Next.js Project 🗂️
+title: Investeringsstrategi
 colors: colors-a
 date: '2024-06-03'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  More context that may or may not be helpful
+  Min tilnærming til investeringer og langsiktig verdiskaping.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image6.jpg
-  altText: Post thumbnail image
+  url: /images/bg2.jpg
+  altText: Strategi
 bottomSections:
   - elementId: ''
     type: RecentPostsSection

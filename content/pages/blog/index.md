@@ -1,6 +1,6 @@
 ---
 type: PostFeedLayout
-title: Blog
+title: Investeringsportefølje
 colors: colors-a
 
 postFeed:
@@ -22,8 +22,8 @@ postFeed:
         - pb-12
 topSections:
   - type: HeroSection
-    title: Blog
-    subtitle: 'Tanker, artikler og innlegg om utvikling, teknologi og læring'
+    title: Investeringsportefølje
+    subtitle: 'Oversikt over investeringer, eierskap og eiendomsprosjekter'
     actions: []
     colors: colors-f
     backgroundSize: full

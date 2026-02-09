@@ -8,11 +8,11 @@ description: >-
   Gjennomfører bachelor i Computer Science ved European University Cyprus. Aktiv deltaker i robotikklubb og IEEE, med valgfag i virksomhet og ledelse.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image3.jpg
+  url: /images/post-2.jpg
   altText: Computer Science studier
 media:
   type: ImageBlock
-  url: /images/featured-Image3.jpg
+  url: /images/post-3.jpg
   altText: Computer Science
 ---
 

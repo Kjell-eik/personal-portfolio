@@ -20,6 +20,8 @@ layer(base);
     }
     body {
         @apply flex flex-col min-h-screen;
+        background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 25%, #16213e 50%, #1a1a2e 75%, #0a0a0f 100%);
+        background-attachment: fixed;
     }
     body > div {
         @apply flex flex-col grow;
@@ -84,7 +86,7 @@ layer(base);
         --text-color-inverse: var(--theme-complementary);
     }
     :where([data-theme^='colors-']):not([data-theme='colors-f']) {
-        @apply bg-main text-main;
+        @apply text-main;
     }
 
     /* Fixing issues caused by data wrapper added via auto annotations */

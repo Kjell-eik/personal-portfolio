@@ -1,15 +1,15 @@
 ---
 type: PostLayout
-title: AI are so hot right now
+title: Utleievirksomhet
 colors: colors-a
 date: '2024-05-02'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  More context that may or may not be helpful
+  Informasjon om utleieeiendommer og forvaltning.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image5.jpg
-  altText: Post thumbnail image
+  url: /images/gallery-4.jpg
+  altText: Utleie
 bottomSections:
   - elementId: ''
     type: RecentPostsSection

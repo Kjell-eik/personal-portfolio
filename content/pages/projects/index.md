@@ -41,46 +41,41 @@ topSections:
 bottomSections:
   - type: ContactSection
     backgroundSize: full
-    title: "Let’s talk... \U0001F4AC"
+    title: "Har du et prosjekt eller en mulighet? Ta kontakt 💬"
     colors: colors-f
     form:
       type: FormBlock
       elementId: sign-up-form
       fields:
         - name: firstName
-          label: First Name
+          label: Fornavn
           hideLabel: true
-          placeholder: First Name
+          placeholder: Fornavn
           isRequired: true
           width: 1/2
           type: TextFormControl
         - name: lastName
-          label: Last Name
+          label: Etternavn
           hideLabel: true
-          placeholder: Last Name
+          placeholder: Etternavn
           isRequired: false
           width: 1/2
           type: TextFormControl
         - name: email
-          label: Email
+          label: E-post
           hideLabel: true
-          placeholder: Email
+          placeholder: E-post
           isRequired: true
           width: full
           type: EmailFormControl
         - name: message
-          label: Message
+          label: Melding
           hideLabel: true
-          placeholder: Tell me about your project
+          placeholder: Fortell om prosjektet ditt
           isRequired: true
           width: full
           type: TextareaFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve my words
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
+      submitLabel: "Send melding"
       styles:
         self:
           textAlign: center

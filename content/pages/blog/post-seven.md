@@ -1,22 +1,15 @@
 ---
 type: PostLayout
-title: Habits of highly productive web developers ⌨️
+title: Fremtidige investeringer
 colors: colors-a
 date: '2024-06-10'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  More context that may or may not be helpful
+  Planer for fremtidige investeringer og prosjekter.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image1.jpg
-  altText: Post thumbnail image
-backgroundImage:
-  type: BackgroundImage
-  url: /images/gallery-3.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 20
+  url: /images/bg3.jpg
+  altText: Fremtid
 bottomSections:
   - elementId: ''
     type: RecentPostsSection

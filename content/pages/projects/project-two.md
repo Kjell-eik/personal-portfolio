@@ -8,11 +8,11 @@ description: >-
   Teknisk ansvarlig for installasjon, drift og vedlikehold av mobile vannbehandlingssystemer. Prosjektet krevde omfattende teknisk kompetanse og problemløsningsevner.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image2.jpg
+  url: /images/post-1.jpg
   altText: Vannbehandlingssystemer
 media:
   type: ImageBlock
-  url: /images/featured-Image2.jpg
+  url: /images/bg3.jpg
   altText: Mobile vannbehandlingssystemer
 ---
 

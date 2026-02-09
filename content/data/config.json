@@ -20,7 +20,7 @@
             },
             {
                 "type": "Link",
-                "label": "Blog",
+                "label": "Portfolio",
                 "url": "/blog"
             }
         ],
@@ -70,15 +70,15 @@
             },
             {
                 "type": "Link",
-                "label": "Blog",
+                "label": "Portfolio",
                 "url": "/blog",
                 "altText": ""
             },
             {
                 "type": "Link",
                 "label": "GitHub",
-                "url": "https://github.com/netlify-templates",
-                "altText": "Netlify templates"
+                "url": "https://github.com/Kjell-eik",
+                "altText": "Stefan GitHub"
             }
         ],
         "contacts": {

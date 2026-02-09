@@ -1,15 +1,15 @@
 ---
 type: PostLayout
-title: Moderne webutvikling i 2024
+title: Selskaper og eierskap
 colors: colors-a
 date: '2024-01-01'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  Refleksjoner om moderne webteknologier og verktøy jeg bruker i prosjekter.
+  Oversikt over selskapseierskap og forretningsengasjementer.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image3.jpg
-  altText: Webutvikling
+  url: /images/gallery-2.jpg
+  altText: Selskaper
 bottomSections:
   - elementId: ''
     type: RecentPostsSection

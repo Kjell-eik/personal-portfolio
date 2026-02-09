@@ -1,15 +1,15 @@
 ---
 type: PostLayout
-title: Sharing my wisdom with the world 🌎
+title: Oppussingsprosjekter
 colors: colors-a
 date: '2024-02-01'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  More context that may or may not be helpful
+  Dokumentasjon av oppussing og rehabiliteringsprosjekter.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image4.jpg
-  altText: Post thumbnail image
+  url: /images/gallery-3.jpg
+  altText: Oppussing
 bottomSections:
   - elementId: ''
     type: RecentPostsSection

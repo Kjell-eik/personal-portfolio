@@ -1,15 +1,15 @@
 ---
 type: PostLayout
-title: Viktige lærdommer fra teknisk arbeid
+title: Aksjer og verdipapirer
 colors: colors-a
 date: '2023-06-15'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  Hvordan teknisk erfaring og praktisk problemløsning har formet min utviklerkarriere.
+  Portefølj oversikt over aksjer og verdipapirer.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image2.jpg
-  altText: Teknisk arbeid
+  url: /images/post-4.png
+  altText: Aksjer
 media:
   url: /images/post-4.png
   altText: altText of the image

@@ -63,15 +63,15 @@ sections:
     elementId: ''
     colors: colors-f
     variant: variant-d
-    subtitle: Artikler og innlegg
+    subtitle: Investeringsportefølje
     showFeaturedImage: false
     actions:
       - type: Link
-        label: Se alle innlegg
+        label: Se hele porteføljen
         url: /blog
     posts:
-      - content/pages/blog/post-six.md
-      - content/pages/blog/post-four.md
+      - content/pages/blog/post-one.md
+      - content/pages/blog/post-two.md
       - content/pages/blog/post-three.md
     showDate: true
     showExcerpt: true

@@ -1,15 +1,15 @@
 ---
 type: PostLayout
-title: Min reise fra tekniker til utvikler
+title: Eiendomsinvesteringer
 colors: colors-a
 date: '2024-01-15'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  Fra praktisk arbeid med vannbehandlingssystemer til studie i informatikk - hvordan jeg fant veien til utvikling.
+  Oversikt over eiendomsinvesteringer og utleieprosjekter.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image1.jpg
-  altText: Utviklerreise
+  url: /images/gallery-1.jpg
+  altText: Eiendom
 media:
   url: /images/post-2.jpg
   altText: altText of the image

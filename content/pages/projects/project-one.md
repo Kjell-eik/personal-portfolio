@@ -8,11 +8,11 @@ description: >-
   Utviklet og designet nettside for VV Bygg og Eiendom. Prosjektet inkluderer moderne webdesign med fokus på brukervennlighet og profesjonelt utseende.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image1.jpg
+  url: /images/gallery-1.jpg
   altText: VV Bygg og Eiendom
 media:
   type: ImageBlock
-  url: /images/featured-Image1.jpg
+  url: /images/gallery-2.jpg
   altText: VV Bygg og Eiendom nettside
 ---
 

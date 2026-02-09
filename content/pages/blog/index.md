@@ -2,13 +2,7 @@
 type: PostFeedLayout
 title: Blog
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg2.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 75
+
 postFeed:
   type: PostFeedSection
   colors: colors-f
@@ -29,7 +23,7 @@ postFeed:
 topSections:
   - type: HeroSection
     title: Blog
-    subtitle: ''
+    subtitle: 'Tanker, artikler og innlegg om utvikling, teknologi og læring'
     actions: []
     colors: colors-f
     backgroundSize: full

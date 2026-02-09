@@ -1,22 +1,15 @@
 ---
 type: PostLayout
-title: Composable - the future of web
-colors: colors-b
+title: Moderne webutvikling i 2024
+colors: colors-a
 date: '2024-01-01'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  More context that may or may not be helpful
+  Refleksjoner om moderne webteknologier og verktøy jeg bruker i prosjekter.
 featuredImage:
   type: ImageBlock
   url: /images/featured-Image3.jpg
-  altText: Post thumbnail image
-backgroundImage:
-  type: BackgroundImage
-  url: /images/gallery-2.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 10
+  altText: Webutvikling
 bottomSections:
   - elementId: ''
     type: RecentPostsSection

@@ -1,22 +1,50 @@
 ---
 type: ProjectLayout
-title: Another cool project
+title: Mobile Vannbehandlingssystemer
 colors: colors-a
-date: '2021-12-20'
-client: Awesome client
+date: '2021-2024'
+client: Nordisk Vannteknikk AS
 description: >-
-  It’s hard to imagine that I’ve that I wrote all this code by myself, probably because I worked with an entire team :) but they definitely followed my lead most of the time.
+  Teknisk ansvarlig for installasjon, drift og vedlikehold av mobile vannbehandlingssystemer. Prosjektet krevde omfattende teknisk kompetanse og problemløsningsevner.
 featuredImage:
   type: ImageBlock
-  url: /images/bg2.jpg
-  altText: Project thumbnail image
+  url: /images/featured-Image2.jpg
+  altText: Vannbehandlingssystemer
 media:
   type: ImageBlock
-  url: /images/bg2.jpg
-  altText: Project image
+  url: /images/featured-Image2.jpg
+  altText: Mobile vannbehandlingssystemer
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+## Om rollen
+
+Som tekniker hos Nordisk Vannteknikk AS var jeg ansvarlig for komplette installasjon-, drifts- og vedlikeholdsprosesser for mobile vannbehandlingssystemer. Stillingen krevde teknisk ekspertise, problemløsning under press og evne til å jobbe selvstendig.
+
+### Hovedansvar
+
+- Installasjon av mobile vannbehandlingsanlegg
+- Systematisk vedlikehold og feilsøking
+- Drift og overvåkning av systemer
+- Dokumentasjon og rapportering
+- Kundeservice og teknisk støtte
+
+### Tekniske ferdigheter utviklet
+
+- Hydrauliske systemer
+- Elektriske installasjoner
+- Prosesstyring og overvåkning
+- Kvalitetssikring
+- Problemløsning under press
+
+> "Kvalitet i hver detalj - fra installasjon til drift"
+
+## Erfaring og læring
+
+Gjennom tre år som tekniker utviklet jeg sterke ferdigheter innen praktisk problemløsning, teknisk forståelse og teamsamarbeid. Arbeidet ga verdifull erfaring med komplekse tekniske systemer og betydningen av nøyaktighet i arbeidet.
+
+### Resultat
+
+Successfullt gjennomførte installasjoner og driftsprosesser med høy kundetilfredshet. Bidro til effektiv drift og minimal nedetid for systemene.
 
 Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
 

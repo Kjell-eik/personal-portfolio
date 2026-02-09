@@ -1,14 +1,8 @@
 ---
 type: ProjectFeedLayout
-title: Projects
+title: Prosjekter
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg1.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 50
+
 projectFeed:
   type: ProjectFeedSection
   colors: colors-f
@@ -27,8 +21,8 @@ projectFeed:
         - pb-12
 topSections:
   - type: HeroSection
-    title: Projects
-    subtitle: ''
+    title: Prosjekter
+    subtitle: 'En oversikt over utviklingsprosjekter og tekniske løsninger jeg har jobbet med'
     actions: []
     colors: colors-f
     backgroundSize: full

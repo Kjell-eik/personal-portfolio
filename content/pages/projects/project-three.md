@@ -1,22 +1,53 @@
 ---
 type: ProjectLayout
-title: One more cool project
+title: Bachelor i Computer Science
 colors: colors-a
-date: '2022-01-22'
-client: Awesome client
+date: '2022-Pågående'
+client: European University Cyprus
 description: >-
-  It’s hard to imagine that I’ve that I wrote all this code by myself, probably because I worked with an entire team :) but they definitely followed my lead most of the time.
+  Gjennomfører bachelor i Computer Science ved European University Cyprus. Aktiv deltaker i robotikklubb og IEEE, med valgfag i virksomhet og ledelse.
 featuredImage:
   type: ImageBlock
-  url: /images/bg3.jpg
-  altText: Project thumbnail image
+  url: /images/featured-Image3.jpg
+  altText: Computer Science studier
 media:
   type: ImageBlock
-  url: /images/bg3.jpg
-  altText: Project image
+  url: /images/featured-Image3.jpg
+  altText: Computer Science
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+## Om studiet
+
+Bachelor i Computer Science ved European University Cyprus kombinerer teoretisk kunnskap med praktisk erfaring. Studiet gir en solid grunnlag innen programmering, algoritmer, datastrukturer og moderne teknologier.
+
+### Studieområder
+
+- Programmering (Python, Java, C++)
+- Algoritmer og datastrukturer
+- Databaser og SQL
+- Webutvikling
+- Kunstig intelligens
+- Nettverksteknologi
+- Software Engineering
+
+### Aktiviteter og engasjement
+
+- **IEEE medlem** - Profesjonell organisasjon for ingeniører
+- **Robotikk klubb** - Praktisk arbeid med robotikk og automatisering
+- **Valgfag** - Virksomhet og ledelse for å kombinere teknisk og forretningsmessig kompetanse
+
+> "Teknologi møter innovasjon"
+
+## Ferdigheter og læring
+
+Studiet har gitt meg en dyp forståelse av hvordan teknologi kan brukes til å løse reelle problemer. Kombinasjonen av teoretisk kunnskap og praktisk erfaring har vært avgjørende for min utvikling som utvikler.
+
+### Fokusområder
+
+- Fullstack webutvikling
+- Problemløsning og algoritmisk tenkning
+- Teamarbeid i utviklerprosjekter
+- Agile metoder og prosjektledelse
 
 Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
 

@@ -1,6 +1,6 @@
 {
     "type": "Config",
-    "favicon": "/images/favicon.svg",
+    "favicon": "/images/favicon_io/favicon.ico",
     "header": {
         "type": "Header",
         "headerVariant": "variant-c",
@@ -38,12 +38,12 @@
                 "label": "GitHub",
                 "url": "https://github.com/Kjell-eik",
                 "icon": "github"
-            }
+            },
             {
                 "type": "Social",
                 "altText": "LinkedIn",
                 "label": "LinkedIn",
-                "url": "https://www.linkedin.com/in/stefan-jahren-9b1a2520a/",
+                "url": "https://www.linkedin.com/in/stefan-jahren/",
                 "icon": "linkedin"
             }
         ],

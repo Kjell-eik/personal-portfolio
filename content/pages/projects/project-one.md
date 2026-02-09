@@ -1,22 +1,49 @@
 ---
 type: ProjectLayout
-title: A very cool code project
+title: VV Bygg og Eiendom - Nettside
 colors: colors-a
-date: '2021-10-15'
-client: Awesome client
+date: '2024'
+client: Eget prosjekt
 description: >-
-  It’s hard to imagine that I’ve that I wrote all this code by myself, probably because I worked with an entire team :) but they definitely followed my lead most of the time.
+  Utviklet og designet nettside for VV Bygg og Eiendom. Prosjektet inkluderer moderne webdesign med fokus på brukervennlighet og profesjonelt utseende.
 featuredImage:
   type: ImageBlock
-  url: /images/bg1.jpg
-  altText: Project thumbnail image
+  url: /images/featured-Image1.jpg
+  altText: VV Bygg og Eiendom
 media:
   type: ImageBlock
-  url: /images/bg1.jpg
-  altText: Project image
+  url: /images/featured-Image1.jpg
+  altText: VV Bygg og Eiendom nettside
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+## Om prosjektet
+
+VV Bygg og Eiendom er et omfattende webprosjekt hvor jeg har utviklet både frontend og backend. Nettsiden presenterer selskapets tjenester innen bygg, anlegg og eiendomsforvaltning på en moderne og oversiktlig måte.
+
+### Teknologier brukt
+
+- HTML5, CSS3, JavaScript
+- Responsiv design for mobile enheter
+- Moderne UI/UX prinsipper
+- SEO-optimalisering
+
+### Hovedfunksjoner
+
+- Profesjonell presentasjon av tjenester
+- Kontaktskjema for henvendelser
+- Billedgalleri av prosjekter
+- Mobilvenlig design
+
+> "Kvalitet og pålitelighet i bygg og eiendom"
+
+## Resultater
+
+Nettsiden har bidratt til økt synlighet for selskapet og gjort det enklere for potensielle kunder å ta kontakt. Prosjektet demonstrerer mine ferdigheter innen webutvikling og evne til å levere komplette løsninger.
+
+### Lenker
+
+- [vvbyggogeiendom.no](https://vvbyggogeiendom.no)
+- [vvbyggogeiendom.com](https://vvbyggogeiendom.com)
 
 Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
 

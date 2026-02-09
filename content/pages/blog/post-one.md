@@ -1,15 +1,15 @@
 ---
 type: PostLayout
-title: How I started a startup 🚀
+title: Min reise fra tekniker til utvikler
 colors: colors-a
-date: '2021-06-28'
+date: '2024-01-15'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  More context that may or may not be helpful
+  Fra praktisk arbeid med vannbehandlingssystemer til studie i informatikk - hvordan jeg fant veien til utvikling.
 featuredImage:
   type: ImageBlock
   url: /images/featured-Image1.jpg
-  altText: Post thumbnail image
+  altText: Utviklerreise
 media:
   url: /images/post-2.jpg
   altText: altText of the image

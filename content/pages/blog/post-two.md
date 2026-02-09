@@ -1,22 +1,15 @@
 ---
 type: PostLayout
-title: The Great Unbundling
+title: Viktige lærdommer fra teknisk arbeid
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg2.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 75
-date: '2021-11-03'
+date: '2023-06-15'
 author: content/data/team/doris-soto.json
 excerpt: >-
-  More context that may or may not be helpful
+  Hvordan teknisk erfaring og praktisk problemløsning har formet min utviklerkarriere.
 featuredImage:
   type: ImageBlock
   url: /images/featured-Image2.jpg
-  altText: Post thumbnail image
+  altText: Teknisk arbeid
 media:
   url: /images/post-4.png
   altText: altText of the image

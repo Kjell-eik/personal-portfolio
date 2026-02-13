@@ -8,9 +8,9 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      Stefan Jahren Bringaker – Informatikkstudent
+      Stefan Jahren Bringaker – Computer Science student
     subtitle: >-
-      Student i informatikk med erfaring fra teknisk arbeid, prosjektarbeid og kundekontakt. Pålitelig og praktisk anlagt, og trives med ansvar og samarbeid.
+      Student i Computer Science med erfaring fra teknisk arbeid, prosjektarbeid og kundekontakt. Pålitelig og praktisk anlagt, og trives med ansvar og samarbeid.
 
     styles:
       self:

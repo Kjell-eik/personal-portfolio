@@ -17,9 +17,11 @@ layer(base);
 @layer base {
     html {
         @apply antialiased font-body;
+        overflow-x: hidden;
     }
     body {
         @apply flex flex-col min-h-screen;
+        overflow-x: hidden;
         background-color: #3a2e24;
         background:
             linear-gradient(
@@ -123,6 +125,14 @@ layer(base);
     b,
     strong {
         @apply font-medium;
+    }
+
+    img,
+    video,
+    canvas,
+    svg {
+        max-width: 100%;
+        height: auto;
     }
 
     select {

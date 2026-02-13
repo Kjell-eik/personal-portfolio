@@ -12,7 +12,7 @@ export default function Header(props) {
     const { isSticky, styles = {}, ...rest } = props;
     const headerWidth = styles.self?.width ?? 'narrow';
     return (
-        <header className={classNames(isSticky ? 'sticky top-0 z-10' : 'relative', 'border-b border-current')}>
+        <header className={classNames(isSticky ? 'sticky top-0 z-50' : 'relative z-50', 'border-b border-current')}>
             <div
                 className={classNames({
                     'max-w-7xl mx-auto xl:border-x xl:border-current': headerWidth === 'narrow',
@@ -126,7 +126,7 @@ function MobileMenu(props) {
     }, [router.events]);
 
     return (
-        <div className="ml-auto lg:hidden">
+        <div className="ml-auto lg:hidden relative z-50">
             <button
                 aria-label="Open Menu"
                 className="h-10 min-h-full p-4 text-lg border-l border-current focus:outline-hidden"
@@ -134,7 +134,12 @@ function MobileMenu(props) {
             >
                 <MenuIcon className="fill-current w-icon h-icon" />
             </button>
-            <div className={classNames('fixed inset-0 z-20 overflow-y-auto bg-main', isMenuOpen ? 'block' : 'hidden')}>
+            <div
+                className={classNames(
+                    'fixed inset-0 z-50 overflow-y-auto bg-black/90 text-white',
+                    isMenuOpen ? 'block' : 'hidden'
+                )}
+            >
                 <div className="flex flex-col min-h-full">
                     <div className="flex items-stretch justify-between border-b border-current">
                         <SiteLogoLink {...logoProps} />

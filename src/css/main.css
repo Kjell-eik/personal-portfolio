@@ -20,7 +20,7 @@ layer(base);
     }
     body {
         @apply flex flex-col min-h-screen;
-        background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 25%, #16213e 50%, #1a1a2e 75%, #0a0a0f 100%);
+        background: linear-gradient(135deg, #f1e7db 0%, #e3d4c2 35%, #d8c7b2 65%, #cbb39a 100%);
         background-attachment: fixed;
     }
     body > div {
@@ -163,9 +163,9 @@ layer(base);
 }
 /* Modern minimalist gradient background */
 .gradient-background {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f1419 100%);
+    background: linear-gradient(135deg, #f1e7db 0%, #e3d4c2 50%, #d8c7b2 100%);
 }
 
 .gradient-background-warm {
-    background: linear-gradient(135deg, #2c2c2c 0%, #3a3a3a 50%, #1f1f1f 100%);
+    background: linear-gradient(135deg, #efe3d4 0%, #e2cdb8 50%, #cfb59b 100%);
 }

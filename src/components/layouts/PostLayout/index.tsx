@@ -17,33 +17,35 @@ const Component: React.FC<ComponentProps> = (props) => {
 
     return (
         <BaseLayout {...props}>
-            <article className="px-4 py-14 lg:py-20">
-                <header className="max-w-5xl mx-auto mb-10 sm:mb-14">
-                    <div className="mb-6 uppercase">
-                        <time dateTime={dateTimeAttr}>{formattedDate}</time>
-                        {author && (
-                            <>
-                                {' | '}
-                                {author.firstName} {author.lastName}
-                            </>
-                        )}
-                    </div>
-                    <h1 className="text-5xl sm:text-6xl">{title}</h1>
-                </header>
-                {media && (
-                    <figure className="max-w-5xl mx-auto mb-10 sm:mb-14">
-                        <PostMedia media={media} />
-                    </figure>
-                )}
-                {markdownContent && (
-                    <Markdown
-                        options={{ forceBlock: true, overrides: { pre: HighlightedPreBlock } }}
-                        className="max-w-3xl mx-auto prose sm:prose-lg"
-                    >
-                        {markdownContent}
-                    </Markdown>
-                )}
-            </article>
+            <section data-theme="colors-f" className="content-surface">
+                <article className="px-4 py-14 lg:py-20">
+                    <header className="max-w-5xl mx-auto mb-10 sm:mb-14">
+                        <div className="mb-6 uppercase">
+                            <time dateTime={dateTimeAttr}>{formattedDate}</time>
+                            {author && (
+                                <>
+                                    {' | '}
+                                    {author.firstName} {author.lastName}
+                                </>
+                            )}
+                        </div>
+                        <h1 className="text-5xl sm:text-6xl">{title}</h1>
+                    </header>
+                    {media && (
+                        <figure className="max-w-5xl mx-auto mb-10 sm:mb-14">
+                            <PostMedia media={media} />
+                        </figure>
+                    )}
+                    {markdownContent && (
+                        <Markdown
+                            options={{ forceBlock: true, overrides: { pre: HighlightedPreBlock } }}
+                            className="max-w-3xl mx-auto prose sm:prose-lg"
+                        >
+                            {markdownContent}
+                        </Markdown>
+                    )}
+                </article>
+            </section>
             {bottomSections?.map((section, index) => {
                 return <DynamicComponent key={index} {...section} />;
             })}

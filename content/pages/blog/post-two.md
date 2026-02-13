@@ -8,12 +8,12 @@ excerpt: >-
   Portefølj oversikt over aksjer og verdipapirer.
 featuredImage:
   type: ImageBlock
-  url: /images/post-4.png
+  url: /images/portfolio/product-bg.jpg
   altText: Aksjer
 media:
-  url: /images/post-4.png
-  altText: altText of the image
-  caption: Caption of the image
+  url: /images/portfolio/oip.webp
+  altText: Aksjer og verdipapirer
+  caption: Porteføljeoversikt
   elementId: ''
   type: ImageBlock
 bottomSections:
@@ -40,7 +40,7 @@ bottomSections:
     showReadMoreLink: true
   - type: ContactSection
     backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
+    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
     colors: colors-f
     form:
       type: FormBlock

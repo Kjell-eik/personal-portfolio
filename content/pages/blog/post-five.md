@@ -8,7 +8,7 @@ excerpt: >-
   Informasjon om utleieeiendommer og forvaltning.
 featuredImage:
   type: ImageBlock
-  url: /images/gallery-4.jpg
+  url: /images/portfolio/mouro-lamp.webp
   altText: Utleie
 bottomSections:
   - elementId: ''
@@ -34,7 +34,7 @@ bottomSections:
     showReadMoreLink: true
   - type: ContactSection
     backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
+    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
     colors: colors-f
     form:
       type: FormBlock

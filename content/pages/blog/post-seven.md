@@ -8,7 +8,7 @@ excerpt: >-
   Planer for fremtidige investeringer og prosjekter.
 featuredImage:
   type: ImageBlock
-  url: /images/bg3.jpg
+  url: /images/portfolio/moodboard.webp
   altText: Fremtid
 bottomSections:
   - elementId: ''
@@ -34,7 +34,7 @@ bottomSections:
     showReadMoreLink: true
   - type: ContactSection
     backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
+    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
     colors: colors-f
     form:
       type: FormBlock

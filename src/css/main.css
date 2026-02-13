@@ -20,11 +20,63 @@ layer(base);
     }
     body {
         @apply flex flex-col min-h-screen;
-        background: linear-gradient(135deg, #f1e7db 0%, #e3d4c2 35%, #d8c7b2 65%, #cbb39a 100%);
+        background-color: #3a2e24;
+        background:
+            linear-gradient(
+                135deg,
+                rgba(160, 126, 96, 0.28) 0%,
+                rgba(168, 132, 100, 0.3) 35%,
+                rgba(176, 138, 106, 0.32) 65%,
+                rgba(184, 144, 112, 0.34) 100%
+            ),
+            url('/images/portfolio/product-bg.jpg');
         background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+        color: #ffffff;
     }
     body > div {
         @apply flex flex-col grow;
+    }
+
+    header,
+    footer {
+        color: #ffffff;
+        background-color: rgba(28, 22, 18, 0.78);
+        backdrop-filter: blur(8px);
+    }
+
+    header *,
+    footer * {
+        color: inherit;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    header a,
+    footer a,
+    header svg,
+    footer svg {
+        color: #ffffff;
+        fill: #ffffff;
+    }
+
+    header .link-fill,
+    footer .link-fill {
+        color: #ffffff;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+    }
+
+    header .link-fill:hover,
+    footer .link-fill:hover {
+        color: #1a1410;
+        background-size: 100% 100%;
+    }
+
+    header,
+    footer {
+        border-color: rgba(247, 242, 234, 0.45);
     }
 
     h1,
@@ -90,6 +142,18 @@ layer(base);
     }
 
     /* Color themes */
+    :where([data-theme='colors-f']) {
+        color: #ffffff;
+        background-color: rgba(36, 28, 22, 0.7);
+    }
+
+    :where([data-theme='colors-f']) * {
+        color: inherit;
+    }
+
+    :where([data-theme='colors-f']) a {
+        color: #ffffff;
+    }
     :where([data-theme='colors-b']) {
         --background-color-main: var(--theme-light);
         --background-color-inverse: var(--theme-on-light);
@@ -168,6 +232,11 @@ layer(base);
         blockquote p:last-of-type::after {
             content: none;
         }
+    }
+
+    .content-surface {
+        background-color: rgba(36, 28, 22, 0.55);
+        backdrop-filter: blur(6px);
     }
 }
 

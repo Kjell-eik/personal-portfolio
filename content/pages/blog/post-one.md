@@ -8,12 +8,12 @@ excerpt: >-
   Oversikt over eiendomsinvesteringer og utleieprosjekter.
 featuredImage:
   type: ImageBlock
-  url: /images/gallery-1.jpg
+  url: /images/portfolio/product-bg.jpg
   altText: Eiendom
 media:
-  url: /images/post-2.jpg
-  altText: altText of the image
-  caption: Caption of the image
+  url: /images/portfolio/oip.webp
+  altText: Portefølje
+  caption: Arbeid i prosess
   elementId: ''
   type: ImageBlock
 bottomSections:
@@ -40,7 +40,7 @@ bottomSections:
     showReadMoreLink: true
   - type: ContactSection
     backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
+    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
     colors: colors-f
     form:
       type: FormBlock

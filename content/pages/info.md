@@ -204,7 +204,7 @@ sections:
   - type: ContactSection
     colors: colors-f
     backgroundSize: full
-    title: 'Har du et prosjekt du vil jeg skal se pa? Ta kontakt 💬'
+    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
     form:
       type: FormBlock
       elementId: sign-up-form
@@ -226,14 +226,14 @@ sections:
         - name: email
           label: E-post
           hideLabel: true
-          placeholder: E-post
+          placeholder: E-postadresse
           isRequired: true
           width: 1/2
           type: EmailFormControl
         - name: address
           label: Melding
           hideLabel: true
-          placeholder: Hva gjelder henvendelsen?
+          placeholder: Kort om hva du trenger hjelp med
           isRequired: true
           width: 1/2
           type: TextFormControl

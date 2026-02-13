@@ -8,7 +8,7 @@ excerpt: >-
   Oversikt over selskapseierskap og forretningsengasjementer.
 featuredImage:
   type: ImageBlock
-  url: /images/gallery-2.jpg
+  url: /images/portfolio/architecture.jpg
   altText: Selskaper
 bottomSections:
   - elementId: ''
@@ -34,7 +34,7 @@ bottomSections:
     showReadMoreLink: true
   - type: ContactSection
     backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
+    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
     colors: colors-f
     form:
       type: FormBlock

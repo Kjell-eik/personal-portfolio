@@ -8,7 +8,7 @@ excerpt: >-
   Min tilnærming til investeringer og langsiktig verdiskaping.
 featuredImage:
   type: ImageBlock
-  url: /images/bg2.jpg
+  url: /images/portfolio/product-bg.jpg
   altText: Strategi
 bottomSections:
   - elementId: ''
@@ -34,7 +34,7 @@ bottomSections:
     showReadMoreLink: true
   - type: ContactSection
     backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
+    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
     colors: colors-f
     form:
       type: FormBlock

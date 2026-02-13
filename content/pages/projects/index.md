@@ -41,7 +41,7 @@ topSections:
 bottomSections:
   - type: ContactSection
     backgroundSize: full
-    title: "Har du et prosjekt eller en mulighet? Ta kontakt 💬"
+    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
     colors: colors-f
     form:
       type: FormBlock
@@ -75,7 +75,7 @@ bottomSections:
           isRequired: true
           width: full
           type: TextareaFormControl
-      submitLabel: "Send melding"
+      submitLabel: 'Send melding'
       styles:
         self:
           textAlign: center

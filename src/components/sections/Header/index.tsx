@@ -136,7 +136,7 @@ function MobileMenu(props) {
             </button>
             <div
                 className={classNames(
-                    'fixed inset-0 z-50 overflow-y-auto bg-black/90 text-white',
+                    'fixed inset-0 z-[9999] overflow-y-auto bg-black/95 text-white',
                     isMenuOpen ? 'block' : 'hidden'
                 )}
             >

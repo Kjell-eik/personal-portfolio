@@ -8,9 +8,9 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      Informatikkstudent og utvikler med interesse for teknologi, praktiske løsninger og entrepenørskap.
+      Stefan Jahren Bringaker – Informatikkstudent
     subtitle: >-
-      Her finner du informasjon om prosjektene jeg har jobbet med, arbeidserfaringen min og ferdighetene jeg bygger gjennom studier og praktisk arbeid.
+      Student i informatikk med erfaring fra teknisk arbeid, prosjektarbeid og kundekontakt. Pålitelig og praktisk anlagt, og trives med ansvar og samarbeid.
 
     styles:
       self:

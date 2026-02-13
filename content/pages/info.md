@@ -8,9 +8,9 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      Stefan Jahren – Informatikkstudent og utvikler
+      Stefan Jahren Bringaker – Informatikkstudent
     subtitle: >-
-      Jeg bygger tekniske og digitale prosjekter, og jobber stadig med nye løsninger både innen programmering og praktisk utviklingsarbeid. Hobby investeringer og prosjekter innen oppussing og utleie. Her finner du prosjekter, erfaring og arbeid jeg har gjort så langt.
+      Student i informatikk med erfaring fra teknisk arbeid, prosjektarbeid og kundekontakt. Pålitelig og praktisk anlagt, og trives med ansvar og samarbeid.
 
     styles:
       self:
@@ -45,9 +45,7 @@ sections:
     title: Om meg
     subtitle: ''
     text: |
-      Jeg er en passionert teknologi-entusiast med erfaring fra både praktisk teknisk arbeid og akademiske studier. Mine interesser spenner fra programmering og webutvikling til eiendomsinvesteringer og oppussingsprosjekter. Jeg trives med å kombinere teknisk kunnskap med praktiske løsninger, og liker å ta på meg utfordringer som krever både analytisk tenkning og hands-on arbeid.
-
-      Gjennom mine studier i Computer Science og arbeidserfaringen fra Nordisk Vannteknikk AS har jeg utviklet solide ferdigheter innen problemløsning, prosjektledelse og teknisk kompetanse. På fritiden driver jeg med investeringer og eiendomsutvikling.
+      Student i informatikk med erfaring fra teknisk arbeid, prosjektarbeid og kundekontakt. Pålitelig og praktisk anlagt, og trives med ansvar og samarbeid. Jeg liker å kombinere teknisk forståelse med praktiske løsninger og bidra i team der det forventes struktur og gjennomføring.
     elementId: ''
     styles:
       self:
@@ -66,26 +64,38 @@ sections:
     title: Arbeidserfaring
     subtitle: ''
     text: |
-      ### Tekniker – Nordisk Vannteknikk AS
-      **2021 - 2024**
+      ### Assistent – Vestfold & Viken bygg og eiendom
+      **2023 – d.d.**
 
-      Teknisk ansvarlig for installasjon, drift og vedlikehold av mobile vannbehandlingssystemer. Jobbet med avanserte tekniske installasjoner, feilsøking og optimalisering av systemer. Prosjektet krevde omfattende teknisk kompetanse, problemløsningsevner og evne til å jobbe selvstendig.
-
-      * Installasjon og vedlikehold av vannbehandlingssystemer
-      * Teknisk feilsøking og problemløsning
-      * Prosjektledelse og kundeoppfølging
-      * Dokumentasjon og rapportering
+      Assistanse ved bygg- og utviklingsprosjekter. Ansvar for drift og utvikling av selskapets nettside og sosiale medier, samt IT‑relaterte oppgaver og kundekontakt.
 
       ---
 
-      ### Vikar – Bringaker Bygg
-      **2018 - 2021**
+      ### Servicetekniker – Nordisk Vannteknikk
+      **2021 – 2024**
 
-      Deltatt i ulike byggeprosjekter med fokus på rehabilitering og oppussing. Erfaring med praktisk byggearbeid, prosjektplanlegging og gjennomføring.
+      Installasjon, drift og reparasjon av mobile vannbehandlingssystemer samt kundekontakt og samarbeid under oppdrag og tilsyn.
 
-      * Oppussing og rehabilitering
-      * Byggeprosjekter og renovering
-      * Praktisk håndverksarbeid
+      ---
+
+      ### Førstegangstjeneste – Akershus kommandantskap
+      **2020 – 2021**
+
+      Gjennomført førstegangstjeneste ved Ørland flystasjon og Kolsås leir.
+
+      ---
+
+      ### Assistent – Bringaker Bygg
+      **2019 – 2021**
+
+      Deltok i bygg- og anleggsprosjekter med maskinarbeid, vedlikehold og snekkerarbeid.
+
+      ---
+
+      ### Verkstedmedarbeider – BOMEKAN
+      **2017 – 2019**
+
+      Produksjon og bearbeiding av deler til prosjekter innen stålkonstruksjoner.
     elementId: ''
     styles:
       self:
@@ -104,23 +114,17 @@ sections:
     title: Utdanning
     subtitle: ''
     text: |
-      ### Bachelor i Computer Science
-      **European University Cyprus – 2022 til i dag**
+      ### BS Computer Science – European University Cyprus
+      **2022 – d.d.**
 
-      Gjennomfører bachelor i Computer Science med fokus på programvareutvikling, algoritmer, datastrukturer og systemutvikling. Aktiv deltaker i robotikklubb og IEEE (Institute of Electrical and Electronics Engineers).
+      Fagområder: programmering, algoritmer og datastrukturer, databaser, systemutvikling, datanettverk og operativsystemer. Erfaring med prosjektarbeid og programvareutvikling i team.
 
-      **Nøkkelfag:**
-      * Programmering (Python, Java, C++)
-      * Webutvikling (HTML, CSS, JavaScript, React, Next.js)
-      * Datastrukturer og algoritmer
-      * Databasesystemer
-      * Software Engineering
-      * Virksomhet og ledelse (valgfag)
+      ---
 
-      **Ekstraaktiviteter:**
-      * Medlem av IEEE student chapter
-      * Robotikklubb
-      * Teknologiprosjekter og hackathons
+      ### Videregående – Thor Heyerdahl
+      **2017 – 2020**
+
+      Fullført medier og kommunikasjon med generell studiekompetanse.
     elementId: ''
     styles:
       self:
@@ -139,26 +143,16 @@ sections:
     title: Ferdigheter
     subtitle: ''
     text: |
-      ### Tekniske ferdigheter
-      * **Programmering:** Python, JavaScript, TypeScript, Java, C++
-      * **Webutvikling:** React, Next.js, HTML/CSS, Tailwind CSS
-      * **Verktøy:** Git, VS Code, Node.js, npm
-      * **Databaser:** SQL, NoSQL
-      * **Annet:** Linux, Windows, Microsoft Office
-
-      ### Praktiske ferdigheter
-      * Prosjektledelse og planlegging
-      * Teknisk feilsøking og problemløsning
-      * Bygg og oppussing
-      * Vannbehandlingssystemer
-      * Kundeservice og kommunikasjon
-
-      ### Personlige egenskaper
-      * Selvdrevet og målrettet
-      * God problemløser
-      * Lærevillig og nysgjerrig
-      * Strukturert og organisert
-      * Godt samarbeidsevner
+      ### Kvalifikasjoner
+      * Praktisk og teknisk problemløsning
+      * Erfaring med prosjektarbeid og samarbeid i team
+      * Grunnleggende erfaring med programmering og systemarbeid
+      * Erfaring med kundekontakt og servicearbeid
+      * Selvstendig og ansvarsbevisst i arbeid
+      * Strukturert og løsningsorientert i arbeidssituasjoner
+      * God teknisk forståelse og rask til å lære nye systemer
+      * Erfaring med teknisk vedlikehold og installasjonsarbeid
+      * Flytende norsk og engelsk, muntlig og skriftlig
     elementId: ''
     styles:
       self:
@@ -174,18 +168,27 @@ sections:
   - type: TextSection
     colors: colors-f
     variant: variant-a
-    title: Frivillighet og engasjement
+    title: Aktiviteter
     subtitle: ''
     text: |
-      ### IEEE Student Member
-      **2022 - i dag**
+      ### President – Norwegian Students Association EUC
+      **2025 – 2026**
 
-      Aktivt medlem i IEEE (Institute of Electrical and Electronics Engineers) student chapter ved European University Cyprus. Deltar i tekniske workshops, foredrag og nettverksarrangementer.
+      Ansvar for kontakt mellom norske studenter og universitetet, samt planlegging og gjennomføring av studentarrangementer.
 
-      ### Robotikklubb
-      **2022 - i dag**
+      ---
 
-      Medlem av universitetets robotikklubb hvor vi jobber med programmeringsprosjekter, robotikk og teknologiutvikling. Deltar i konkurranser og prosjektarbeid.
+      ### Styremedlem – ANSA
+      **2025 – 2026**
+
+      Bidrar til planlegging og gjennomføring av arrangementer samt støtte for norske studenter på Kypros.
+
+      ---
+
+      ### Fotballtrener – HSH Fotball
+      **2021-sesong**
+
+      Hovedtrener for gutter 16, ansvar for trening og oppfølging av spillere.
     elementId: ''
     styles:
       self:

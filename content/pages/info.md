@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: Home
+title: Om meg
 colors: colors-a
 
 sections:
@@ -8,9 +8,9 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      Stefan Jahren Bringaker – Computer Science student
+      Stefan Jahren Bringaker – Informatikkstudent
     subtitle: >-
-      Student i Computer Science med erfaring fra teknisk arbeid, prosjektarbeid og kundekontakt. Pålitelig og praktisk anlagt, og trives med ansvar og samarbeid.
+      Informatikkstudent med erfaring fra fullstack-utvikling, computer vision og hardware-integrasjon. Brenner for å bygge teknologi som løser reelle problemer. Søker sommerjobb/internship innen utvikling.
 
     styles:
       self:
@@ -45,7 +45,15 @@ sections:
     title: Om meg
     subtitle: ''
     text: |
-      Student i Computer Science med erfaring fra teknisk arbeid, prosjektarbeid og kundekontakt. Pålitelig og praktisk anlagt, og trives med ansvar og samarbeid. Jeg liker å kombinere teknisk forståelse med praktiske løsninger og bidra i team der det forventes struktur og gjennomføring.
+      Jeg er informatikkstudent i mitt fjerde år ved European University Cyprus med en bred erfaring som kombinerer teknologi, praktisk arbeid og lederskap. Min interesse for programmering springer ut av en nysgjerrighet for hvordan teknologi kan løse reelle problemer – fra computer vision og robotikk til webutvikling og sikre systemer.
+
+      Det som engasjerer meg mest er å bygge ting som faktisk fungerer. Gjennom universitetsprosjekter har jeg jobbet med alt fra håndbevegelses-kontrollerte roboter til sikre eksamensystemer, og jeg trives med utfordringen som ligger i å integrere ulike teknologier for å skape intuitive løsninger.
+
+      Ved siden av studiene har jeg bred praktisk erfaring fra teknisk arbeid, administrasjon og kundekontakt gjennom flere år i servicebransjen og byggsektoren. Som president i Norwegian Students Association har jeg også utviklet ferdigheter innen organisering, kommunikasjon og prosjektledelse.
+
+      Utover teknologi har jeg interesse for investering og økonomi – jeg følger aksjemarkedet og driver med eiendomsinvestering på siden. Denne kombinasjonen av teknisk dyktighet og forretningsforståelse gir meg et helhetlig perspektiv på hvordan teknologi kan skape verdi.
+
+      **Søker:** Sommerjobb/internship innen utvikling hvor jeg kan bidra med mine tekniske ferdigheter og lære av erfarne utviklere i et profesjonelt miljø.
     elementId: ''
     styles:
       self:
@@ -115,9 +123,15 @@ sections:
     subtitle: ''
     text: |
       ### BS Computer Science – European University Cyprus
-      **2022 – d.d.**
+      **2022 – Forventet ferdig: Januar 2027**
 
-      Fagområder: programmering, algoritmer og datastrukturer, databaser, systemutvikling, datanettverk og operativsystemer. Erfaring med prosjektarbeid og programvareutvikling i team.
+      4-årig bachelorprogram i informatikk med fokus på praktisk programvareutvikling og systemdesign.
+
+      **Fagområder:** Programmering (Python, Java, C++), algoritmer og datastrukturer, databaser og SQL, systemutvikling, datanettverk, operativsystemer, webutvikling, computer vision.
+
+      **Prosjekterfaring:** Hand gesture controlled robot, online examination system, og flere team-baserte utviklerprosjekter.
+
+      **Aktiviteter:** President i Norwegian Students Association EUC (2025-2026), styremedlem i ANSA (2025-2026), IEEE medlem, robotikklubb.
 
       ---
 
@@ -140,19 +154,43 @@ sections:
   - type: TextSection
     colors: colors-f
     variant: variant-a
-    title: Ferdigheter
+    title: Tekniske ferdigheter
     subtitle: ''
     text: |
-      ### Kvalifikasjoner
-      * Praktisk og teknisk problemløsning
-      * Erfaring med prosjektarbeid og samarbeid i team
-      * Grunnleggende erfaring med programmering og systemarbeid
-      * Erfaring med kundekontakt og servicearbeid
-      * Selvstendig og ansvarsbevisst i arbeid
-      * Strukturert og løsningsorientert i arbeidssituasjoner
-      * God teknisk forståelse og rask til å lære nye systemer
-      * Erfaring med teknisk vedlikehold og installasjonsarbeid
-      * Flytende norsk og engelsk, muntlig og skriftlig
+      ### Programmeringsspråk
+      * **Python** - Computer vision, backend-utvikling, Arduino-integrasjon
+      * **JavaScript** - Frontend-utvikling og interaktivitet
+      * **C++** - Embedded systems og Arduino-programmering
+      * **HTML5 & CSS3** - Webdesign og responsiv layout
+      * **SQL** - Database design og queries (SQLite)
+
+      ### Frameworks & Biblioteker
+      * **Flask** - Python web framework for backend API
+      * **OpenCV** - Computer vision og bildebehandling
+      * **WordPress** - CMS for nettside-administrasjon
+
+      ### Verktøy & Teknologier
+      * **Git** - Versjonskontroll og samarbeid
+      * **Arduino** - Mikrokontroller-programmering
+      * **SQLite** - Relasjonsdatabase
+      * **REST API** - API-design og implementasjon
+      * **VS Code** - Primært utviklingsverktøy
+
+      ### Kompetanseområder
+      * Fullstack webutvikling (frontend og backend)
+      * Computer vision og bildegjenkenning
+      * Hardware/software integrasjon
+      * Database design og administrasjon
+      * Sikkerhet og autentisering (password hashing, session management)
+      * Responsive web design
+      * SEO-optimalisering
+      * Prosjektstyring og teamarbeid
+
+      ### Andre ferdigheter
+      * Teknisk problemløsing og debugging
+      * Kundekontakt og servicearbeid
+      * Teknisk dokumentasjon
+      * Flytende norsk og engelsk (muntlig og skriftlig)
     elementId: ''
     styles:
       self:

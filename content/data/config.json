@@ -5,7 +5,7 @@
         "type": "Header",
         "headerVariant": "variant-c",
         "isSticky": false,
-        "title": "Personlig",
+        "title": "Stefan Jahren",
         "isTitleVisible": true,
         "primaryLinks": [
             {
@@ -17,11 +17,6 @@
                 "type": "Link",
                 "label": "Prosjekter",
                 "url": "/projects"
-            },
-            {
-                "type": "Link",
-                "label": "Portfolio",
-                "url": "/blog"
             }
         ],
         "socialLinks": [
@@ -70,12 +65,6 @@
             },
             {
                 "type": "Link",
-                "label": "Portfolio",
-                "url": "/blog",
-                "altText": ""
-            },
-            {
-                "type": "Link",
                 "label": "GitHub",
                 "url": "https://github.com/Kjell-eik",
                 "altText": "Stefan GitHub"
@@ -84,7 +73,7 @@
         "contacts": {
             "type": "ContactBlock",
             "title": "Kontaktinformasjon",
-            "phoneNumber": "+47 40091590",
+            "phoneNumber": "+47 400 91 590",
             "phoneAltText": "Telefonnummer",
             "email": "stefanbringaker@gmail.com",
             "emailAltText": "E-post",

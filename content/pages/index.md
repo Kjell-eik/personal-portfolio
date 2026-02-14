@@ -8,9 +8,9 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      Stefan Jahren Bringaker – Computer Science student
+      Stefan Jahren Bringaker – Informatikkstudent
     subtitle: >-
-      Student i Computer Science med erfaring fra teknisk arbeid, prosjektarbeid og kundekontakt. Pålitelig og praktisk anlagt, og trives med ansvar og samarbeid.
+      Informatikkstudent med erfaring fra fullstack-utvikling, computer vision og hardware-integrasjon. Brenner for å bygge teknologi som løser reelle problemer. Søker sommerjobb/internship innen utvikling.
 
     styles:
       self:
@@ -29,7 +29,12 @@ sections:
         flexDirection: row-reverse
         textAlign: left
     type: HeroSection
-    actions: []
+    actions:
+      - type: Button
+        label: Les mer om meg
+        url: /info
+        style: primary
+        elementId: ''
 
   - colors: colors-f
     type: FeaturedProjectsSection
@@ -44,8 +49,8 @@ sections:
     showReadMoreLink: true
     variant: variant-b
     projects:
-      - content/pages/projects/project-two.md
-      - content/pages/projects/project-three.md
+      - content/pages/projects/project-four.md
+      - content/pages/projects/project-five.md
       - content/pages/projects/project-one.md
     styles:
       self:
@@ -57,35 +62,7 @@ sections:
           - pl-4
           - pr-4
         textAlign: left
-    subtitle: Prosjekter
-
-  - type: FeaturedPostsSection
-    elementId: ''
-    colors: colors-f
-    variant: variant-d
-    subtitle: Investeringsportefølje
-    showFeaturedImage: false
-    actions:
-      - type: Link
-        label: Se hele porteføljen
-        url: /blog
-    posts:
-      - content/pages/blog/post-one.md
-      - content/pages/blog/post-two.md
-      - content/pages/blog/post-three.md
-    showDate: true
-    showExcerpt: true
-    showReadMoreLink: true
-    styles:
-      self:
-        height: auto
-        width: narrow
-        padding:
-          - pt-28
-          - pb-48
-          - pl-4
-          - pr-4
-        textAlign: left
+    subtitle: Utvalgte prosjekter
 
   - type: ContactSection
     colors: colors-f

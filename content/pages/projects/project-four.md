@@ -58,7 +58,6 @@ Vi brukte et kamera og computer vision (OpenCV) til å gjenkjenne håndbevegelse
 **Robotdemonstrasjon:**  
 Se roboten i aksjon:
 
-- [robot-demo.mp4](/images/portfolio/robot-demo.mp4)
 - [robot-gesture-demo.mp4](/images/portfolio/robot-gesture-demo.mp4)
 
 ## Hva jeg lærte

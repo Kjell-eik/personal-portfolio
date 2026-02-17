@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 import { Link, Social } from '@/components/atoms';
 import ImageBlock from '@/components/molecules/ImageBlock';
@@ -112,7 +113,13 @@ function HeaderVariantC(props) {
 function MobileMenu(props) {
     const { primaryLinks = [], socialLinks = [], ...logoProps } = props;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
     const router = useRouter();
+
+    useEffect(() => {
+        setMounted(true);
+        return () => setMounted(false);
+    }, []);
 
     useEffect(() => {
         const handleRouteChange = () => {
@@ -125,51 +132,92 @@ function MobileMenu(props) {
         };
     }, [router.events]);
 
-    return (
-        <div className="ml-auto lg:hidden relative z-50">
-            <button
-                aria-label="Open Menu"
-                className="h-10 min-h-full p-4 text-lg border-l border-current focus:outline-hidden"
-                onClick={() => setIsMenuOpen(true)}
-            >
-                <MenuIcon className="fill-current w-icon h-icon" />
-            </button>
-            <div
-                className={classNames(
-                    'fixed inset-0 z-[9999] overflow-y-auto bg-black/95 text-white',
-                    isMenuOpen ? 'block' : 'hidden'
-                )}
-            >
-                <div className="flex flex-col min-h-full">
-                    <div className="flex items-stretch justify-between border-b border-current">
-                        <SiteLogoLink {...logoProps} />
-                        <div className="border-l border-current">
-                            <button
-                                aria-label="Close Menu"
-                                className="h-10 min-h-full p-4 text-lg focus:outline-hidden"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                <CloseIcon className="fill-current w-icon h-icon" />
-                            </button>
-                        </div>
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
+            document.body.style.top = '0';
+        } else {
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+            document.body.style.top = '';
+        }
+        return () => {
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+            document.body.style.top = '';
+        };
+    }, [isMenuOpen]);
+
+    const menuContent = isMenuOpen && (
+        <div
+            className="fixed inset-0 overflow-y-auto bg-black text-white"
+            style={{
+                position: 'fixed',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                zIndex: 9999,
+                backgroundColor: 'rgba(0, 0, 0, 0.95)',
+                WebkitOverflowScrolling: 'touch'
+            }}
+            role="dialog"
+            aria-modal="true"
+        >
+            <div className="flex flex-col min-h-screen">
+                <div className="flex items-stretch justify-between border-b border-current">
+                    <SiteLogoLink {...logoProps} />
+                    <div className="border-l border-current">
+                        <button
+                            aria-label="Close Menu"
+                            className="h-10 min-h-full p-4 text-lg focus:outline-none"
+                            onClick={() => setIsMenuOpen(false)}
+                            type="button"
+                        >
+                            <CloseIcon className="fill-current w-icon h-icon" />
+                        </button>
                     </div>
-                    {(primaryLinks.length > 0 || socialLinks.length > 0) && (
-                        <div className="flex flex-col items-center justify-center px-4 py-20 space-y-12 grow">
-                            {primaryLinks.length > 0 && (
-                                <ul className="space-y-6">
-                                    <ListOfLinks links={primaryLinks} inMobileMenu={true} />
-                                </ul>
-                            )}
-                            {socialLinks.length > 0 && (
-                                <ul className="flex flex-wrap justify-center border border-current divide-x divide-current">
-                                    <ListOfSocialLinks links={socialLinks} inMobileMenu={true} />
-                                </ul>
-                            )}
-                        </div>
-                    )}
                 </div>
+                {(primaryLinks.length > 0 || socialLinks.length > 0) && (
+                    <div className="flex flex-col items-center justify-center px-4 py-20 space-y-12 grow flex-1">
+                        {primaryLinks.length > 0 && (
+                            <ul className="space-y-6">
+                                <ListOfLinks links={primaryLinks} inMobileMenu={true} />
+                            </ul>
+                        )}
+                        {socialLinks.length > 0 && (
+                            <ul className="flex flex-wrap justify-center border border-current divide-x divide-current">
+                                <ListOfSocialLinks links={socialLinks} inMobileMenu={true} />
+                            </ul>
+                        )}
+                    </div>
+                )}
             </div>
         </div>
+    );
+
+    return (
+        <>
+            <div className="ml-auto lg:hidden">
+                <button
+                    aria-label="Open Menu"
+                    aria-expanded={isMenuOpen}
+                    className="h-10 min-h-full p-4 text-lg border-l border-current focus:outline-none"
+                    onClick={() => {
+                        console.log('Menu button clicked, current state:', isMenuOpen);
+                        setIsMenuOpen(true);
+                    }}
+                    type="button"
+                >
+                    <MenuIcon className="fill-current w-icon h-icon" />
+                </button>
+            </div>
+            {mounted && typeof document !== 'undefined' && menuContent && createPortal(menuContent, document.body)}
+        </>
     );
 }
 
@@ -192,7 +240,9 @@ function ListOfLinks({ links, inMobileMenu }) {
         <li key={index} className={classNames(inMobileMenu ? 'text-center w-full' : 'inline-flex items-stretch')}>
             <HeaderLink
                 {...link}
-                className={classNames(inMobileMenu ? 'text-xl bottom-shadow-1 hover:bottom-shadow-5' : 'p-4 link-fill')}
+                className={classNames(
+                    inMobileMenu ? 'text-xl text-white bottom-shadow-1 hover:bottom-shadow-5' : 'p-4 link-fill'
+                )}
             />
         </li>
     ));

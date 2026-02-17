@@ -5,7 +5,7 @@ colors: colors-a
 date: '2025'
 client: Universitetsprosjekt
 description: >-
-  Fullstack webapplikasjon for online eksamensavvikling med sikker autentisering, sanntids overvåkning og automatisk retting. Utviklet i team som del av systemutviklingskurs.
+  Et system for å gjennomføre eksamener digitalt. Laget i team som kursprosjekt – med innlogging, automatisk retting, og separate dashboards for lærere og studenter.
 featuredImage:
   type: ImageBlock
   url: /images/portfolio/exam-system.jpg
@@ -18,71 +18,69 @@ media:
 
 ## Om prosjektet
 
-Online Examination System er en fullstack webapplikasjon designet for å håndtere digitale eksamener. Systemet støtter brukerautentisering, eksamensoppretting, sanntids overvåkning og automatisk retting av multiple-choice spørsmål.
+Vi fikk i oppgave å lage et system for digitale eksamener. Tenk deg at en lærer skal kunne lage en eksamen, sette en tidsfrist, og studentene kan ta den hjemmefra. Systemet må vite hvem som er hvem, holde styr på tiden, og rette multiple-choice automatisk.
 
-### Tech Stack
+Det var et 8-ukers teamprosjekt hvor vi bygde hele systemet fra bunnen av med Flask (Python), SQLite database, og vanlig HTML/CSS/JavaScript på frontend.
+
+### Hva vi brukte
 
 **Backend:**
 
-- **Python Flask** - Web framework for backend API
-- **SQLite** - Relasjonsdatabase for bruker- og eksamendata
-- **Werkzeug Security** - Password hashing og sikkerhet
-- **Flask Session Management** - Bruker-sesjoner
+- **Python Flask** – Web framework for å håndtere innlogging og API
+- **SQLite** – Database for brukere, eksamener og resultater
+- **Werkzeug** – For kryptert passordlagring
+- **Session Management** – Holder styr på hvem som er innlogget
 
 **Frontend:**
 
-- **HTML5** - Semantisk markup
-- **CSS3** - Responsiv styling og layout
-- **JavaScript** - Interaktiv funksjonalitet
+- **HTML5/CSS3** – Grensesnitt og design
+- **JavaScript** – Interaktivitet (nedtelling, validering, etc.)
 
 **Sikkerhet:**
 
-- **Password Hashing** - Bcrypt/SHA-256 for passordsikring
-- **Session Management** - Sikre bruker-sesjoner
-- **SQL Injection Protection** - Parameteriserte queries
-- **Authentication Guards** - Rollbasert tilgangskontroll
+- **Password Hashing** – Passord lagres kryptert (Bcrypt)
+- **SQL Injection Protection** – Parametriserte queries
+- **Rollebasert tilgang** – Studenter og lærere ser forskjellig innhold
 
-### Nøkkelfunksjoner
+### Funksjonalitet
 
-- **Brukerautentisering** - Sikker innlogging med krypterte passord
-- **Rollebasert tilgang** - Separate dashboards for studenter og lærere
-- **Eksamensadministrasjon** - Opprett, rediger og administrer eksamener
-- **Sanntids eksamen** - Tidsbegrenset eksamensavvikling
-- **Automatisk retting** - Umiddelbar feedback på multiple-choice
-- **Resultater og statistikk** - Oversikt over tidligere eksamener
-- **Responsiv design** - Fungerer på desktop, tablet og mobil
+- **Sikker innlogging** – Krypterte passord og session management
+- **To typer brukere** – Studenter og lærere med forskjellige dashboards
+- **Opprett eksamener** – Lærere kan lage eksamener med tidsfrister
+- **Tidsbegrenset gjennomføring** – Nedtelling mens studenten tar eksamen
+- **Automatisk retting** – Multiple-choice rettes med en gang
+- **Oversikt** – Historikk og statistikk over tidligere eksamener
+- **Fungerer på mobil** – Responsivt design
 
-### Database Design
+### Database-struktur
 
-**Tabeller:**
+Fem hovedtabeller:
 
-- `users` - Brukerinformasjon og autentisering
-- `exams` - Eksamensdetaljer og innstillinger
-- `questions` - Spørsmål med svaralternativer
-- `submissions` - Student-besvarelser og resultater
-- `sessions` - Aktive eksamen-sesjoner
+- `users` – Brukerinformasjon og passord
+- `exams` – Eksamensdetaljer og tidsfrister
+- `questions` – Spørsmål med svaralternativer
+- `submissions` – Studentbesvarelser og poeng
+- `sessions` – Aktive pålogginger
 
-### Tekniske implementasjoner
+### Teknisk implementasjon
 
-- **RESTful API design** - Strukturerte endpoints
-- **Input validering** - Server-side validering av all brukerinput
-- **Error handling** - Omfattende feilhåndtering
-- **Database normalisering** - Effektiv datastruktur
+- **REST API design** – Logisk struktur på endepunkter
+- **Server-side validering** – Sjekker all input fra brukere
+- **Feilhåndtering** – Gir fornuftige feilmeldinger
+- **Normalisert database** – Effektiv datastruktur
 
-> "Digitalisering av eksamensprosessen med fokus på sikkerhet og brukervennlighet"
+> "Å digitalisere eksamener med fokus på sikkerhet"
 
-## Resultater og læring
+## Hva jeg lærte
 
-Prosjektet ga verdifull erfaring med:
-
-- **Fullstack utvikling** - Fra database til brukergrensesnitt
-- **Sikkerhetsprinsipper** - Autentisering og autorisasjon
-- **Database design** - Relasjonelle databaser og SQL
-- **Teamutvikling** - Git workflow og samarbeid
-- **Testing og debugging** - Systematisk feilsøking
+- **Fullstack-utvikling** – Jobbet med alt fra database til frontend
+- **Sikkerhet** – Hvordan man håndterer passord, innlogging og sessions
+- **Database design** – Å strukturere data fornuftig i SQL
+- **Teamarbeid** – Git workflow, koderevisjoner, og samarbeid
+- **Feilsøking** – Systematisk debugging av komplekse problemer
 
 **Prosjektteam:** 4 studenter  
 **Varighet:** 8 uker  
-**Rolle:** Backend-utvikler og database-design
+**Min rolle:** Backend-utvikler og database-design
 
-**Teknologier demonstrert:** Python, Flask, SQLite, HTML/CSS/JavaScript, Authentication, Database Design, REST API
+**Teknologier:** Python, Flask, SQLite, HTML/CSS/JavaScript, REST API

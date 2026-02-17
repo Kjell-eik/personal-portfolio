@@ -5,7 +5,7 @@ colors: colors-a
 date: '2024-2025'
 client: Universitetsprosjekt
 description: >-
-  Utviklet en robot som kan styres ved håndbevegelser ved hjelp av computer vision og maskinlæring. Prosjektet kombinerer hardware og software for å skape en intuitiv kontrollmekanisme.
+  En robot som styres med håndbevegelser – uten joystick eller knapper. Universitetsprosjekt hvor vi kombinerte kamera, AI og Arduino for å lage en intuitiv måte å kontrollere en robot på.
 featuredImage:
   type: ImageBlock
   url: /images/portfolio/robot-hand-gesture.jpg
@@ -18,56 +18,57 @@ media:
 
 ## Om prosjektet
 
-Hand Gesture Controlled Robot er et teamprosjekt utviklet ved universitetet som demonstrerer integrasjon mellom computer vision, maskinlæring og hardware-kontroll. Roboten kan gjenkjenne ulike håndbevegelser via kamera og respondere med tilsvarende bevegelser.
+I dette prosjektet ville vi lage noe annerledes enn de vanlige robotene som styres med joystick. Tanken var: Hva om du bare kunne bevege hånda di, og roboten beveger seg dit du peker?
 
-### Tech Stack
+Vi brukte et kamera og computer vision (OpenCV) til å gjenkjenne håndbevegelser, og koblet det opp til en Arduino som styrte motorene. Det var utfordrende å få det til å fungere raskt nok uten forsinkelse, men vi klarte å få det ned til under 100ms.
 
-**Software:**
+### Hva vi brukte
 
-- **Python** - Hovedprogrammeringsspråk for CV og logikk
-- **OpenCV** - Computer vision og bildebehandling
-- **C++** - Arduino-programmering og motor-kontroll
-- **MediaPipe/Computer Vision** - Håndgjenkjenning
+**På PC-siden:**
 
-**Hardware:**
+- **Python** – For å behandle kamerabilder og gjenkjenne håndbevegelser
+- **OpenCV** – Computer vision-bibliotek for bildebehandling
+- **MediaPipe** – AI-modell fra Google for håndgjenkjenning
 
-- **Arduino** - Mikrokontroller for motor-styring
-- **DC Motorer** - Drivsystem for hjul
-- **Webcam** - Sanntids bildefangst
-- **Motor Driver** - H-bridge for motor-kontroll
+**På robot-siden:**
 
-### Nøkkelfunksjoner
+- **Arduino** – Mikrokontroller som styrer motorene
+- **C++** – Programmeringsspråk for Arduino
+- **DC Motorer** – Drivsystem for hjulene
+- **Motor Driver** – For å kontrollere hastighet og retning
 
-- **Sanntids håndgjenkjenning** - Gjenkjenner håndbevegelser med <100ms latency
-- **Multi-directional kontroll** - Frem, tilbake, venstre, høyre, stopp
-- **Wireless kommunikasjon** - Trådløs forbindelse mellom PC og Arduino
-- **Robust deteksjon** - Fungerer i varierende lysforhold
+### Hvordan det fungerer
 
-### Tekniske utfordringer løst
+- **Rask respons** – Roboten reagerer på håndbevegelser nærmest øyeblikkelig (under 100ms)
+- **Fleksibel styring** – Kjører frem, tilbake, venstre, høyre, og stopper
+- **Trådløs** – PC-en kommuniserer trådløst med Arduino
+- **Fungerer i forskjellige lysforhold** – Relativt robust deteksjon
 
-1. **Latency-optimalisering** - Reduserte forsinkelse fra 300ms til <100ms
-2. **Nøyaktig gjenkjenning** - Oppnådde 95%+ accuracy på hånd-gestures
-3. **Hardware-integration** - Sømløs kommunikasjon mellom Python og Arduino
-4. **Real-time processing** - Effektiv bildebehandling for sanntids respons
+### Utfordringer vi løste
 
-> "Bridging the gap between human gestures and machine control"
+1. **Forsinkelse** – I starten tok det 300ms fra du beveget hånda til roboten reagerte. Fikk det ned til under 100ms ved å optimalisere koden.
+2. **Nøyaktighet** – Roboten måtte forstå forskjell på bevegelser. Klarte 95%+ nøyaktighet.
+3. **Kommunikasjon** – Få Python og Arduino til å snakke sammen sømløst.
+4. **Sanntidsbehandling** – Behandle kamerabilder raskt nok for øyeblikkelig respons.
 
-### Video-demonstrasjoner
+> "Når teknologi og menneskelige bevegelser møtes"
+
+### Videoer
 
 **Robotdemonstrasjon:**  
-Se roboten i aksjon med håndbevegelses-kontroll:
+Se roboten i aksjon:
 
 - [robot-demo.mp4](/images/portfolio/robot-demo.mp4)
 - [robot-gesture-demo.mp4](/images/portfolio/robot-gesture-demo.mp4)
 
-## Resultater
+## Hva jeg lærte
 
-Prosjektet demonstrerer erfaring med:
+Prosjektet ga meg erfaring med:
 
-- Computer vision og bildebehandling
-- Hardware/software integrasjon
-- Embedded systems programmering
-- Teamarbeid og prosjektstyring
-- Problem-solving i multidisiplinære prosjekter
+- Computer vision og bildebehandling i praksis
+- Å koble sammen hardware og software
+- Programmering av mikrokontrollere (Arduino)
+- Teamarbeid på tekniske prosjekter
+- Feilsøking når ting ikke fungerer som forventet
 
-**Teknologier demonstrert:** Python, C++, OpenCV, Arduino, Computer Vision, Embedded Systems
+**Teknologier:** Python, C++, OpenCV, Arduino, Computer Vision, Embedded Systems

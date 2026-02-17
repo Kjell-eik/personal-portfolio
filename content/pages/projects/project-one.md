@@ -5,7 +5,7 @@ colors: colors-a
 date: '2024'
 client: Vestfold & Viken Bygg og Eiendom
 description: >-
-  Utviklet og vedlikeholder profesjonell nettside for VV Bygg og Eiendom. WordPress-basert løsning med fokus på enkel navigasjon, informasjonsformidling og kontaktmuligheter for potensielle kunder.
+  Driver og vedlikeholder nettsiden til VV Bygg og Eiendom. WordPress-basert løsning hvor jeg har ansvar for innholdsoppdateringer, teknisk drift, og SEO.
 featuredImage:
   type: ImageBlock
   url: /images/portfolio/moodboard.webp
@@ -18,45 +18,47 @@ media:
 
 ## Om prosjektet
 
-VV Bygg og Eiendom nettside er en profesjonell bedriftsplattform utviklet for å presentere selskapets tjenester innen bygg, anlegg og eiendomsforvaltning. Som assistent i selskapet har jeg ansvar for drift, vedlikehold og videreutvikling av nettsiden.
+Som assistent i VV Bygg og Eiendom har jeg ansvar for deres nettside. Det handler om å holde innholdet oppdatert, passe på at alt fungerer teknisk, og sørge for at potensielle kunder finner frem til dem.
 
-### Tech Stack
+Nettsiden er bygget i WordPress, noe som gjør det enkelt å oppdatere innhold, men krever fortsatt teknisk forståelse for hosting, sikkerhet, og SEO.
 
-- **WordPress CMS** - Innholdsstyring og administrasjon
-- **HTML5 & CSS3** - Struktur og styling
-- **JavaScript** - Interaktive elementer
-- **Responsive Design** - Optimalisert for mobile enheter
-- **SEO-optimalisering** - Meta tags, alt-tekster, sitemap
-- **Hosting** - Profesjonell webhosting med SSL-sertifikat
+### Hva jeg bruker
 
-### Hovedfunksjoner
+- **WordPress CMS** – Innholdsstyring og oppdateringer
+- **HTML5 & CSS3** – Tilpasninger av design
+- **JavaScript** – Interaktive elementer
+- **Responsive Design** – Fungerer på mobil
+- **SEO-optimalisering** – Søkemotoroptimalisering
+- **Hosting & Sikkerhet** – SSL-sertifikat og backup
 
-- **Tjenestepresentasjon** - Oversiktlig visning av bedriftens tilbud
-- **Kontaktskjema** - Enkel kommunikasjonskanal for henvendelser
-- **Prosjektgalleri** - Visuell fremstilling av gjennomførte prosjekter
-- **Mobiloptimalisering** - Fullt responsivt design for alle enheter
-- **Informasjonssider** - Om selskapet, tjenester og kontaktinfo
+### Hva nettsiden gjør
 
-### Arbeidsoppgaver
+- **Presenterer tjenester** – Oversikt over hva firmaet tilbyr
+- **Kontaktskjema** – For henvendelser fra potensielle kunder
+- **Prosjektgalleri** – Bilder fra gjennomførte prosjekter
+- **Mobilvenlig** – Fungerer på alle enheter
+- **Informasjonssider** – Om selskapet og deres tjenester
 
-- **Nettside-administrasjon** - Løpende oppdatering av innhold
-- **Teknisk vedlikehold** - Sikkerhetoppdateringer og backup
-- **Design og UX** - Forbedring av brukeropplevelse
-- **SEO-arbeid** - Optimalisering for søkemotorer
-- **Kundestøtte** - Håndtering av nettside-relaterte henvendelser
+### Mine oppgaver
 
-> "Enkel og effektiv kommunikasjon mellom bedrift og kunde"
+- **Innholdsoppdatering** – Legger til nye prosjekter og informasjon
+- **Teknisk vedlikehold** – Sikkerhetoppdateringer og backup
+- **Design** – Forbedringer av brukeropplevelsen
+- **SEO** – Sørger for at siden dukker opp i Google
+- **Support** – Hjelper til med nettside-relaterte spørsmål
 
-## Resultater
+> "Bedriftens digitale ansikt"
 
-Nettsiden fungerer som bedriftens digitale visittkort og primære informasjonskanal:
+## Resultat
 
-- Profesjonell online-tilstedeværelse
-- Redusert behov for telefon-henvendelser gjennom informative sider
+Nettsiden fungerer som bedriftens digitale visittkort:
+
+- Profesjonell tilstedeværelse på nett
+- Færre telefon-henvendelser siden mye info finnes på nettet
 - Enkel kontaktmulighet for potensielle kunder
-- Mobilvenlig design som når bredere publikum
+- Mobilvenlig, så folk kan se den overalt
 
-**Ansvar:** Drift, vedlikehold, innholdsoppdatering, teknisk support
+**Mitt ansvar:** Drift, vedlikehold, innhold, teknisk support
 
 ### Lenker
 

@@ -41,7 +41,7 @@ topSections:
 bottomSections:
   - type: ContactSection
     backgroundSize: full
-    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
+    title: 'La oss ta en prat!'
     colors: colors-f
     form:
       type: FormBlock
@@ -64,17 +64,17 @@ bottomSections:
         - name: email
           label: E-post
           hideLabel: true
-          placeholder: E-post
+          placeholder: E-postadresse
           isRequired: true
-          width: full
+          width: 1/2
           type: EmailFormControl
-        - name: message
+        - name: address
           label: Melding
           hideLabel: true
-          placeholder: Fortell om prosjektet ditt
+          placeholder: Hva lurer du på?
           isRequired: true
-          width: full
-          type: TextareaFormControl
+          width: 1/2
+          type: TextFormControl
       submitLabel: 'Send melding'
       styles:
         self:

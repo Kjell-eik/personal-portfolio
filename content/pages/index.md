@@ -10,7 +10,7 @@ sections:
     title: >-
       Stefan Jahren Bringaker – Informatikkstudent
     subtitle: >-
-      Informatikkstudent med erfaring fra fullstack-utvikling, computer vision og hardware-integrasjon. Brenner for å bygge teknologi som løser reelle problemer. Søker sommerjobb/internship innen utvikling.
+      4. års informatikkstudent som liker å bygge ting som faktisk fungerer. Med erfaring fra fullstack-utvikling, computer vision og robotikk, søker jeg sommerjobb hvor jeg kan lære og bidra i et utviklerteam.
 
     styles:
       self:
@@ -67,7 +67,7 @@ sections:
   - type: ContactSection
     colors: colors-f
     backgroundSize: full
-    title: 'Har du spørsmål, samarbeid eller en idé? Ta kontakt 💬'
+    title: 'La oss ta en prat!'
     form:
       type: FormBlock
       elementId: sign-up-form
@@ -96,7 +96,7 @@ sections:
         - name: address
           label: Melding
           hideLabel: true
-          placeholder: Kort om hva du trenger hjelp med
+          placeholder: Hva lurer du på?
           isRequired: true
           width: 1/2
           type: TextFormControl

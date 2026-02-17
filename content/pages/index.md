@@ -10,7 +10,7 @@ sections:
     title: >-
       Stefan Jahren Bringaker – Informatikkstudent
     subtitle: >-
-      4. års informatikkstudent som liker å bygge ting som faktisk fungerer. Med erfaring fra fullstack-utvikling, computer vision og robotikk, søker jeg sommerjobb hvor jeg kan lære og bidra i et utviklerteam.
+      4. års informatikkstudent som liker å bygge ting som faktisk fungerer. Med erfaring fra fullstack-utvikling, computer vision og robotikk.
 
     styles:
       self:

@@ -6,9 +6,7 @@ export default function Document() {
             <Head />
             <body>
                 {/* Hidden form for Netlify Forms detection */}
-                <form name="sign-up-form" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
-                    <input type="hidden" name="form-name" value="sign-up-form" />
-                    <input type="hidden" name="bot-field" />
+                <form name="sign-up-form" netlify netlify-honeypot="bot-field" hidden>
                     <input type="text" name="firstName" />
                     <input type="text" name="lastName" />
                     <input type="email" name="email" />

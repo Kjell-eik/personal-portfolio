@@ -23,12 +23,13 @@ export default function FormBlock(props) {
 
         const form = formRef.current;
         const data = new FormData(form);
+        const formDataObj = Object.fromEntries(data.entries());
 
         try {
-            const response = await fetch('/', {
+            const response = await fetch('/api/submit-form', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: new URLSearchParams(data as any).toString()
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formDataObj)
             });
 
             if (response.ok) {
@@ -60,18 +61,9 @@ export default function FormBlock(props) {
 
     return (
         <Annotated content={props}>
-            <form
-                className={className}
-                name={elementId}
-                id={elementId}
-                onSubmit={handleSubmit}
-                ref={formRef}
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-            >
+            <form className={className} name={elementId} id={elementId} onSubmit={handleSubmit} ref={formRef}>
                 <div className="grid gap-6 sm:grid-cols-2">
                     <input type="hidden" name="form-name" value={elementId} />
-                    <input type="hidden" name="bot-field" />
                     {fields.map((field, index) => {
                         return <DynamicComponent key={index} {...field} />;
                     })}

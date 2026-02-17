@@ -2,9 +2,5 @@
   publish = ".next"
   command = "npm run build"
 
-[functions]
-  # Enable form detection for Next.js Runtime v5
-  included_files = ["content/**", "public/**"]
-
 [[plugins]]
   package = "@netlify/plugin-nextjs"

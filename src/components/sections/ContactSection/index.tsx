@@ -11,10 +11,20 @@ export default function ContactSection(props) {
     const sectionAlign = styles.self?.textAlign ?? 'left';
     return (
         <Section elementId={elementId} colors={colors} backgroundSize={backgroundSize} styles={styles.self}>
-            <div className={classNames('flex gap-8', mapFlexDirectionStyles(styles.self?.flexDirection ?? 'row'))}>
-                <div className="flex-1 w-full">
+            <div
+                className={classNames(
+                    'flex gap-12 lg:gap-16',
+                    mapFlexDirectionStyles(styles.self?.flexDirection ?? 'row')
+                )}
+            >
+                <div className="flex-1 w-full space-y-8">
                     {title && (
-                        <h2 className={classNames('text-4xl sm:text-5xl', mapStyles({ textAlign: sectionAlign }))}>
+                        <h2
+                            className={classNames(
+                                'text-4xl sm:text-5xl font-bold leading-tight transition-all duration-500',
+                                mapStyles({ textAlign: sectionAlign })
+                            )}
+                        >
                             {title}
                         </h2>
                     )}
@@ -22,21 +32,21 @@ export default function ContactSection(props) {
                         <Markdown
                             options={{ forceBlock: true, forceWrapper: true }}
                             className={classNames(
-                                'max-w-none prose sm:prose-lg',
+                                'max-w-none prose sm:prose-lg opacity-90 leading-relaxed prose-headings:transition-all prose-headings:duration-300',
                                 mapStyles({ textAlign: sectionAlign }),
                                 {
-                                    'mt-4': title
+                                    'mt-6': title
                                 }
                             )}
                         >
                             {text}
                         </Markdown>
                     )}
-                    {form && <FormBlock {...form} className={classNames({ 'mt-12': title || text })} />}
+                    {form && <FormBlock {...form} className={classNames('mt-12', { 'mt-16': title || text })} />}
                 </div>
                 {media && (
                     <div
-                        className={classNames('flex flex-1 w-full', {
+                        className={classNames('flex flex-1 w-full transition-all duration-500', {
                             'justify-center': sectionAlign === 'center',
                             'justify-end': sectionAlign === 'right'
                         })}

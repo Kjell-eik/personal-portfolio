@@ -19,24 +19,30 @@ export default function Component(props: HeroSection) {
     const sectionAlign = styles.self?.textAlign ?? 'left';
     return (
         <Section elementId={elementId} colors={colors} backgroundSize={backgroundSize} styles={styles.self}>
-            <div className={classNames('flex gap-8', mapFlexDirectionStyles(sectionFlexDirection))}>
+            <div className={classNames('flex gap-12 lg:gap-16', mapFlexDirectionStyles(sectionFlexDirection))}>
                 <div className={classNames('flex-1 w-full', mapStyles({ textAlign: sectionAlign }))}>
                     {title && (
                         <AnnotatedField path=".title">
-                            <h1 className="text-5xl sm:text-6xl">{title}</h1>
+                            <h1 className="text-5xl sm:text-6xl lg:text-7xl leading-tight">{title}</h1>
                         </AnnotatedField>
                     )}
                     {subtitle && (
                         <AnnotatedField path=".subtitle">
-                            <p className={classNames('text-xl sm:text-2xl', { 'mt-4': title })}>{subtitle}</p>
+                            <p
+                                className={classNames('text-xl sm:text-2xl lg:text-3xl opacity-90 leading-relaxed', {
+                                    'mt-6': title
+                                })}
+                            >
+                                {subtitle}
+                            </p>
                         </AnnotatedField>
                     )}
                     {text && (
                         <AnnotatedField path=".text">
                             <Markdown
                                 options={{ forceBlock: true, forceWrapper: true }}
-                                className={classNames('max-w-none prose sm:prose-lg', {
-                                    'mt-6': title || subtitle
+                                className={classNames('max-w-none prose sm:prose-lg lg:prose-xl', {
+                                    'mt-8': title || subtitle
                                 })}
                             >
                                 {text}
@@ -46,7 +52,7 @@ export default function Component(props: HeroSection) {
                     {actions?.length > 0 && (
                         <div
                             className={classNames('flex flex-wrap items-center gap-4', {
-                                'mt-8': title || subtitle || text,
+                                'mt-10': title || subtitle || text,
                                 'justify-center': sectionAlign === 'center',
                                 'justify-end': sectionAlign === 'right'
                             })}

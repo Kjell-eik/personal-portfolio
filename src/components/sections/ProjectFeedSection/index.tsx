@@ -76,26 +76,40 @@ function ProjectGrid(props) {
             })}
         >
             {projects.map((project, index) => (
-                <Link key={index} href={project} className="block max-w-3xl pb-10 border-b border-current group">
+                <Link
+                    key={index}
+                    href={project}
+                    className="block max-w-3xl pb-10 border-b-2 border-white/10 group relative overflow-hidden rounded-lg transition-all duration-500 hover:border-white/30 hover:shadow-2xl hover:shadow-black/20"
+                    style={{
+                        transitionDelay: `${index * 50}ms`
+                    }}
+                >
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                     {showFeaturedImage && project.featuredImage && (
-                        <div className="w-full mb-6 overflow-hidden aspect-3/2">
+                        <div className="w-full mb-6 overflow-hidden aspect-3/2 rounded-lg shadow-lg">
                             <ImageBlock
                                 {...project.featuredImage}
-                                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                                className="object-cover w-full h-full transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-1"
                             />
                         </div>
                     )}
                     {showDate && project.date && (
-                        <div className="mb-3">
+                        <div className="mb-3 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                             <ProjectDate date={project.date} />
                         </div>
                     )}
-                    <TitleTag className="text-3xl sm:text-4xl">{project.title}</TitleTag>
-                    {showDescription && project.description && <p className="mt-5 text-lg">{project.description}</p>}
+                    <TitleTag className="text-3xl sm:text-4xl transition-all duration-300 group-hover:translate-x-1">
+                        {project.title}
+                    </TitleTag>
+                    {showDescription && project.description && (
+                        <p className="mt-5 text-lg opacity-85 group-hover:opacity-100 transition-all duration-300">
+                            {project.description}
+                        </p>
+                    )}
                     {showReadMoreLink && (
                         <div className="mt-8">
-                            <span className="inline-flex text-xl transition rounded-full p-4 border-2 border-current group-hover:bottom-shadow-6 group-hover:-translate-y-1.5">
-                                <ArrowUpRightIcon className="fill-current w-icon h-icon" />
+                            <span className="inline-flex text-xl transition-all duration-500 ease-out rounded-full p-4 border-2 border-current group-hover:bottom-shadow-8 group-hover:-translate-y-2 group-hover:rotate-12 group-hover:border-white/50 group-hover:bg-white/5 backdrop-blur-sm">
+                                <ArrowUpRightIcon className="fill-current w-icon h-icon transition-transform duration-300 group-hover:scale-110" />
                             </span>
                         </div>
                     )}

@@ -48,11 +48,19 @@ export default function FormBlock(props) {
     if (submitted) {
         return (
             <Annotated content={props}>
-                <div className={classNames(className, 'p-6 border-2 border-current')}>
-                    <p className="text-lg font-medium">✅ Takk for meldingen!</p>
-                    <p className="mt-2">Jeg svarer så fort jeg kan.</p>
-                    <button onClick={() => setSubmitted(false)} className="mt-4 text-sm underline hover:no-underline">
-                        Send en ny melding
+                <div
+                    className={classNames(
+                        className,
+                        'p-8 border-2 border-current rounded-lg backdrop-blur-sm bg-white/10 shadow-lg'
+                    )}
+                >
+                    <p className="text-2xl font-medium">✅ Takk for meldingen!</p>
+                    <p className="mt-3 text-lg opacity-90">Jeg svarer så fort jeg kan.</p>
+                    <button
+                        onClick={() => setSubmitted(false)}
+                        className="mt-6 text-base underline hover:no-underline transition-all hover:translate-x-1"
+                    >
+                        Send en ny melding →
                     </button>
                 </div>
             </Annotated>
@@ -68,12 +76,16 @@ export default function FormBlock(props) {
                         return <DynamicComponent key={index} {...field} />;
                     })}
                 </div>
-                {error && <div className="mt-4 p-4 border-2 border-red-500 text-red-500">{error}</div>}
-                <div className={classNames('mt-8', mapStyles({ textAlign: styles.self?.textAlign ?? 'left' }))}>
+                {error && (
+                    <div className="mt-6 p-5 border-2 border-red-400 bg-red-900/20 text-red-100 rounded-lg backdrop-blur-sm">
+                        {error}
+                    </div>
+                )}
+                <div className={classNames('mt-10', mapStyles({ textAlign: styles.self?.textAlign ?? 'left' }))}>
                     <button
                         type="submit"
                         disabled={submitting}
-                        className="inline-flex items-center justify-center px-5 py-4 text-lg transition border-2 border-current hover:bottom-shadow-6 hover:-translate-y-1.5 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium transition-all duration-300 border-2 border-current hover:bottom-shadow-8 hover:-translate-y-2 active:translate-y-0 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:bottom-shadow-0 shadow-lg"
                     >
                         {submitting ? 'Sender...' : submitLabel}
                     </button>

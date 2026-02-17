@@ -26,7 +26,7 @@ export default function TextFormControl(props) {
             )}
             <input
                 id={name}
-                className="w-full p-3 bg-transparent border border-current placeholder:text-current placeholder:opacity-50 focus:outline-none focus:ring-1 focus:ring-current sm:text-xl"
+                className="w-full p-4 bg-white/5 backdrop-blur-sm border-2 border-white/30 rounded-md placeholder:text-current placeholder:opacity-60 focus:outline-none focus:border-white/60 focus:bg-white/10 transition-all duration-300 sm:text-xl shadow-sm hover:border-white/40"
                 type="text"
                 name={name}
                 {...attr}

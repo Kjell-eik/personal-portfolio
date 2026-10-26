@@ -12,9 +12,11 @@ import HighlightedPreBlock from '@/utils/highlighted-markdown';
 import BaseLayout from '../BaseLayout';
 
 type ComponentProps = PageComponentProps &
-    ProjectLayout & {
+    Omit<ProjectLayout, 'date'> & {
         prevProject?: ProjectLayout;
         nextProject?: ProjectLayout;
+        date?: string;
+        status?: string;
         technologies?: string[];
     };
 
@@ -23,6 +25,7 @@ const Component: React.FC<ComponentProps> = (props) => {
         title,
         date,
         client,
+        status,
         description,
         markdownContent,
         media,
@@ -31,8 +34,8 @@ const Component: React.FC<ComponentProps> = (props) => {
         technologies = [],
         bottomSections = []
     } = props;
-    const projectDate = dayjs(date);
-    const dateTimeAttr = projectDate.isValid() ? projectDate.format('YYYY-MM-DD') : undefined;
+    const projectDate = date ? dayjs(date) : undefined;
+    const dateTimeAttr = projectDate?.isValid() ? projectDate.format('YYYY-MM-DD') : undefined;
 
     return (
         <BaseLayout {...props}>
@@ -52,13 +55,22 @@ const Component: React.FC<ComponentProps> = (props) => {
                         </ol>
                     </nav>
                     <div className="project-detail-header mx-auto mb-8 max-w-6xl sm:mb-12">
-                        <div className="flex flex-wrap items-center gap-3 text-sm text-white/75">
-                            {client && <span className="uppercase tracking-widest">{client}</span>}
-                            {client && date && <span aria-hidden="true">•</span>}
-                            <time className="uppercase tracking-widest" dateTime={dateTimeAttr}>
-                                {date}
-                            </time>
-                        </div>
+                        {(client || date) && (
+                            <div className="flex flex-wrap items-center gap-3 text-sm text-white/75">
+                                {client && <span className="uppercase tracking-widest">{client}</span>}
+                                {client && date && <span aria-hidden="true">•</span>}
+                                {date && (
+                                    <time className="uppercase tracking-widest" dateTime={dateTimeAttr}>
+                                        {date}
+                                    </time>
+                                )}
+                            </div>
+                        )}
+                        {status && (
+                            <span className="project-status-badge mt-4" aria-label={`Prosjektstatus: ${status}`}>
+                                {status}
+                            </span>
+                        )}
                         <h1 className="mt-4 max-w-4xl text-4xl leading-tight sm:text-5xl md:text-6xl">{title}</h1>
                     </div>
                     {description && (

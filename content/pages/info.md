@@ -10,7 +10,7 @@ sections:
     title: >-
       Stefan Jahren Bringaker – Informatikkstudent
     subtitle: >-
-      4. års informatikkstudent som liker å bygge ting som faktisk fungerer. Med erfaring fra fullstack-utvikling, computer vision og robotikk, søker jeg sommerjobb hvor jeg kan lære og bidra i et utviklerteam.
+      Informatikkstudent ved European University Cyprus med erfaring fra fullstack-utvikling, computer vision og robotikk. Jeg søker sommerjobb der jeg kan lære og bidra i et utviklerteam.
 
     styles:
       self:
@@ -50,18 +50,18 @@ sections:
     subtitle: ''
     text: |
       ### Bakgrunn
-      Jeg er informatikkstudent i fjerde år på Kypros, og har alltid vært nysgjerrig på hvordan teknologi fungerer. Det startet med å lure på hvordan ting virker, og nå bygger jeg dem selv – alt fra roboter som reagerer på håndbevegelser til systemer for digitale eksamener.
+      Jeg studerer informatikk ved European University Cyprus. Interessen for teknologi startet med nysgjerrighet på hvordan ting fungerer, og har utviklet seg til praktisk arbeid med alt fra en robot styrt av håndbevegelser til et system for digitale eksamener.
 
       ### Teknologi i praksis
-      Det morsomste med programmering er når ting faktisk begynner å fungere. Gjennom studiene har jeg fått jobbe med mange forskjellige teknologier: computer vision som gjenkjenner bevegelser, Arduino-roboter, og webutvikling med Flask og Python. Jeg liker spesielt prosjekter hvor du må kombinere forskjellige teknologier for å få noe til å virke.
+      Gjennom studiene har jeg arbeidet med computer vision for å gjenkjenne bevegelser, robotikk med Arduino og webutvikling med Flask og Python. Jeg liker særlig prosjekter der flere teknologier må spille sammen for å løse en konkret oppgave.
 
       ### Praktisk erfaring og ledelse
-      Ved siden av studiene har jeg jobbet mye praktisk – både i byggbransjen, som servicetekniker, og nå med nettsideadministrasjon. Akkurat nå er jeg også president i foreningen for norske studenter her på Kypros, noe som har gitt meg mye erfaring med organisering og det å få ting til å skje.
+      Ved siden av studiene har jeg erfaring fra byggbransjen, arbeid som servicetekniker og administrasjon av nettsider. Jeg har også vært president i Norwegian Students Association på Kypros. Rollene har gitt meg erfaring med praktiske oppgaver, kundekontakt og organisering.
 
       ### Interesser og mål
-      Utenom koding er jeg interessert i økonomi og investering – følger aksjemarkedet og har litt eiendomsinvestering på siden. Synes det er spennende hvordan teknologi og business hører sammen.
+      Utenom programmering er jeg interessert i økonomi og investeringer. Jeg følger aksjemarkedet og har noe erfaring med eiendomsinvestering. Jeg synes det er spennende hvordan teknologi og næringsliv henger sammen.
 
-      **Søker sommerjobb** hvor jeg kan være med i et utviklerteam, lære hvordan det er å jobbe i et profesjonelt miljø, og bidra med det jeg kan.
+      **Søker sommerjobb** der jeg kan bli del av et utviklerteam, lære mer om arbeid i et profesjonelt miljø og bidra med erfaringen jeg har.
     elementId: info-about-copy
     styles:
       self:
@@ -87,23 +87,23 @@ sections:
       - title: Assistent
         organization: Vestfold & Viken bygg og eiendom
         dates: 2023 – d.d.
-        description: Hjelper til med forskjellige prosjekter i selskapet. Har hovedansvar for nettsiden deres og sosiale medier, samt IT-relaterte oppgaver og kundekontakt.
+        description: Arbeidet omfatter ulike prosjekter, hovedansvar for selskapets nettside og sosiale medier, IT-relaterte oppgaver og kundekontakt.
       - title: Servicetekniker
         organization: Nordisk Vannteknikk
         dates: 2021 – 2024
-        description: Jobbet med installasjon, drift og reparasjon av mobile vannbehandlingssystemer. Mye reising til forskjellige oppdrag, og mye kundekontakt.
+        description: Arbeidet med installasjon, drift og reparasjon av mobile vannbehandlingssystemer. Stillingen innebar reiser til ulike oppdrag og jevnlig kundekontakt.
       - title: Førstegangstjeneste
         organization: Akershus kommandantskap
         dates: 2020 – 2021
-        description: Fullført førstegangstjeneste ved Ørland flystasjon og Kolsås leir.
+        description: Gjennomførte førstegangstjeneste ved Ørland flystasjon og Kolsås leir.
       - title: Assistent
         organization: Bringaker Bygg
         dates: 2019 – 2021
-        description: Jobbet på forskjellige byggeprosjekter med maskinarbeid, vedlikehold og snekkerarbeid.
+        description: Deltok i ulike byggeprosjekter med maskinarbeid, vedlikehold og snekkerarbeid.
       - title: Verkstedmedarbeider
         organization: BOMEKAN
         dates: 2017 – 2019
-        description: Produksjon og bearbeiding av deler til stålkonstruksjoner.
+        description: Arbeidet med produksjon og bearbeiding av deler til stålkonstruksjoner.
     styles:
       self:
         height: auto
@@ -123,23 +123,23 @@ sections:
     title: Utdanning
     subtitle: ''
     text: |
-      ### BS Computer Science – European University Cyprus
+      ### Bachelor i informatikk – European University Cyprus
       **2022 – Ferdig januar 2027**
 
-      4-årig bachelor i informatikk. Studerer alt fra grunnleggende programmering til mer avanserte ting som computer vision og systemdesign.
+      Fireårig bachelorgrad i informatikk. Studiet omfatter blant annet programmering, computer vision og systemdesign.
 
-      **Noen av fagene:** Python, Java, C++, algoritmer, databaser, nettverk, operativsystemer, webutvikling, computer vision.
+      **Utvalgte fagområder:** Python, Java, C++, algoritmer, databaser, nettverk, operativsystemer, webutvikling og computer vision.
 
-      **Prosjekter:** Håndbevegelses-styrt robot, digitalt eksamensystem, og flere andre teamprosjekter.
+      **Prosjekter:** Håndstyrt robot, digitalt eksamenssystem og andre teamprosjekter.
 
-      **Andre aktiviteter:** President i Norwegian Students Association (2025-2026), styremedlem i ANSA, IEEE-medlem, robotikklubb.
+      **Andre aktiviteter:** President i Norwegian Students Association (2025–2026), styremedlem i ANSA, IEEE-medlem og medlem av robotikklubben.
 
       ---
 
       ### Videregående – Thor Heyerdahl
       **2017 – 2020**
 
-      Medier og kommunikasjon, generell studiekompetanse.
+      Medier og kommunikasjon. Generell studiekompetanse.
     elementId: ''
     styles:
       self:
@@ -161,52 +161,52 @@ sections:
       - title: Programmeringsspråk
         skills:
           - name: Python
-            detail: Computer vision, backend-utvikling, Arduino-integrasjon
+            detail: Computer vision, backend-utvikling og Arduino-integrasjon
           - name: JavaScript
-            detail: Frontend-utvikling og interaktivitet
+            detail: Frontend-utvikling og interaktive funksjoner
           - name: C++
-            detail: Embedded systems og Arduino-programmering
+            detail: Embedded systems og programmering for Arduino
           - name: HTML5 & CSS3
-            detail: Webdesign og responsiv layout
+            detail: Webdesign og responsiv utforming
           - name: SQL
-            detail: Database design og queries (SQLite)
-      - title: Frameworks & Biblioteker
+            detail: Databasedesign og SQL-spørringer (SQLite)
+      - title: Rammeverk og biblioteker
         skills:
           - name: Flask
-            detail: Python web framework for backend API
+            detail: Python-rammeverk for webapplikasjoner og API-er
           - name: OpenCV
-            detail: Computer vision og bildebehandling
+            detail: Computer vision og behandling av bilder
           - name: WordPress
-            detail: CMS for nettside-administrasjon
-      - title: Verktøy & Teknologier
+            detail: Innholdsstyring og administrasjon av nettsider
+      - title: Verktøy og teknologi
         skills:
           - name: Git
-            detail: Versjonskontroll og samarbeid
+            detail: Versjonskontroll og samarbeid i prosjekter
           - name: Arduino
-            detail: Mikrokontroller-programmering
+            detail: Programmering av mikrokontrollere
           - name: SQLite
-            detail: Relasjonsdatabase
+            detail: Relasjonsdatabase og SQL
           - name: REST API
-            detail: API-design og implementasjon
+            detail: Utforming og implementering av API-er
           - name: VS Code
-            detail: Primært utviklingsverktøy
+            detail: Verktøy for programvareutvikling
       - title: Kompetanseområder
         skills:
           - name: Fullstack webutvikling
             detail: frontend og backend
           - name: Computer vision
-            detail: bildegjenkenning
-          - name: Hardware/software integrasjon
-          - name: Database design og administrasjon
+            detail: gjenkjenning og behandling av bilder
+          - name: Integrasjon av maskinvare og programvare
+          - name: Databasedesign og -administrasjon
           - name: Sikkerhet og autentisering
-            detail: password hashing, session management
-          - name: Responsive web design
-          - name: SEO-optimalisering
-          - name: Prosjektstyring og teamarbeid
+            detail: passordhashing og sesjonshåndtering
+          - name: Responsiv webdesign
+          - name: Søkemotoroptimalisering (SEO)
+          - name: Prosjektarbeid og samarbeid i team
       - title: Andre ferdigheter
         skills:
-          - name: Teknisk problemløsing og debugging
-          - name: Kundekontakt og servicearbeid
+          - name: Teknisk problemløsing og feilsøking
+          - name: Kundekontakt og service
           - name: Teknisk dokumentasjon
           - name: Flytende norsk og engelsk
             detail: muntlig og skriftlig
@@ -232,21 +232,21 @@ sections:
       ### President – Norwegian Students Association EUC
       **2025 – 2026**
 
-      Leder foreningen for norske studenter på Kypros. Holder kontakt med universitetet, planlegger arrangementer, og hjelper andre norske studenter.
+      Rollen omfatter kontakt med universitetet, planlegging av arrangementer og støtte til norske studenter på Kypros.
 
       ---
 
       ### Styremedlem – ANSA
       **2025 – 2026**
 
-      Bidrar med å planlegge arrangementer og støtte norske studenter på Kypros.
+      Arbeidet omfatter planlegging av arrangementer og støtte til norske studenter på Kypros.
 
       ---
 
       ### Fotballtrener – HSH Fotball
-      **2021-sesong**
+      **Sesongen 2021**
 
-      Hovedtrener for gutter 16.
+      Hovedtrener for G16-laget.
     elementId: ''
     styles:
       self:

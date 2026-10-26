@@ -1,172 +1,177 @@
-# HCI Redesign — Final Assessment Submission
+# HCI Redesign — Assessment Submission
 
-**Status:** Draft for review
-
-**Website:** Personal portfolio redesign
-**Evidence folder:** `public/hci-redesign/screenshots/`
+- **Draft for review**
+- **Website:** Personal portfolio redesign
+- **Evidence archive:** [`hci-evidence/`](./hci-evidence/)
+**Original comparison revision:** Git commit `dc17fb4`
 
 ## Introduction
 
-This redesign improves the portfolio’s information hierarchy and responsive presentation while retaining its dark olive-green palette, monospace typography, existing content, and navigation. The work was implemented in phases across the homepage, project cards, About page, skills, work history, project details, and contact forms.
+This redesign makes the portfolio easier to scan on desktop and mobile while retaining its dark olive-green palette, monospace identity, existing project content, links, and contact-form backend. It updates the homepage, project cards and detail pages, About content, skill groups, and work history. A new Senior Project page describes the supplied bachelor-project goals and clearly marks the work as ongoing; it does not claim unverified implementation or results.
 
-This report assesses the four assignment categories against the actual implementation and available screenshots. It distinguishes strong demonstrations from cases where the evidence is less conclusive. The paired captures used below are authentic local website screenshots at matching viewports: **390 × 844 px mobile** and **1440 × 1000 px desktop**. No screenshot has been edited or replaced for this document.
-
-## Assessment at a glance
-
-All 14 requested applications have a corresponding visible implementation. Most are clearly demonstrated in the available evidence. Three deserve a qualified assessment: continuity is clearest in the desktop grid; figure/ground separation is present but uses neighboring dark tones; and the closure illustration has a strong after-state image but no directly matched before image of that specific page location. Several screenshots also retain a small Next.js development indicator. These evidence limitations are called out rather than concealed.
+The original captures come from a separate checkout of commit `dc17fb4`, immediately before the “Webpage overhaul” commit. Final captures come from the local production build. Both were captured at matching **390 × 844 CSS-pixel mobile** and **1440 × 900 CSS-pixel desktop** viewports. Images are authentic full-page PNGs: their widths match the configured CSS viewport and their heights represent the full rendered page. The archived baseline does not contain a Senior Project page, so that new page has final-state screenshots only.
 
 ## 1. Gestalt
 
-| # | Application and implementation | Assessment | Visual evidence |
-|---:|---|---|---|
-| 1 | **Proximity.** Project titles, summaries, media, and content are kept together. On the About page, each skill name stays with its explanation, while role, employer, dates, and description are grouped in each job card. | **Clearly demonstrated.** Related details can be read together without matching text across distant sections. | [E2 — Project cards](#e2-project-cards), [E3 — Skills and experience](#e3-skills-and-experience), [E4 — Project details](#e4-project-details) |
-| 2 | **Similarity.** Project cards share image treatment, spacing, typography, and a labeled action. Skill groups and work entries repeat consistent card structures. | **Clearly demonstrated.** Repeated styling makes comparable items recognizable as the same kind of content. | [E2](#e2-project-cards), [E3](#e3-skills-and-experience) |
-| 3 | **Continuity.** The projects page aligns cards into a consistent desktop grid; project detail pages also provide a predictable previous/next sequence. | **Demonstrated, with a viewport limitation.** Alignment is especially visible on desktop. On mobile, the grid becomes a single column, so the evidence is a vertical scan rather than a row. | [E2](#e2-project-cards), [E4](#e4-project-details) |
-| 4 | **Figure/Ground.** Dark project cards and media frames sit above the botanical olive background. The robot technology badges use a bounded dark treatment as well. | **Visible, but moderate.** The card boundary and darker surface separate foreground from background; the overall palette remains intentionally subdued, so the separation is less pronounced than a high-contrast treatment. | [E2](#e2-project-cards), [E6 — Robot closure and technologies](#e6-robot-closure-and-technologies) |
-| 5 | **Closure.** The robot project includes five separated, rounded contour segments with eyes, a mouth, and an antenna. The incomplete outline suggests a robot face that the viewer mentally completes. | **Clearly demonstrated in the after-state.** The face remains recognizable without relying on its caption. A directly matched before screenshot of this exact page location was not captured; the existing before image shows the project page’s earlier top section, not the position of the new illustration. | [E6](#e6-robot-closure-and-technologies); [before project overview, mobile](public/hci-redesign/screenshots/before-phase5-robot-390.png), [desktop](public/hci-redesign/screenshots/before-phase5-robot-1440.png) |
+1. **Proximity — Clearly demonstrated.** Project detail pages group each project’s heading and metadata, introduction, image, technology badges, and explanatory sections. On the Online Examination System page, Backend, Frontend, and Security are separate information cards. VV Bygg’s three existing content groups also use separated sections. Related information is encountered together rather than being matched across distant parts of a page.
+
+2. **Similarity — Clearly demonstrated.** Project cards share image sizing, typography, spacing, borders, surfaces, and the labeled “Se prosjekt” action. The detail pages reuse the same breadcrumb, metadata, technology-badge, and content-card patterns. The repeated styling makes related content recognizable as belonging to the same type.
+
+3. **Continuity — Clearly demonstrated, strongest on desktop.** Each detail page follows the same top-to-bottom sequence: breadcrumb, title and metadata, introduction, image, technologies, grouped details, and related projects. Aligned desktop grids reinforce that reading path; at mobile sizes the content stacks into a predictable vertical sequence.
+
+4. **Figure/Ground — Present, but moderate.** Dark card surfaces and borders distinguish project information from the botanical background. The treatment remains intentionally subdued, so the boundary is visible but less forceful than a high-contrast panel. The paired project-card and detail-page screenshots show this separation on both screen sizes.
+
+5. **Closure — Visible, but worth a final student review.** Beside the robot project’s “På robot-siden” explanation, a small SVG draws interrupted head corners, eyes, a mouth, and an antenna. The facial features suggest the missing contour and make the symbol relevant to the robot content. This is not a closed border or a separate caption panel. The 64 px symbol is legible in the robot detail capture, but its small size makes it a weaker demonstration than a larger, isolated shape; assess it at normal mobile viewing size before claiming it is unequivocal.
 
 ## 2. Focus-Attention
 
-| # | Application and implementation | Assessment | Visual evidence |
-|---:|---|---|---|
-| 6 | **Contrast.** Warm gold highlights the homepage “Les mer om meg” action, project actions, form labels and submit button against the olive/dark surfaces. | **Clearly demonstrated.** Primary actions have a distinct fill or accent instead of relying only on position. | [E1 — Homepage](#e1-homepage), [E2](#e2-project-cards), [E5 — Contact form](#e5-contact-form) |
-| 7 | **Size and scale.** The homepage name and project/page headings have stronger typographic scale than subtitles and body copy. | **Clearly demonstrated.** The page’s subject and the reading order are apparent before the supporting description. | [E1](#e1-homepage), [E4](#e4-project-details) |
-| 8 | **Whitespace.** Responsive spacing separates the hero, project groups, skill and work cards, project content, and form controls. | **Demonstrated.** Space helps distinguish content groups and form fields. The mobile captures are important evidence that the spacing remains compact enough for a narrow viewport. | [E1](#e1-homepage), [E3](#e3-skills-and-experience), [E5](#e5-contact-form) |
+6. **Contrast — Clearly demonstrated.** Warm gold highlights the homepage “Les mer om meg” action, the labeled project actions, technology badges, contact labels, focus indicators, and submit button against the dark olive surfaces. The accent helps visitors find important actions. No formal WCAG color-contrast ratio measurement was made.
+
+7. **Size and scale — Clearly demonstrated.** The homepage name and project titles are visually larger than role labels, introductions, section headings, and body copy. This makes the page subject and content hierarchy apparent before visitors read the supporting details.
+
+8. **Whitespace — Demonstrated across both layouts.** Spacing separates the homepage introduction, project grids, skills and work groups, project detail sections, and form controls. Mobile spacing is reduced to keep the pages compact; desktop spacing distinguishes sections without relying on extra ornament.
 
 ## 3. Recognition
 
-| # | Application and implementation | Assessment | Visual evidence |
-|---:|---|---|---|
-| 9 | **Icon + text labels.** Project-card actions pair an arrow with the explicit Norwegian label “Se prosjekt.” | **Clearly demonstrated.** The destination action is named rather than communicated by an unlabeled arrow alone. | [E2](#e2-project-cards) |
-| 10 | **Consistency.** Project actions, information cards, contact controls, and form buttons reuse consistent presentation across the relevant pages. | **Clearly demonstrated.** Familiar patterns reduce the need to infer how repeated elements work. | [E2](#e2-project-cards), [E3](#e3-skills-and-experience), [E5](#e5-contact-form) |
-| 11 | **Location and field cues.** Project details show a “Prosjekter / [project]” breadcrumb and labeled previous/next links. Contact forms show persistent labels above fields. | **Clearly demonstrated.** Current location, navigation direction, and field purpose are explicit. | [E4](#e4-project-details), [E5](#e5-contact-form) |
+9. **Icon + text labels — Clearly demonstrated.** Project cards use “Se prosjekt” with an arrow instead of an arrow-only action. Visitors can identify the action without having to infer the icon’s meaning.
+
+10. **Consistent patterns — Clearly demonstrated.** Card and badge treatments repeat across the featured-project area, `/projects/`, and the three existing detail pages. Skill categories and work entries also repeat their own card structure. The Senior Project follows the established project layout and adds an explicit “Under utvikling” status.
+
+11. **Location and field cues — Clearly demonstrated.** Project details provide a “Prosjekter / [project]” breadcrumb and related-project navigation. The mobile menu marks the current route. Contact fields show persistent labels above the inputs, including a textarea for the message, so their purpose does not depend on placeholders.
 
 ## 4. 7±2 Rule
 
-| # | Application and implementation | Assessment | Visual evidence |
-|---:|---|---|---|
-| 12 | **Application 1 — Technical skills.** The existing skills are arranged under five named category cards: Programming Languages; Frameworks & Libraries; Tools & Technologies; Areas of Expertise; and Other Skills. Each skill remains grouped with its detail. | **Clearly demonstrated.** The five top-level groups make the long skills section scannable by domain instead of presenting one continuous list. | [E3 — Skills](#e3-skills-and-experience) |
-| 13 | **Application 2 — Work experience.** The five existing jobs are shown as separate, similarly structured cards containing role, employer, dates, and description. | **Clearly demonstrated.** Five recognizable entries can be scanned or compared independently. | [E3 — Experience](#e3-skills-and-experience) |
-| 14 | **Application 3 — Robot technologies.** Python, C++, OpenCV, Arduino, Computer Vision, and Embedded Systems appear together as six consistent badges. | **Clearly demonstrated.** The requested six items form one bounded, easily scanned group without adding technologies. | [E6](#e6-robot-closure-and-technologies) |
+12. **Application 1 — Technical skills.** The existing skills are grouped into five named category cards. Visitors can first recognize a domain and then scan its skill details, rather than reading a single uninterrupted list. The five top-level groups are within the commonly used 5–9 example range.
+
+13. **Application 2 — Work experience.** Five consistent cards each group a job’s title, employer, dates, and description. The repeated structure helps visitors scan and compare five recognizable entries.
+
+14. **Application 3 — Robot technologies and concepts.** Python, C++, OpenCV, Arduino, Computer Vision, and Embedded Systems appear together as six visually consistent badges. The bounded six-item group is easy to identify without adding concepts.
+
+These are practical information-grouping choices, not a claim that seven items is a universal or exact limit on working memory.
 
 ## Visual evidence
 
-The following before/after pairs use matching viewport dimensions. Phase 3–5 originals remain in the evidence folder; the document links directly to those files.
+The original and final pairs below use matching CSS viewport widths. The complete route captures and provenance are listed in the [`screenshot index`](./hci-evidence/03-intermediate-development/screenshot-index.md).
 
-### E1 — Homepage
+### E1 — Homepage: hierarchy, contrast, whitespace, and labeled action
 
-The hero separates name, professional title, and introduction. The gold “Les mer om meg” button gives the primary action a clear visual priority.
+**Mobile — 390 px viewport**
 
-| Before — mobile, 390 × 844 | After — mobile, 390 × 844 |
-|---|---|
-| ![Homepage before redesign, mobile](public/hci-redesign/screenshots/before-phase3-home-390.png) | ![Homepage after redesign, mobile](public/hci-redesign/screenshots/after-phase3-home-390.png) |
+Before:
 
-| Before — desktop, 1440 × 1000 | After — desktop, 1440 × 1000 |
-|---|---|
-| ![Homepage before redesign, desktop](public/hci-redesign/screenshots/before-phase3-home-1440.png) | ![Homepage after redesign, desktop](public/hci-redesign/screenshots/after-phase3-home-1440.png) |
+![Original homepage at 390 px](./hci-evidence/01-original-website/mobile/home-mobile-390-fullpage.png)
 
-### E2 — Project cards
+After:
 
-The cards use consistent imagery frames, content spacing, typography, and “Se prosjekt” actions. The desktop capture shows the aligned grid; the mobile capture shows the same card pattern in a single-column layout.
+![Final homepage at 390 px](./hci-evidence/02-final-website/mobile/home-mobile-390-fullpage.png)
 
-| Before — mobile, 390 × 844 | After — mobile, 390 × 844 |
-|---|---|
-| ![Project cards before redesign, mobile](public/hci-redesign/screenshots/before-phase3-featured-projects-390.png) | ![Project cards after redesign, mobile](public/hci-redesign/screenshots/after-phase3-featured-projects-390.png) |
+**Desktop — 1440 px viewport**
 
-| Before — desktop, 1440 × 1000 | After — desktop, 1440 × 1000 |
-|---|---|
-| ![Project cards before redesign, desktop](public/hci-redesign/screenshots/before-phase3-featured-projects-1440.png) | ![Project cards after redesign, desktop](public/hci-redesign/screenshots/after-phase3-featured-projects-1440.png) |
+Before:
 
-### E3 — Skills and experience
+![Original homepage at 1440 px](./hci-evidence/01-original-website/desktop/home-desktop-1440-fullpage.png)
 
-Five skill categories and five work entries use repeated structures. The mobile and desktop pairs show both the compact single-column treatment and the aligned wider-screen grids.
+After:
 
-#### Technical skills
+![Final homepage at 1440 px](./hci-evidence/02-final-website/desktop/home-desktop-1440-fullpage.png)
 
-| Before — mobile, 390 × 844 | After — mobile, 390 × 844 |
-|---|---|
-| ![Skills before redesign, mobile](public/hci-redesign/screenshots/before-phase4-skills-390.png) | ![Skills after redesign, mobile](public/hci-redesign/screenshots/after-phase4-skills-390.png) |
+The final homepage capture also shows the persistent contact labels, message textarea, and submit action near the bottom. Earlier phase-specific contact screenshots remain in the intermediate archive; they are historical captures, not substitutes for the final production image.
 
-| Before — desktop, 1440 × 1000 | After — desktop, 1440 × 1000 |
-|---|---|
-| ![Skills before redesign, desktop](public/hci-redesign/screenshots/before-phase4-skills-1440.png) | ![Skills after redesign, desktop](public/hci-redesign/screenshots/after-phase4-skills-1440.png) |
+For a closer comparison of the contact-form redesign, these preserved Phase 5 captures show the form before and after its labels, textarea, spacing, and submit-action changes. They are phase-specific historical evidence; E1 above is the authoritative capture of the current final homepage.
 
-#### Work experience
+| Viewport | Before Phase 5 | After Phase 5 |
+|---|---|---|
+| Mobile — 390 × 844 | ![Contact form before Phase 5 at 390 px](./hci-evidence/03-intermediate-development/before-phase5-contact-390.png) | ![Contact form after Phase 5 at 390 px](./hci-evidence/03-intermediate-development/after-phase5-contact-390.png) |
+| Desktop — 1440 × 1000 | ![Contact form before Phase 5 at 1440 px](./hci-evidence/03-intermediate-development/before-phase5-contact-1440.png) | ![Contact form after Phase 5 at 1440 px](./hci-evidence/03-intermediate-development/after-phase5-contact-1440.png) |
 
-| Before — mobile, 390 × 844 | After — mobile, 390 × 844 |
-|---|---|
-| ![Experience before redesign, mobile](public/hci-redesign/screenshots/before-phase4-experience-390.png) | ![Experience after redesign, mobile](public/hci-redesign/screenshots/after-phase4-experience-390.png) |
+### E2 — Project cards: proximity, similarity, continuity, figure/ground, and icon + label
 
-| Before — desktop, 1440 × 1000 | After — desktop, 1440 × 1000 |
-|---|---|
-| ![Experience before redesign, desktop](public/hci-redesign/screenshots/before-phase4-experience-1440.png) | ![Experience after redesign, desktop](public/hci-redesign/screenshots/after-phase4-experience-1440.png) |
+**Mobile — 390 px viewport**
 
-### E4 — Project details
+Before:
 
-The robot project before/after pair shows the change to a consistent detail-page hierarchy, breadcrumb, project summary, and responsive media frame.
+![Original projects page at 390 px](./hci-evidence/01-original-website/mobile/projects-mobile-390-fullpage.png)
 
-| Before — mobile, 390 × 844 | After — mobile, 390 × 844 |
-|---|---|
-| ![Robot detail before redesign, mobile](public/hci-redesign/screenshots/before-phase5-robot-390.png) | ![Robot detail after redesign, mobile](public/hci-redesign/screenshots/after-phase5-robot-390.png) |
+After:
 
-| Before — desktop, 1440 × 1000 | After — desktop, 1440 × 1000 |
-|---|---|
-| ![Robot detail before redesign, desktop](public/hci-redesign/screenshots/before-phase5-robot-1440.png) | ![Robot detail after redesign, desktop](public/hci-redesign/screenshots/after-phase5-robot-1440.png) |
+![Final projects page at 390 px](./hci-evidence/02-final-website/mobile/projects-mobile-390-fullpage.png)
 
-Equivalent original captures are preserved for the other project-detail pages: [VV Bygg mobile before/after](public/hci-redesign/screenshots/before-phase5-project-one-390.png) / [after](public/hci-redesign/screenshots/after-phase5-project-one-390.png), [VV Bygg desktop before/after](public/hci-redesign/screenshots/before-phase5-project-one-1440.png) / [after](public/hci-redesign/screenshots/after-phase5-project-one-1440.png), [Online Examination mobile before/after](public/hci-redesign/screenshots/before-phase5-project-five-390.png) / [after](public/hci-redesign/screenshots/after-phase5-project-five-390.png), and [Online Examination desktop before/after](public/hci-redesign/screenshots/before-phase5-project-five-1440.png) / [after](public/hci-redesign/screenshots/after-phase5-project-five-1440.png).
+**Desktop — 1440 px viewport**
 
-### E5 — Contact form
+Before:
 
-Persistent labels, a message textarea, improved spacing, and a prominent submit action are visible at both widths.
+![Original projects page at 1440 px](./hci-evidence/01-original-website/desktop/projects-desktop-1440-fullpage.png)
 
-| Before — mobile, 390 × 844 | After — mobile, 390 × 844 |
-|---|---|
-| ![Contact form before redesign, mobile](public/hci-redesign/screenshots/before-phase5-contact-390.png) | ![Contact form after redesign, mobile](public/hci-redesign/screenshots/after-phase5-contact-390.png) |
+After:
 
-| Before — desktop, 1440 × 1000 | After — desktop, 1440 × 1000 |
-|---|---|
-| ![Contact form before redesign, desktop](public/hci-redesign/screenshots/before-phase5-contact-1440.png) | ![Contact form after redesign, desktop](public/hci-redesign/screenshots/after-phase5-contact-1440.png) |
+![Final projects page at 1440 px](./hci-evidence/02-final-website/desktop/projects-desktop-1440-fullpage.png)
 
-### E6 — Robot closure and technologies
+The homepage’s featured-project cards are visible in the paired homepage captures in E1.
 
-The after-state capture shows the intentionally open robot-face contour and all six existing technology/concept badges. The illustration is recognizable as a robot face from its contour and facial features without needing the caption.
+### E3 — Skills and work experience: grouping and repeated structure
 
-| After — mobile, 390 × 844 | After — desktop, 1440 × 1000 |
-|---|---|
-| ![Robot closure and six technology badges, mobile](public/hci-redesign/screenshots/after-phase5-robot-closure-tech-390.png) | ![Robot closure and six technology badges, desktop](public/hci-redesign/screenshots/after-phase5-robot-closure-tech-1440.png) |
+**Mobile — 390 px viewport**
 
-**Evidence limitation:** These are authentic after-state screenshots at the illustration and badge section. The preserved before-state project screenshots show the earlier project-page view, not this exact scroll position. No synthetic or reconstructed before image is used. If the assignment requires a tightly matched before/after comparison of this new feature, capture the preserved original revision at the corresponding project-page position before final PDF export.
+Before:
 
-## Project image audit
+![Original About page at 390 px](./hci-evidence/01-original-website/mobile/about-mobile-390-fullpage.png)
 
-The image configuration in the project files and the captured pages were checked against the assets present in the original repository baseline. No image was replaced as part of this audit.
+After:
 
-- **VV Bygg og Eiendom:** The homepage/project card uses a collage (`moodboard.webp`); the detail page uses a rainy-window photograph (`architecture.jpg`). The two images are inconsistent with each other and neither visibly identifies the described WordPress work or the client’s website. These assets were already present in the original baseline. **Proposed correction:** use a real, approved screenshot of the VV Bygg site or an authentic project image for both the card and detail page, with consistent crop and accurate alt text. No such replacement should be made until the project owner supplies or approves the image.
-- **Online Examination System:** The card uses a generic software illustration, and the detail page uses a generic code photograph (`code.jpg`). The repository does not establish that either is a screenshot or artifact from the student project. **Proposed correction:** use an authentic project dashboard or other approved project artifact for the card and detail page. Do not use identifiable student data; redact it if needed. No replacement was made.
+![Final About page at 390 px](./hci-evidence/02-final-website/mobile/about-mobile-390-fullpage.png)
 
-The relevant original captures are preserved: [VV Bygg card, desktop](public/hci-redesign/screenshots/after-phase3-featured-projects-1440.png), [VV Bygg detail, mobile](public/hci-redesign/screenshots/after-phase5-project-one-390.png), [Online Examination card, desktop](public/hci-redesign/screenshots/after-phase3-featured-projects-1440.png), and [Online Examination detail, mobile](public/hci-redesign/screenshots/after-phase5-project-five-390.png).
+**Desktop — 1440 px viewport**
 
-## Technical verification and remaining issues
+Before:
 
-| Check | Result |
-|---|---|
-| TypeScript check and production build | **Passed.** Next.js reports a version warning: Next.js 15.5.11 and `@next/swc` 15.5.7 do not match. Compilation and static generation completed successfully. |
-| Responsive pages and overflow | **Passed.** Six routes (`/`, `/info/`, `/projects/`, and all three project details) were checked at 375, 390, 768, 1366, and 1440 CSS px: 30 route/viewport combinations. No horizontal document overflow or broken page images were found. |
-| Navigation and active location | **Passed.** Project routes loaded, project breadcrumbs and neighboring-project links were present, the mobile menu indicated the current “Prosjekter” page, and selecting “Info” navigated and closed the menu. |
-| CV download | **Passed.** The `/cv.pdf` asset returned HTTP 200 with `application/pdf`. A Next.js prefetch request for a page-data URL associated with this static PDF returned 404; the PDF itself is available at its target URL. |
-| Contact forms | **Passed with a local stub.** The homepage, About, and projects forms each submitted the expected fields to `/api/submit-form` and displayed the success state. The request was intercepted in the browser; **no real message or email was sent**. |
-| Screenshot evidence | **Preserved.** The existing screenshot directory contains 51 original PNG captures. No screenshots were deleted or overwritten. `public/hci-redesign/edge-test.png` was also left untouched. |
+![Original About page at 1440 px](./hci-evidence/01-original-website/desktop/about-desktop-1440-fullpage.png)
 
-### Evidence handling before submission or deployment
+After:
 
-Some existing captures show a small Next.js development indicator near the lower-left corner. The captures remain unaltered so their source evidence is preserved. For a cleaner final PDF, recapture the relevant pages from a production preview at the same scroll positions and dimensions; do not retouch or replace the preserved originals.
+![Final About page at 1440 px](./hci-evidence/02-final-website/desktop/about-desktop-1440-fullpage.png)
 
-The screenshots currently live under `public/`, so a deployed site would expose them as public static files and include them in the deployment output. Keep the evidence there until it has been reviewed and backed up. Before deployment, it is advisable to move the submission evidence to a location outside `public/` and update this document’s image links. **No evidence has been moved or cleaned up.**
+### E4 — Project-detail consistency and Closure
+
+The robot comparison shows the revised detail-page hierarchy, six technology badges, and integrated incomplete robot-face symbol. The symbol is new, so the before capture does not contain a corresponding illustration; it is not presented as a matched before-state of that new feature.
+
+| Viewport | Original project page | Final project page |
+|---|---|---|
+| Mobile — 390 px | [Original robot detail](./hci-evidence/01-original-website/mobile/robot-mobile-390-fullpage.png) | [Final robot detail](./hci-evidence/02-final-website/mobile/robot-mobile-390-fullpage.png) |
+| Desktop — 1440 px | [Original robot detail](./hci-evidence/01-original-website/desktop/robot-desktop-1440-fullpage.png) | [Final robot detail](./hci-evidence/02-final-website/desktop/robot-desktop-1440-fullpage.png) |
+
+Earlier focused screenshots of the robot-side section are retained as supplementary Phase 6 evidence: [mobile](./hci-evidence/03-intermediate-development/phase6-robot-closure-mobile-390.png) · [desktop](./hci-evidence/03-intermediate-development/phase6-robot-closure-desktop-1440.png). They predate the final copy and are not a replacement for the final full-page robot captures above.
+
+The same detail-page structure is visible on these paired captures:
+
+| Project | Mobile — before / after | Desktop — before / after |
+|---|---|---|
+| Online Examination System | [Before](./hci-evidence/01-original-website/mobile/examination-mobile-390-fullpage.png) · [After](./hci-evidence/02-final-website/mobile/examination-mobile-390-fullpage.png) | [Before](./hci-evidence/01-original-website/desktop/examination-desktop-1440-fullpage.png) · [After](./hci-evidence/02-final-website/desktop/examination-desktop-1440-fullpage.png) |
+| VV Bygg og Eiendom | [Before](./hci-evidence/01-original-website/mobile/vv-bygg-mobile-390-fullpage.png) · [After](./hci-evidence/02-final-website/mobile/vv-bygg-mobile-390-fullpage.png) | [Before](./hci-evidence/01-original-website/desktop/vv-bygg-desktop-1440-fullpage.png) · [After](./hci-evidence/02-final-website/desktop/vv-bygg-desktop-1440-fullpage.png) |
+
+The additional Senior Project page has no baseline counterpart: [mobile final capture](./hci-evidence/02-final-website/mobile/senior-project-mobile-390-fullpage.png) · [desktop final capture](./hci-evidence/02-final-website/desktop/senior-project-desktop-1440-fullpage.png).
+
+## Project-image and copy limitations
+
+- **VV Bygg og Eiendom:** The project card displays a collage while the detail page displays a rainy-window photograph. These assets are not established as authentic depictions of the described work. No replacement was made; an authentic, owner-approved project screenshot or image is needed.
+- **Online Examination System:** The card illustration and code photograph are not verified as artifacts from the student project. No replacement was made; use an approved image and remove any student data before publication.
+- **Blog posts:** Seven generic posts contain Lorem Ipsum/template English copy and a quote attributed to another person. They were preserved pending owner-provided content rather than rewritten with invented facts.
+- **About page:** The summer-employment wording may be outdated and needs the owner’s confirmation.
+- **Senior Project:** Available project material did not verify implementation, tests, or results. The page presents these as undocumented or future work, not completed accomplishments.
+
+## Technical checks and remaining issues
+
+- `tsc --noEmit` passed.
+- `npm run build` passed for the original baseline and the final working tree. The existing dependency warning reports Next.js 15.5.11 with `@next/swc` 15.5.7; no dependency changes were made.
+- Seven final routes were checked at 375, 390, 768, 900, 1366, and 1440 CSS px (42 route/viewport combinations). Each returned HTTP 200; document and body widths did not exceed the viewport, and no development overlay appeared.
+- Desktop navigation and its social links were visible from 768 through 1440 px; the hamburger was hidden at those widths. There was no horizontal overflow or overlap.
+- The mobile menu was checked open and closed at 390 px, including its active-route marker, Escape-to-close, and focus restoration. Its three social links each have a 64 × 64 px clickable area.
+- Contact labels and message textarea were checked without submitting the form. No real message or email was sent.
+- The final source includes older placeholder blog content and the two unverified image choices listed above; these remain open owner decisions.
 
 ## Conclusion
 
-The redesign visibly applies the 14 requested HCI applications across the portfolio and retains responsive page structure, navigation, project content, and form behavior. The strongest evidence is the before/after treatment of the homepage, project cards, skills, work entries, and contact form. The robot illustration provides a distinct closure example, though its exact before-state comparison should be strengthened if the grading submission requires one. The two project-image authenticity concerns remain open pending approved source images.
+The portfolio implements all 14 requested HCI applications with visible examples across mobile and desktop layouts. Grouping, repeated card patterns, reading order, visual hierarchy, and recognition cues are documented against the actual interface rather than generic definitions. Figure/Ground is present but subdued, and the small Closure symbol merits a final human judgment at normal viewing size. The project imagery, blog filler, and potentially stale employment copy also require owner review. The site and evidence are prepared for review only; nothing has been deployed.
 
 ## AI-use disclosure
 
-An AI coding assistant was used to help implement the approved website changes, review the local implementation and screenshots, run technical checks, and draft this assessment text. The screenshots referenced here are real captures of the local website; they were not AI-generated or edited for this document. Existing project and employment information was retained from the portfolio content. The author should review this draft, confirm every factual statement and image permission, and follow the institution’s rules for AI disclosure before submission.
+An AI coding assistant helped implement and review the website changes, organize the screenshot archive, run local validation, and draft this document. The screenshots are real captures of the local website and were not AI-generated or edited. Project facts were limited to existing portfolio content and the supplied Senior Project brief. The portfolio owner should verify personal facts, project descriptions, image permissions, and this disclosure against institutional requirements before submission.

@@ -96,8 +96,13 @@ function getAllPostsSorted(objects: ContentObject[]) {
 
 function getAllProjectsSorted(objects: ContentObject[]) {
     const all = objects.filter((object) => object.__metadata?.modelName === 'ProjectLayout') as ProjectLayout[];
-    const sorted = all.sort(
-        (projectA, projectB) => new Date(projectB.date).getTime() - new Date(projectA.date).getTime()
-    );
+    const sorted = all.sort((projectA, projectB) => projectTimestamp(projectB) - projectTimestamp(projectA));
     return sorted;
+}
+
+function projectTimestamp(project: ProjectLayout) {
+    if (!project.date) return 0;
+
+    const timestamp = new Date(project.date).getTime();
+    return Number.isNaN(timestamp) ? 0 : timestamp;
 }

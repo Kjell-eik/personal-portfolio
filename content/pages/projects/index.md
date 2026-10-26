@@ -22,7 +22,7 @@ projectFeed:
 topSections:
   - type: HeroSection
     title: Prosjekter
-    subtitle: 'En oversikt over utviklingsprosjekter og tekniske løsninger jeg har jobbet med'
+    subtitle: 'Her finner du utvalgte utviklingsprosjekter og tekniske løsninger jeg har jobbet med.'
     actions: []
     colors: colors-f
     backgroundSize: full

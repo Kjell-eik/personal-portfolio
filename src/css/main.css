@@ -601,6 +601,28 @@ a:hover {
     line-height: 1.4;
 }
 
+.project-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(231, 213, 172, 0.45);
+    border-radius: 999px;
+    background: rgba(10, 12, 7, 0.52);
+    padding: 0.35rem 0.75rem;
+    color: #f4ead4;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+.project-status-badge::before {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: #d8bb85;
+    content: '';
+}
+
 .project-info-card {
     min-width: 0;
     border: 1px solid rgba(255, 255, 255, 0.16);

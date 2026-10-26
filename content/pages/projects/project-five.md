@@ -5,7 +5,7 @@ colors: colors-a
 date: '2025'
 client: Universitetsprosjekt
 description: >-
-  Et system for å gjennomføre eksamener digitalt. Laget i team som kursprosjekt – med innlogging, automatisk retting, og separate dashboards for lærere og studenter.
+  Et digitalt eksamenssystem vi utviklet som et åtte ukers teamprosjekt. Lærere kan opprette eksamener, mens studenter kan gjennomføre dem med tidsbegrensning. Systemet inkluderer innlogging, automatisk retting og separate oversikter for lærere og studenter.
 technologies:
   - Python
   - Flask
@@ -21,72 +21,70 @@ featuredImage:
 media:
   type: ImageBlock
   url: /images/portfolio/code.jpg
-  altText: Examination System Dashboard
+  altText: Kode fra eksamenssystemet
 ---
 
 ## Om prosjektet
 
-Vi fikk i oppgave å lage et system for digitale eksamener. Tenk deg at en lærer skal kunne lage en eksamen, sette en tidsfrist, og studentene kan ta den hjemmefra. Systemet må vite hvem som er hvem, holde styr på tiden, og rette multiple-choice automatisk.
+Vi utviklet systemet som et teamprosjekt over åtte uker. Tanken var at en lærer skulle kunne opprette en eksamen med frist, mens studentene kunne logge inn og ta den digitalt. Systemet holder oversikt over brukere og tid, og retter flervalgsoppgaver automatisk.
 
-Det var et 8-ukers teamprosjekt hvor vi bygde hele systemet fra bunnen av med Flask (Python), SQLite database, og vanlig HTML/CSS/JavaScript på frontend.
+Løsningen ble bygget med Flask og Python på serversiden, SQLite som database og HTML, CSS og JavaScript i grensesnittet.
 
 ## Backend
 
-- **Python Flask** – Web framework for å håndtere innlogging og API
-- **SQLite** – Database for brukere, eksamener og resultater
-- **Werkzeug** – For kryptert passordlagring
-- **Session Management** – Holder styr på hvem som er innlogget
+- **Python og Flask** – håndterer innlogging og API-et
+- **SQLite** – lagrer data om brukere, eksamener og resultater
+- **Werkzeug** – brukes til håndtering av passord
+- **Sesjonshåndtering** – holder oversikt over innloggede brukere
 
 ## Frontend
 
-- **HTML5/CSS3** – Grensesnitt og design
-- **JavaScript** – Interaktivitet (nedtelling, validering, etc.)
+- **HTML5 og CSS3** – bygger opp grensesnittet og utformingen
+- **JavaScript** – håndterer blant annet nedtelling og validering
 
 ## Sikkerhet
 
-- **Password Hashing** – Passord lagres kryptert (Bcrypt)
-- **SQL Injection Protection** – Parametriserte queries
-- **Rollebasert tilgang** – Studenter og lærere ser forskjellig innhold
+- **Passordhashing med Bcrypt** – passord lagres som hash, ikke i klartekst
+- **Beskyttelse mot SQL-injeksjon** – databasen bruker parametriserte spørringer
+- **Rollebasert tilgang** – studenter og lærere får tilgang til ulike funksjoner
 
 ## Funksjonalitet
 
-- **Sikker innlogging** – Krypterte passord og session management
-- **To typer brukere** – Studenter og lærere med forskjellige dashboards
-- **Opprett eksamener** – Lærere kan lage eksamener med tidsfrister
-- **Tidsbegrenset gjennomføring** – Nedtelling mens studenten tar eksamen
-- **Automatisk retting** – Multiple-choice rettes med en gang
-- **Oversikt** – Historikk og statistikk over tidligere eksamener
-- **Fungerer på mobil** – Responsivt design
+- Sikker innlogging og håndtering av brukersesjoner
+- Separate oversikter for studenter og lærere
+- Opprettelse av eksamener med tidsfrister
+- Tidsbegrenset gjennomføring med nedtelling
+- Automatisk retting av flervalgsoppgaver
+- Historikk og statistikk over tidligere eksamener
+- Responsiv utforming for bruk på mobil
 
-## Database-struktur
+## Databasestruktur
 
-Fem hovedtabeller:
+Databasen er organisert i fem hovedtabeller:
 
-- `users` – Brukerinformasjon og passord
-- `exams` – Eksamensdetaljer og tidsfrister
-- `questions` – Spørsmål med svaralternativer
-- `submissions` – Studentbesvarelser og poeng
-- `sessions` – Aktive pålogginger
+- `users` – brukere og passord
+- `exams` – eksamener og tidsfrister
+- `questions` – spørsmål og svaralternativer
+- `submissions` – besvarelser og poeng
+- `sessions` – aktive innlogginger
 
-## Teknisk implementasjon
+## Teknisk arbeid
 
-- **REST API design** – Logisk struktur på endepunkter
-- **Server-side validering** – Sjekker all input fra brukere
-- **Feilhåndtering** – Gir fornuftige feilmeldinger
-- **Normalisert database** – Effektiv datastruktur
-
-## Prosjektets mål
-
-> "Å digitalisere eksamener med fokus på sikkerhet"
+- Utforming av REST API-endepunkter
+- Validering av data på serversiden
+- Feilhåndtering med forståelige feilmeldinger
+- Normalisering av databasen
 
 ## Hva jeg lærte
 
-- **Fullstack-utvikling** – Jobbet med alt fra database til frontend
-- **Sikkerhet** – Hvordan man håndterer passord, innlogging og sessions
-- **Database design** – Å strukturere data fornuftig i SQL
-- **Teamarbeid** – Git workflow, koderevisjoner, og samarbeid
-- **Feilsøking** – Systematisk debugging av komplekse problemer
+- **Fullstack-utvikling** – arbeid med database, backend og frontend
+- **Sikkerhet** – passordhåndtering, innlogging og sesjoner
+- **Databasedesign** – strukturering av data i SQL
+- **Teamarbeid** – Git, kodegjennomgang og samarbeid
+- **Feilsøking** – systematisk undersøkelse av feil
 
-**Prosjektteam:** 4 studenter  
-**Varighet:** 8 uker  
-**Min rolle:** Backend-utvikler og database-design
+**Prosjektteam:** fire studenter
+
+**Varighet:** åtte uker
+
+**Min rolle:** backend-utvikling og databasedesign

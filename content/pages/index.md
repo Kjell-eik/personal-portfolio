@@ -1,6 +1,6 @@
 ---
 type: PageLayout
-title: Home
+title: Hjem
 colors: colors-a
 
 sections:
@@ -10,7 +10,7 @@ sections:
     title: Stefan Jahren Bringaker
     subtitle: Informatikkstudent
     text: >-
-      4\. års informatikkstudent som liker å bygge ting som faktisk fungerer. Med erfaring fra fullstack-utvikling, computer vision og robotikk.
+      Jeg studerer informatikk ved European University Cyprus og liker å utvikle teknologi som løser praktiske utfordringer. Jeg har erfaring med fullstack-utvikling, computer vision og robotikk, og trives særlig med prosjekter der programvare møter den fysiske verden.
 
     styles:
       self:

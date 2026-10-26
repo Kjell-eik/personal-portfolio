@@ -5,7 +5,7 @@ colors: colors-a
 date: '2024-2025'
 client: Universitetsprosjekt
 description: >-
-  En robot som styres med håndbevegelser – uten joystick eller knapper. Universitetsprosjekt hvor vi kombinerte kamera, AI og Arduino for å lage en intuitiv måte å kontrollere en robot på.
+  I dette universitetsprosjektet laget vi en robot som styres med håndbevegelser i stedet for joystick eller knapper. Et kamera, computer vision og Arduino ble koblet sammen for å gjøre styringen intuitiv.
 technologies:
   - Python
   - C++
@@ -16,63 +16,60 @@ technologies:
 featuredImage:
   type: ImageBlock
   url: /images/portfolio/robot-hand-gesture.jpg
-  altText: Hand Gesture Robot
+  altText: Robotprosjekt med håndbevegelsesstyring
 media:
   type: ImageBlock
   url: /images/portfolio/robot-demo.jpg
-  altText: Hand Gesture Controlled Robot
+  altText: Demonstrasjon av robotprosjektet
 ---
 
 ## Om prosjektet
 
-I dette prosjektet ville vi lage noe annerledes enn de vanlige robotene som styres med joystick. Tanken var: Hva om du bare kunne bevege hånda di, og roboten beveger seg dit du peker?
-
-Vi brukte et kamera og computer vision (OpenCV) til å gjenkjenne håndbevegelser, og koblet det opp til en Arduino som styrte motorene. Det var utfordrende å få det til å fungere raskt nok uten forsinkelse, men vi klarte å få det ned til under 100ms.
+Målet var å lage en robot som reagerer på håndbevegelser i stedet for å bli styrt med joystick. Et kamera og computer vision (OpenCV) gjenkjenner håndbevegelser på PC-en, og en Arduino styrer motorene på roboten. Løsningen kombinerer bildebehandling, programvare og maskinvare.
 
 ## På PC-siden
 
-- **Python** – For å behandle kamerabilder og gjenkjenne håndbevegelser
-- **OpenCV** – Computer vision-bibliotek for bildebehandling
-- **MediaPipe** – AI-modell fra Google for håndgjenkjenning
+- **Python** – behandler kamerabilder og håndterer gjenkjenning av bevegelser
+- **OpenCV** – brukes til bildebehandling og computer vision
+- **MediaPipe** – modellen fra Google brukes til håndgjenkjenning
 
 ## På robot-siden
 
-- **Arduino** – Mikrokontroller som styrer motorene
-- **C++** – Programmeringsspråk for Arduino
-- **DC Motorer** – Drivsystem for hjulene
-- **Motor Driver** – For å kontrollere hastighet og retning
+- **Arduino** – mikrokontrolleren som styrer motorene
+- **C++** – programmeringsspråket som brukes på Arduino
+- **DC-motorer** – driver robotens hjul
+- **Motorstyring** – regulerer motorenes hastighet og retning
 
-## Hvordan det fungerer
+## Styring og funksjon
 
-- **Rask respons** – Roboten reagerer på håndbevegelser nærmest øyeblikkelig (under 100ms)
-- **Fleksibel styring** – Kjører frem, tilbake, venstre, høyre, og stopper
-- **Trådløs** – PC-en kommuniserer trådløst med Arduino
-- **Fungerer i forskjellige lysforhold** – Relativt robust deteksjon
+- Roboten kan kjøre fremover, bakover, til venstre og til høyre, eller stoppe.
+- PC-en kommuniserer trådløst med Arduino-enheten.
+- Systemet ble prøvd i ulike lysforhold, og håndbevegelsene ble gjenkjent relativt robust.
+- Målet med sanntidsbehandlingen var at roboten skulle reagere raskt på bevegelsene.
 
-## Utfordringer vi løste
+## Utfordringer og løsninger
 
-1. **Forsinkelse** – I starten tok det 300ms fra du beveget hånda til roboten reagerte. Fikk det ned til under 100ms ved å optimalisere koden.
-2. **Nøyaktighet** – Roboten måtte forstå forskjell på bevegelser. Klarte 95%+ nøyaktighet.
-3. **Kommunikasjon** – Få Python og Arduino til å snakke sammen sømløst.
-4. **Sanntidsbehandling** – Behandle kamerabilder raskt nok for øyeblikkelig respons.
+- **Forsinkelse:** I starten tok det omtrent 300 ms fra hånden ble beveget til roboten reagerte. Etter optimalisering ble forsinkelsen redusert til under 100 ms.
+- **Gjenkjenning:** Roboten måtte skille mellom ulike bevegelser. Prosjektbeskrivelsen oppgir en nøyaktighet på over 95 %.
+- **Kommunikasjon:** Python-programmet på PC-en og Arduino-enheten måtte kommunisere pålitelig.
+- **Sanntidsbehandling:** Kamerabildene måtte behandles raskt nok til at styringen opplevdes umiddelbar.
 
 ## Prosjektets mål
 
-> "Når teknologi og menneskelige bevegelser møtes"
+> Å la teknologi tolke menneskelige bevegelser og bruke dem til å styre en robot.
 
-## Videoer
+## Demonstrasjon
 
-**Robotdemonstrasjon:**  
-Se roboten i aksjon:
+En video av roboten i bruk er tilgjengelig her:
 
-- [robot-gesture-demo.mp4](/images/portfolio/robot-gesture-demo.mp4)
+- [Se demonstrasjonen av roboten](/images/portfolio/robot-gesture-demo.mp4)
 
 ## Hva jeg lærte
 
-Prosjektet ga meg erfaring med:
+Prosjektet ga meg praktisk erfaring med:
 
-- Computer vision og bildebehandling i praksis
-- Å koble sammen hardware og software
-- Programmering av mikrokontrollere (Arduino)
-- Teamarbeid på tekniske prosjekter
-- Feilsøking når ting ikke fungerer som forventet
+- computer vision og bildebehandling
+- integrasjon av programvare og maskinvare
+- programmering av mikrokontrollere med Arduino
+- samarbeid i et teknisk prosjekt
+- systematisk feilsøking

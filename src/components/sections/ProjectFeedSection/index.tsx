@@ -95,6 +95,7 @@ function ProjectGrid(props) {
                                 <ProjectDate date={project.date} />
                             </div>
                         )}
+                        {project.status && <span className="project-status-badge mb-3 self-start">{project.status}</span>}
                         <TitleTag className="text-2xl leading-snug">{project.title}</TitleTag>
                         {showDescription && project.description && (
                             <p className="mt-3 text-base leading-relaxed">{project.description}</p>

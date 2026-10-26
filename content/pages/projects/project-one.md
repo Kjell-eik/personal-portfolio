@@ -5,7 +5,7 @@ colors: colors-a
 date: '2024'
 client: Vestfold & Viken Bygg og Eiendom
 description: >-
-  Driver og vedlikeholder nettsiden til VV Bygg og Eiendom. WordPress-basert løsning hvor jeg har ansvar for innholdsoppdateringer, teknisk drift, og SEO.
+  Jeg drifter og vedlikeholder nettsiden til VV Bygg og Eiendom. Nettsiden er bygget i WordPress, og jeg følger opp innhold, teknisk drift og søkemotoroptimalisering.
 technologies:
   - WordPress CMS
   - HTML5 & CSS3
@@ -20,56 +20,47 @@ featuredImage:
 media:
   type: ImageBlock
   url: /images/portfolio/architecture.jpg
-  altText: VV Bygg og Eiendom nettside
+  altText: Nettsiden til VV Bygg og Eiendom
 ---
 
 ## Om prosjektet
 
-Som assistent i VV Bygg og Eiendom har jeg ansvar for deres nettside. Det handler om å holde innholdet oppdatert, passe på at alt fungerer teknisk, og sørge for at potensielle kunder finner frem til dem.
+Jeg arbeider med nettsiden til VV Bygg og Eiendom. Oppgavene omfatter oppdatering av innhold, teknisk vedlikehold og hjelp til at besøkende finner informasjon om selskapet og tjenestene.
 
-Nettsiden er bygget i WordPress, noe som gjør det enkelt å oppdatere innhold, men krever fortsatt teknisk forståelse for hosting, sikkerhet, og SEO.
+Nettsiden bruker WordPress, som gjør det mulig å oppdatere innhold uten å bygge sidene på nytt. Driften krever samtidig oppfølging av hosting, sikkerhet og søkemotoroptimalisering.
 
 ## Hva jeg bruker
 
-- **WordPress CMS** – Innholdsstyring og oppdateringer
-- **HTML5 & CSS3** – Tilpasninger av design
-- **JavaScript** – Interaktive elementer
-- **Responsive Design** – Fungerer på mobil
-- **SEO-optimalisering** – Søkemotoroptimalisering
-- **Hosting & Sikkerhet** – SSL-sertifikat og backup
+- **WordPress CMS** – publisering og oppdatering av innhold
+- **HTML5 og CSS3** – tilpasning av utforming
+- **JavaScript** – interaktive elementer
+- **Responsiv utforming** – tilpasning til mobil og andre skjermstørrelser
+- **Søkemotoroptimalisering (SEO)** – arbeid med hvordan nettsiden presenteres i søkemotorer
+- **Hosting og sikkerhet** – blant annet SSL-sertifikat og sikkerhetskopiering
 
 ## Hva nettsiden gjør
 
-- **Presenterer tjenester** – Oversikt over hva firmaet tilbyr
-- **Kontaktskjema** – For henvendelser fra potensielle kunder
-- **Prosjektgalleri** – Bilder fra gjennomførte prosjekter
-- **Mobilvenlig** – Fungerer på alle enheter
-- **Informasjonssider** – Om selskapet og deres tjenester
+- Presenterer selskapets tjenester
+- Gir potensielle kunder en kontaktmulighet gjennom kontaktskjema
+- Viser bilder av gjennomførte prosjekter i et prosjektgalleri
+- Tilbyr informasjonssider om selskapet og tjenestene
+- Tilpasser visningen til mobil og andre enheter
 
 ## Mine oppgaver
 
-- **Innholdsoppdatering** – Legger til nye prosjekter og informasjon
-- **Teknisk vedlikehold** – Sikkerhetoppdateringer og backup
-- **Design** – Forbedringer av brukeropplevelsen
-- **SEO** – Sørger for at siden dukker opp i Google
-- **Support** – Hjelper til med nettside-relaterte spørsmål
-
-## Prosjektets mål
-
-> "Bedriftens digitale ansikt"
+- Oppdatere innhold og legge til informasjon om prosjekter
+- Følge opp teknisk vedlikehold, sikkerhetsoppdateringer og sikkerhetskopiering
+- Gjøre forbedringer av utformingen og brukeropplevelsen
+- Arbeide med søkemotoroptimalisering
+- Besvare spørsmål om nettsiden
 
 ## Resultat
 
-Nettsiden fungerer som bedriftens digitale visittkort:
+Nettsiden fungerer som selskapets digitale visittkort og gjør informasjon og kontaktmuligheter tilgjengelig på nett. Tilgangen til informasjon på nettsiden har bidratt til færre telefonhenvendelser.
 
-- Profesjonell tilstedeværelse på nett
-- Færre telefon-henvendelser siden mye info finnes på nettet
-- Enkel kontaktmulighet for potensielle kunder
-- Mobilvenlig, så folk kan se den overalt
+**Mitt ansvar:** Drift, vedlikehold, innhold og teknisk støtte.
 
-**Mitt ansvar:** Drift, vedlikehold, innhold, teknisk support
-
-### Lenker
+## Lenker
 
 - [vvbyggogeiendom.no](https://vvbyggogeiendom.no)
 - [vvbyggogeiendom.com](https://vvbyggogeiendom.com)

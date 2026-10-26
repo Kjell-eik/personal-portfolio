@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 
 import { Action, Link } from '@/components/atoms';
 import ImageBlock from '@/components/molecules/ImageBlock';
+import ArrowRightIcon from '@/components/svgs/arrow-right';
 import ArrowUpRightIcon from '@/components/svgs/arrow-up-right';
 import { mapStylesToClassNames as mapStyles } from '@/utils/map-styles-to-class-names';
 import Section from '../Section';
@@ -67,11 +68,10 @@ function ProjectGrid(props) {
     const TitleTag = headingLevel;
     return (
         <div
-            className={classNames('grid gap-y-12', {
+            className={classNames('grid items-stretch gap-6 sm:gap-8', {
                 'md:grid-cols-2': variant === 'variant-a',
-                'md:grid-cols-3': variant === 'variant-b',
+                'md:grid-cols-2 lg:grid-cols-3': variant === 'variant-b',
                 'justify-center': variant === 'variant-c',
-                'gap-x-6 lg:gap-x-8': variant !== 'variant-c',
                 'mt-12': hasTopMargin
             })}
         >
@@ -79,40 +79,33 @@ function ProjectGrid(props) {
                 <Link
                     key={index}
                     href={project}
-                    className="block max-w-3xl pb-10 border-b-2 border-white/10 group relative overflow-hidden rounded-lg transition-all duration-500 hover:border-white/30 hover:shadow-2xl hover:shadow-black/20"
-                    style={{
-                        transitionDelay: `${index * 50}ms`
-                    }}
+                    className="group flex h-full flex-col overflow-hidden rounded-xl border border-white/15 bg-[#1a1b12]/85 shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:border-[#d8bb85]/70 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#d8bb85]"
                 >
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
                     {showFeaturedImage && project.featuredImage && (
-                        <div className="w-full mb-6 overflow-hidden aspect-3/2 rounded-lg shadow-lg">
+                        <div className="aspect-[16/10] w-full shrink-0 overflow-hidden bg-black/20">
                             <ImageBlock
                                 {...project.featuredImage}
-                                className="object-cover w-full h-full transition-all duration-700 ease-out group-hover:scale-110 group-hover:rotate-1"
+                                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                         </div>
                     )}
-                    {showDate && project.date && (
-                        <div className="mb-3 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
-                            <ProjectDate date={project.date} />
-                        </div>
-                    )}
-                    <TitleTag className="text-3xl sm:text-4xl transition-all duration-300 group-hover:translate-x-1">
-                        {project.title}
-                    </TitleTag>
-                    {showDescription && project.description && (
-                        <p className="mt-5 text-lg opacity-85 group-hover:opacity-100 transition-all duration-300">
-                            {project.description}
-                        </p>
-                    )}
-                    {showReadMoreLink && (
-                        <div className="mt-8">
-                            <span className="inline-flex text-xl transition-all duration-500 ease-out rounded-full p-4 border-2 border-current group-hover:bottom-shadow-8 group-hover:-translate-y-2 group-hover:rotate-12 group-hover:border-white/50 group-hover:bg-white/5 backdrop-blur-sm">
-                                <ArrowUpRightIcon className="fill-current w-icon h-icon transition-transform duration-300 group-hover:scale-110" />
+                    <div className="flex grow flex-col p-5 sm:p-6">
+                        {showDate && project.date && (
+                            <div className="mb-2 text-sm opacity-75">
+                                <ProjectDate date={project.date} />
+                            </div>
+                        )}
+                        <TitleTag className="text-2xl leading-snug">{project.title}</TitleTag>
+                        {showDescription && project.description && (
+                            <p className="mt-3 text-base leading-relaxed">{project.description}</p>
+                        )}
+                        {showReadMoreLink && (
+                            <span className="mt-auto inline-flex min-h-11 self-start items-center gap-2 rounded-md border border-[#d8bb85]/80 px-4 py-2 text-sm font-medium tracking-wide text-[#f0d69f] transition-colors group-hover:bg-[#d8bb85] group-hover:text-[#1d1d13] group-focus-visible:bg-[#d8bb85] group-focus-visible:text-[#1d1d13]">
+                                Se prosjekt
+                                <ArrowRightIcon className="h-4 w-4 fill-current transition-transform group-hover:translate-x-1" />
                             </span>
-                        </div>
-                    )}
+                        )}
+                    </div>
                 </Link>
             ))}
         </div>

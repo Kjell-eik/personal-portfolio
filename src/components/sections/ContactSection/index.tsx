@@ -13,7 +13,7 @@ export default function ContactSection(props) {
         <Section elementId={elementId} colors={colors} backgroundSize={backgroundSize} styles={styles.self}>
             <div
                 className={classNames(
-                    'flex gap-12 lg:gap-16',
+                    'contact-section-layout flex gap-8 sm:gap-12 lg:gap-16',
                     mapFlexDirectionStyles(styles.self?.flexDirection ?? 'row')
                 )}
             >
@@ -42,7 +42,12 @@ export default function ContactSection(props) {
                             {text}
                         </Markdown>
                     )}
-                    {form && <FormBlock {...form} className={classNames('mt-12', { 'mt-16': title || text })} />}
+                    {form && (
+                        <FormBlock
+                            {...form}
+                            className={classNames('contact-form mt-8 sm:mt-12', { 'sm:mt-16': title || text })}
+                        />
+                    )}
                 </div>
                 {media && (
                     <div

@@ -18,7 +18,9 @@ export default function TextFormControl(props) {
             {label && (
                 <label
                     id={labelId}
-                    className={classNames('inline-block mb-1 sm:text-xl', { 'sr-only': hideLabel })}
+                    className={classNames('form-control-label mb-2 inline-block text-base font-medium sm:text-lg', {
+                        'sr-only': hideLabel
+                    })}
                     htmlFor={name}
                 >
                     {label}

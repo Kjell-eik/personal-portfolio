@@ -15,6 +15,7 @@ import Section from '../Section';
  */
 export default function Component(props: HeroSection) {
     const { elementId, colors, backgroundSize, title, subtitle, text, media, actions = [], styles = {} } = props;
+    const isHomepageHero = elementId === 'home-hero';
     const sectionFlexDirection = styles.self?.flexDirection ?? 'row';
     const sectionAlign = styles.self?.textAlign ?? 'left';
     return (
@@ -23,15 +24,25 @@ export default function Component(props: HeroSection) {
                 <div className={classNames('flex-1 w-full', mapStyles({ textAlign: sectionAlign }))}>
                     {title && (
                         <AnnotatedField path=".title">
-                            <h1 className="text-5xl sm:text-6xl lg:text-7xl leading-tight">{title}</h1>
+                            <h1
+                                className={classNames('text-4xl sm:text-5xl lg:text-7xl leading-tight', {
+                                    'lg:max-w-5xl': isHomepageHero
+                                })}
+                            >
+                                {title}
+                            </h1>
                         </AnnotatedField>
                     )}
                     {subtitle && (
                         <AnnotatedField path=".subtitle">
                             <p
-                                className={classNames('text-xl sm:text-2xl lg:text-3xl opacity-90 leading-relaxed', {
-                                    'mt-6': title
-                                })}
+                                className={classNames(
+                                    'text-xl sm:text-2xl lg:text-3xl opacity-90 leading-relaxed',
+                                    {
+                                        'mt-3 sm:mt-6': title,
+                                        'font-medium text-[#e7d5ac]': isHomepageHero
+                                    }
+                                )}
                             >
                                 {subtitle}
                             </p>
@@ -42,7 +53,8 @@ export default function Component(props: HeroSection) {
                             <Markdown
                                 options={{ forceBlock: true, forceWrapper: true }}
                                 className={classNames('max-w-none prose sm:prose-lg lg:prose-xl', {
-                                    'mt-8': title || subtitle
+                                    'mt-4 sm:mt-8': title || subtitle,
+                                    'lg:max-w-3xl': isHomepageHero
                                 })}
                             >
                                 {text}
@@ -52,13 +64,17 @@ export default function Component(props: HeroSection) {
                     {actions?.length > 0 && (
                         <div
                             className={classNames('flex flex-wrap items-center gap-4', {
-                                'mt-10': title || subtitle || text,
+                                'mt-6 sm:mt-10': title || subtitle || text,
                                 'justify-center': sectionAlign === 'center',
                                 'justify-end': sectionAlign === 'right'
                             })}
                         >
                             {actions.map((action, index) => (
-                                <Action key={index} {...action} />
+                                <Action
+                                    key={index}
+                                    {...action}
+                                    className={isHomepageHero && index === 0 ? 'home-hero-cta' : undefined}
+                                />
                             ))}
                         </div>
                     )}

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 import { Link, Social } from '@/components/atoms';
@@ -48,12 +48,12 @@ function HeaderVariantA(props) {
         <div className="relative flex items-stretch">
             <SiteLogoLink {...logoProps} />
             {primaryLinks.length > 0 && (
-                <ul className="hidden border-r border-current divide-x divide-current lg:flex">
+                <ul className="hidden border-r border-current divide-x divide-current md:flex">
                     <ListOfLinks links={primaryLinks} inMobileMenu={false} />
                 </ul>
             )}
             {socialLinks.length > 0 && (
-                <ul className="hidden ml-auto border-l border-current lg:flex">
+                <ul className="hidden ml-auto border-l border-current md:flex">
                     <ListOfSocialLinks links={socialLinks} inMobileMenu={false} />
                 </ul>
             )}
@@ -68,13 +68,13 @@ function HeaderVariantB(props) {
         <div className="relative flex items-stretch">
             <SiteLogoLink {...logoProps} />
             {primaryLinks.length > 0 && (
-                <ul className="hidden ml-auto border-l border-current divide-x divide-current lg:flex">
+                <ul className="hidden ml-auto border-l border-current divide-x divide-current md:flex">
                     <ListOfLinks links={primaryLinks} inMobileMenu={false} />
                 </ul>
             )}
             {socialLinks.length > 0 && (
                 <ul
-                    className={classNames('hidden border-l border-current lg:flex', {
+                    className={classNames('hidden border-l border-current md:flex', {
                         'ml-auto': primaryLinks.length === 0
                     })}
                 >
@@ -92,13 +92,13 @@ function HeaderVariantC(props) {
         <div className="relative flex items-stretch">
             <SiteLogoLink {...logoProps} />
             {socialLinks.length > 0 && (
-                <ul className="hidden ml-auto border-l border-current lg:flex">
+                <ul className="hidden ml-auto border-l border-current md:flex">
                     <ListOfSocialLinks links={socialLinks} inMobileMenu={false} />
                 </ul>
             )}
             {primaryLinks.length > 0 && (
                 <ul
-                    className={classNames('hidden border-l border-current divide-x divide-current lg:flex', {
+                    className={classNames('hidden border-l border-current divide-x divide-current md:flex', {
                         'ml-auto': primaryLinks.length === 0
                     })}
                 >
@@ -115,6 +115,14 @@ function MobileMenu(props) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
     const router = useRouter();
+    const menuRef = useRef<HTMLDivElement>(null);
+    const menuButtonRef = useRef<HTMLButtonElement>(null);
+    const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+    function closeMenu() {
+        setIsMenuOpen(false);
+        menuButtonRef.current?.focus();
+    }
 
     useEffect(() => {
         setMounted(true);
@@ -135,47 +143,58 @@ function MobileMenu(props) {
     useEffect(() => {
         if (isMenuOpen) {
             document.body.style.overflow = 'hidden';
-            document.body.style.position = 'fixed';
-            document.body.style.width = '100%';
-            document.body.style.top = '0';
+            closeButtonRef.current?.focus();
         } else {
             document.body.style.overflow = '';
-            document.body.style.position = '';
-            document.body.style.width = '';
-            document.body.style.top = '';
         }
         return () => {
             document.body.style.overflow = '';
-            document.body.style.position = '';
-            document.body.style.width = '';
-            document.body.style.top = '';
         };
     }, [isMenuOpen]);
 
     const menuContent = isMenuOpen && (
         <div
-            className="fixed inset-0 overflow-y-auto bg-black text-white"
+            ref={menuRef}
+            className="fixed inset-0 z-[100] overflow-y-auto bg-[#171b10]/98 text-white backdrop-blur-xl"
             style={{
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                zIndex: 99999,
-                backgroundColor: 'rgba(0, 0, 0, 0.95)',
                 WebkitOverflowScrolling: 'touch'
             }}
             role="dialog"
             aria-modal="true"
+            aria-label="Hovedmeny"
+            onKeyDown={(event) => {
+                if (event.key === 'Escape') {
+                    closeMenu();
+                    return;
+                }
+
+                if (event.key === 'Tab') {
+                    const focusableElements = menuRef.current?.querySelectorAll<HTMLElement>(
+                        'a[href], button:not(:disabled), [tabindex]:not([tabindex="-1"])'
+                    );
+                    if (!focusableElements?.length) return;
+
+                    const firstElement = focusableElements[0];
+                    const lastElement = focusableElements[focusableElements.length - 1];
+                    if (event.shiftKey && document.activeElement === firstElement) {
+                        event.preventDefault();
+                        lastElement.focus();
+                    } else if (!event.shiftKey && document.activeElement === lastElement) {
+                        event.preventDefault();
+                        firstElement.focus();
+                    }
+                }
+            }}
         >
             <div className="flex flex-col min-h-screen">
                 <div className="flex items-stretch justify-between border-b border-current">
                     <SiteLogoLink {...logoProps} />
                     <div className="border-l border-current">
                         <button
-                            aria-label="Close Menu"
-                            className="h-10 min-h-full p-4 text-lg focus:outline-none"
-                            onClick={() => setIsMenuOpen(false)}
+                            ref={closeButtonRef}
+                            aria-label="Lukk meny"
+                            className="flex min-h-11 min-w-11 items-center justify-center p-3 text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#d8bb85]"
+                            onClick={closeMenu}
                             type="button"
                         >
                             <CloseIcon className="fill-current w-icon h-icon" />
@@ -183,14 +202,16 @@ function MobileMenu(props) {
                     </div>
                 </div>
                 {(primaryLinks.length > 0 || socialLinks.length > 0) && (
-                    <div className="flex flex-col items-center justify-center px-4 py-20 space-y-12 grow flex-1">
+                    <div className="flex flex-col items-stretch justify-start px-4 pt-8 pb-10 space-y-8 grow flex-1">
                         {primaryLinks.length > 0 && (
-                            <ul className="space-y-6">
-                                <ListOfLinks links={primaryLinks} inMobileMenu={true} />
-                            </ul>
+                            <nav className="mx-auto w-full max-w-sm" aria-label="Hovedmeny">
+                                <ul className="space-y-2">
+                                    <ListOfLinks links={primaryLinks} inMobileMenu={true} />
+                                </ul>
+                            </nav>
                         )}
                         {socialLinks.length > 0 && (
-                            <ul className="flex flex-wrap justify-center border border-current divide-x divide-current">
+                            <ul className="mx-auto inline-flex w-fit flex-nowrap border border-current divide-x divide-current">
                                 <ListOfSocialLinks links={socialLinks} inMobileMenu={true} />
                             </ul>
                         )}
@@ -202,15 +223,14 @@ function MobileMenu(props) {
 
     return (
         <>
-            <div className="ml-auto lg:hidden">
+            <div className="ml-auto md:hidden">
                 <button
-                    aria-label="Open Menu"
+                    ref={menuButtonRef}
+                    aria-label="Åpne meny"
                     aria-expanded={isMenuOpen}
-                    className="h-10 min-h-full p-4 text-lg border-l border-current focus:outline-none"
-                    onClick={() => {
-                        console.log('Menu button clicked, current state:', isMenuOpen);
-                        setIsMenuOpen(true);
-                    }}
+                    aria-haspopup="dialog"
+                    className="flex min-h-11 min-w-11 items-center justify-center border-l border-current p-3 text-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-3px] focus-visible:outline-[#d8bb85]"
+                    onClick={() => setIsMenuOpen(true)}
                     type="button"
                 >
                     <MenuIcon className="fill-current w-icon h-icon" />
@@ -236,22 +256,45 @@ function SiteLogoLink({ title, isTitleVisible, logo }) {
 }
 
 function ListOfLinks({ links, inMobileMenu }) {
-    return links.map((link, index) => (
-        <li key={index} className={classNames(inMobileMenu ? 'text-center w-full' : 'inline-flex items-stretch')}>
-            <HeaderLink
-                {...link}
-                className={classNames(
-                    inMobileMenu ? 'text-xl text-white bottom-shadow-1 hover:bottom-shadow-5' : 'p-4 link-fill'
-                )}
-            />
-        </li>
-    ));
+    const router = useRouter();
+    const currentPath = router.asPath.split(/[?#]/)[0].replace(/\/+$/, '') || '/';
+
+    return links.map((link, index) => {
+        const linkPath = typeof link.url === 'string' ? link.url.split(/[?#]/)[0].replace(/\/+$/, '') || '/' : '';
+        const isCurrent =
+            !!linkPath && (currentPath === linkPath || (linkPath !== '/' && currentPath.startsWith(`${linkPath}/`)));
+
+        return (
+            <li key={index} className={classNames(inMobileMenu ? 'w-full' : 'inline-flex items-stretch')}>
+                <HeaderLink
+                    {...link}
+                    aria-current={isCurrent ? 'page' : undefined}
+                    className={classNames(
+                        inMobileMenu
+                            ? classNames(
+                                  'flex min-h-12 w-full items-center justify-center px-6 text-lg text-white transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d8bb85]',
+                                  isCurrent
+                                      ? 'border-l-2 border-[#d8bb85] bg-white/10 text-[#f0d69f]'
+                                      : 'hover:bg-white/10'
+                              )
+                            : classNames(
+                                  'p-4 link-fill',
+                                  isCurrent && 'text-[#f0d69f] underline decoration-2 underline-offset-8'
+                              )
+                    )}
+                />
+            </li>
+        );
+    });
 }
 
 function ListOfSocialLinks({ links, inMobileMenu = false }) {
     return links.map((link, index) => (
-        <li key={index} className="inline-flex items-stretch">
-            <Social {...link} className={classNames('text-lg link-fill', inMobileMenu ? 'p-5' : 'p-4')} />
+        <li key={index} className={classNames('inline-flex items-stretch', inMobileMenu && 'box-content h-16 w-16')}>
+            <Social
+                {...link}
+                className={classNames('text-lg link-fill', inMobileMenu ? 'h-16 w-16' : 'p-4')}
+            />
         </li>
     ));
 }

@@ -13,7 +13,7 @@ projectFeed:
   variant: variant-a
   styles:
     self:
-      width: narrow
+      width: wide
       padding:
         - pt-0
         - pl-4
@@ -49,32 +49,32 @@ bottomSections:
       fields:
         - name: firstName
           label: Fornavn
-          hideLabel: true
+          hideLabel: false
           placeholder: Fornavn
           isRequired: true
           width: 1/2
           type: TextFormControl
         - name: lastName
           label: Etternavn
-          hideLabel: true
+          hideLabel: false
           placeholder: Etternavn
           isRequired: false
           width: 1/2
           type: TextFormControl
         - name: email
           label: E-post
-          hideLabel: true
+          hideLabel: false
           placeholder: E-postadresse
           isRequired: true
-          width: 1/2
+          width: full
           type: EmailFormControl
         - name: address
           label: Melding
-          hideLabel: true
+          hideLabel: false
           placeholder: Hva lurer du på?
           isRequired: true
-          width: 1/2
-          type: TextFormControl
+          width: full
+          type: TextareaFormControl
       submitLabel: 'Send melding'
       styles:
         self:

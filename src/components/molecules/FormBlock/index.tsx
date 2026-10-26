@@ -32,14 +32,17 @@ export default function FormBlock(props) {
                 body: JSON.stringify(formDataObj)
             });
 
+            const responseData = await response.json().catch(() => null);
+
             if (response.ok) {
                 setSubmitted(true);
                 form.reset();
             } else {
-                throw new Error('Form submission failed');
+                throw new Error(responseData?.message || 'Form submission failed');
             }
         } catch (err) {
-            setError('Noe gikk galt. Prøv igjen eller send e-post direkt til stefanbringaker@gmail.com');
+            const message = err instanceof Error ? err.message : 'Noe gikk galt. Prøv igjen eller send e-post direkt til stefanbringaker@gmail.com';
+            setError(message);
         } finally {
             setSubmitting(false);
         }
@@ -51,8 +54,9 @@ export default function FormBlock(props) {
                 <div
                     className={classNames(
                         className,
-                        'p-8 border-2 border-current rounded-lg backdrop-blur-sm bg-white/10 shadow-lg'
+                        'contact-form-success rounded-xl border border-white/20 bg-black/20 p-6 shadow-lg sm:p-8'
                     )}
+                    role="status"
                 >
                     <p className="text-2xl font-medium">✅ Takk for meldingen!</p>
                     <p className="mt-3 text-lg opacity-90">Jeg svarer så fort jeg kan.</p>
@@ -69,7 +73,13 @@ export default function FormBlock(props) {
 
     return (
         <Annotated content={props}>
-            <form className={className} name={elementId} id={elementId} onSubmit={handleSubmit} ref={formRef}>
+            <form
+                className={classNames('contact-form-fields', className)}
+                name={elementId}
+                id={elementId}
+                onSubmit={handleSubmit}
+                ref={formRef}
+            >
                 <div className="grid gap-6 sm:grid-cols-2">
                     <input type="hidden" name="form-name" value={elementId} />
                     {fields.map((field, index) => {
@@ -77,15 +87,15 @@ export default function FormBlock(props) {
                     })}
                 </div>
                 {error && (
-                    <div className="mt-6 p-5 border-2 border-red-400 bg-red-900/20 text-red-100 rounded-lg backdrop-blur-sm">
+                    <div className="mt-6 rounded-lg border border-red-300 bg-red-950/40 p-4 text-red-100" role="alert">
                         {error}
                     </div>
                 )}
-                <div className={classNames('mt-10', mapStyles({ textAlign: styles.self?.textAlign ?? 'left' }))}>
+                <div className={classNames('mt-8 sm:mt-10', mapStyles({ textAlign: styles.self?.textAlign ?? 'left' }))}>
                     <button
                         type="submit"
                         disabled={submitting}
-                        className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium transition-all duration-300 border-2 border-current hover:bottom-shadow-8 hover:-translate-y-2 active:translate-y-0 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:bottom-shadow-0 shadow-lg"
+                        className="contact-submit-button inline-flex min-h-14 w-full items-center justify-center rounded-lg border border-[#e7d5ac] bg-[#e7d5ac] px-8 py-4 text-base font-bold text-[#211d14] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#f0e2c2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e7d5ac] active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0 sm:w-auto sm:text-lg"
                     >
                         {submitting ? 'Sender...' : submitLabel}
                     </button>

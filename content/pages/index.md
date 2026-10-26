@@ -4,13 +4,13 @@ title: Home
 colors: colors-a
 
 sections:
-  - elementId: ''
+  - elementId: home-hero
     colors: colors-f
     backgroundSize: full
-    title: >-
-      Stefan Jahren Bringaker – Informatikkstudent
-    subtitle: >-
-      4. års informatikkstudent som liker å bygge ting som faktisk fungerer. Med erfaring fra fullstack-utvikling, computer vision og robotikk.
+    title: Stefan Jahren Bringaker
+    subtitle: Informatikkstudent
+    text: >-
+      4\. års informatikkstudent som liker å bygge ting som faktisk fungerer. Med erfaring fra fullstack-utvikling, computer vision og robotikk.
 
     styles:
       self:
@@ -22,8 +22,12 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-40
-          - pb-56
+          - pt-16
+          - pb-16
+          - sm:pt-24
+          - sm:pb-24
+          - lg:pt-32
+          - lg:pb-32
           - pl-4
           - pr-4
         flexDirection: row-reverse
@@ -34,6 +38,7 @@ sections:
         label: Les mer om meg
         url: /info
         style: primary
+        className: home-hero-cta
         elementId: ''
 
   - colors: colors-f
@@ -74,32 +79,32 @@ sections:
       fields:
         - name: firstName
           label: Fornavn
-          hideLabel: true
+          hideLabel: false
           placeholder: Fornavn
           isRequired: true
           width: 1/2
           type: TextFormControl
         - name: lastName
           label: Etternavn
-          hideLabel: true
+          hideLabel: false
           placeholder: Etternavn
           isRequired: false
           width: 1/2
           type: TextFormControl
         - name: email
           label: E-post
-          hideLabel: true
+          hideLabel: false
           placeholder: E-postadresse
           isRequired: true
-          width: 1/2
+          width: full
           type: EmailFormControl
         - name: address
           label: Melding
-          hideLabel: true
+          hideLabel: false
           placeholder: Hva lurer du på?
           isRequired: true
-          width: 1/2
-          type: TextFormControl
+          width: full
+          type: TextareaFormControl
       submitLabel: 'Send melding'
       styles:
         self:

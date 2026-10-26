@@ -6,6 +6,14 @@ date: '2025'
 client: Universitetsprosjekt
 description: >-
   Et system for å gjennomføre eksamener digitalt. Laget i team som kursprosjekt – med innlogging, automatisk retting, og separate dashboards for lærere og studenter.
+technologies:
+  - Python
+  - Flask
+  - SQLite
+  - HTML5
+  - CSS3
+  - JavaScript
+  - REST API
 featuredImage:
   type: ImageBlock
   url: /images/portfolio/exam-system.jpg
@@ -22,27 +30,25 @@ Vi fikk i oppgave å lage et system for digitale eksamener. Tenk deg at en lære
 
 Det var et 8-ukers teamprosjekt hvor vi bygde hele systemet fra bunnen av med Flask (Python), SQLite database, og vanlig HTML/CSS/JavaScript på frontend.
 
-### Hva vi brukte
-
-**Backend:**
+## Backend
 
 - **Python Flask** – Web framework for å håndtere innlogging og API
 - **SQLite** – Database for brukere, eksamener og resultater
 - **Werkzeug** – For kryptert passordlagring
 - **Session Management** – Holder styr på hvem som er innlogget
 
-**Frontend:**
+## Frontend
 
 - **HTML5/CSS3** – Grensesnitt og design
 - **JavaScript** – Interaktivitet (nedtelling, validering, etc.)
 
-**Sikkerhet:**
+## Sikkerhet
 
 - **Password Hashing** – Passord lagres kryptert (Bcrypt)
 - **SQL Injection Protection** – Parametriserte queries
 - **Rollebasert tilgang** – Studenter og lærere ser forskjellig innhold
 
-### Funksjonalitet
+## Funksjonalitet
 
 - **Sikker innlogging** – Krypterte passord og session management
 - **To typer brukere** – Studenter og lærere med forskjellige dashboards
@@ -52,7 +58,7 @@ Det var et 8-ukers teamprosjekt hvor vi bygde hele systemet fra bunnen av med Fl
 - **Oversikt** – Historikk og statistikk over tidligere eksamener
 - **Fungerer på mobil** – Responsivt design
 
-### Database-struktur
+## Database-struktur
 
 Fem hovedtabeller:
 
@@ -62,12 +68,14 @@ Fem hovedtabeller:
 - `submissions` – Studentbesvarelser og poeng
 - `sessions` – Aktive pålogginger
 
-### Teknisk implementasjon
+## Teknisk implementasjon
 
 - **REST API design** – Logisk struktur på endepunkter
 - **Server-side validering** – Sjekker all input fra brukere
 - **Feilhåndtering** – Gir fornuftige feilmeldinger
 - **Normalisert database** – Effektiv datastruktur
+
+## Prosjektets mål
 
 > "Å digitalisere eksamener med fokus på sikkerhet"
 
@@ -82,5 +90,3 @@ Fem hovedtabeller:
 **Prosjektteam:** 4 studenter  
 **Varighet:** 8 uker  
 **Min rolle:** Backend-utvikler og database-design
-
-**Teknologier:** Python, Flask, SQLite, HTML/CSS/JavaScript, REST API

@@ -18,7 +18,9 @@ export default function TextareaFormControl(props) {
             {label && (
                 <label
                     id={labelId}
-                    className={classNames('inline-block mb-1 sm:text-xl', { 'sr-only': hideLabel })}
+                    className={classNames('form-control-label mb-2 inline-block text-base font-medium sm:text-lg', {
+                        'sr-only': hideLabel
+                    })}
                     htmlFor={name}
                 >
                     {label}
@@ -28,7 +30,7 @@ export default function TextareaFormControl(props) {
                 id={name}
                 className="w-full p-4 bg-white/5 backdrop-blur-sm border-2 border-white/30 rounded-md placeholder:text-current placeholder:opacity-60 focus:outline-none focus:border-white/60 focus:bg-white/10 transition-all duration-300 sm:text-xl shadow-sm hover:border-white/40 resize-y min-h-[120px]"
                 name={name}
-                rows="5"
+                rows={5}
                 {...attr}
             />
         </div>

@@ -4,7 +4,7 @@ title: Om meg
 colors: colors-a
 
 sections:
-  - elementId: ''
+  - elementId: info-about-hero
     colors: colors-f
     backgroundSize: full
     title: >-
@@ -22,8 +22,12 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-36
-          - pb-48
+          - pt-12
+          - pb-12
+          - sm:pt-20
+          - sm:pb-20
+          - lg:pt-24
+          - lg:pb-24
           - pl-4
           - pr-4
         flexDirection: row-reverse
@@ -45,73 +49,70 @@ sections:
     title: Om meg
     subtitle: ''
     text: |
+      ### Bakgrunn
       Jeg er informatikkstudent i fjerde år på Kypros, og har alltid vært nysgjerrig på hvordan teknologi fungerer. Det startet med å lure på hvordan ting virker, og nå bygger jeg dem selv – alt fra roboter som reagerer på håndbevegelser til systemer for digitale eksamener.
 
+      ### Teknologi i praksis
       Det morsomste med programmering er når ting faktisk begynner å fungere. Gjennom studiene har jeg fått jobbe med mange forskjellige teknologier: computer vision som gjenkjenner bevegelser, Arduino-roboter, og webutvikling med Flask og Python. Jeg liker spesielt prosjekter hvor du må kombinere forskjellige teknologier for å få noe til å virke.
 
+      ### Praktisk erfaring og ledelse
       Ved siden av studiene har jeg jobbet mye praktisk – både i byggbransjen, som servicetekniker, og nå med nettsideadministrasjon. Akkurat nå er jeg også president i foreningen for norske studenter her på Kypros, noe som har gitt meg mye erfaring med organisering og det å få ting til å skje.
 
+      ### Interesser og mål
       Utenom koding er jeg interessert i økonomi og investering – følger aksjemarkedet og har litt eiendomsinvestering på siden. Synes det er spennende hvordan teknologi og business hører sammen.
 
       **Søker sommerjobb** hvor jeg kan være med i et utviklerteam, lære hvordan det er å jobbe i et profesjonelt miljø, og bidra med det jeg kan.
-    elementId: ''
+    elementId: info-about-copy
     styles:
       self:
         height: auto
         width: narrow
         padding:
-          - pt-28
-          - pb-28
+          - pt-12
+          - pb-12
+          - sm:pt-16
+          - sm:pb-16
+          - lg:pt-20
+          - lg:pb-20
           - pl-4
           - pr-4
         textAlign: left
 
-  - type: TextSection
+  - type: InfoGroupsSection
     colors: colors-f
-    variant: variant-a
     title: Arbeidserfaring
-    subtitle: ''
-    text: |
-      ### Assistent – Vestfold & Viken bygg og eiendom
-      **2023 – d.d.**
-
-      Hjelper til med forskjellige prosjekter i selskapet. Har hovedansvar for nettsiden deres og sosiale medier, samt IT-relaterte oppgaver og kundekontakt.
-
-      ---
-
-      ### Servicetekniker – Nordisk Vannteknikk
-      **2021 – 2024**
-
-      Jobbet med installasjon, drift og reparasjon av mobile vannbehandlingssystemer. Mye reising til forskjellige oppdrag, og mye kundekontakt.
-
-      ---
-
-      ### Førstegangstjeneste – Akershus kommandantskap
-      **2020 – 2021**
-
-      Fullført førstegangstjeneste ved Ørland flystasjon og Kolsås leir.
-
-      ---
-
-      ### Assistent – Bringaker Bygg
-      **2019 – 2021**
-
-      Jobbet på forskjellige byggeprosjekter med maskinarbeid, vedlikehold og snekkerarbeid.
-
-      ---
-
-      ### Verkstedmedarbeider – BOMEKAN
-      **2017 – 2019**
-
-      Produksjon og bearbeiding av deler til stålkonstruksjoner.
-    elementId: ''
+    elementId: info-work-experience
+    groupType: experience
+    groups:
+      - title: Assistent
+        organization: Vestfold & Viken bygg og eiendom
+        dates: 2023 – d.d.
+        description: Hjelper til med forskjellige prosjekter i selskapet. Har hovedansvar for nettsiden deres og sosiale medier, samt IT-relaterte oppgaver og kundekontakt.
+      - title: Servicetekniker
+        organization: Nordisk Vannteknikk
+        dates: 2021 – 2024
+        description: Jobbet med installasjon, drift og reparasjon av mobile vannbehandlingssystemer. Mye reising til forskjellige oppdrag, og mye kundekontakt.
+      - title: Førstegangstjeneste
+        organization: Akershus kommandantskap
+        dates: 2020 – 2021
+        description: Fullført førstegangstjeneste ved Ørland flystasjon og Kolsås leir.
+      - title: Assistent
+        organization: Bringaker Bygg
+        dates: 2019 – 2021
+        description: Jobbet på forskjellige byggeprosjekter med maskinarbeid, vedlikehold og snekkerarbeid.
+      - title: Verkstedmedarbeider
+        organization: BOMEKAN
+        dates: 2017 – 2019
+        description: Produksjon og bearbeiding av deler til stålkonstruksjoner.
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         padding:
-          - pt-16
-          - pb-16
+          - pt-12
+          - pb-12
+          - sm:pt-16
+          - sm:pb-16
           - pl-4
           - pr-4
         textAlign: left
@@ -151,54 +152,73 @@ sections:
           - pr-4
         textAlign: left
 
-  - type: TextSection
+  - type: InfoGroupsSection
     colors: colors-f
-    variant: variant-a
     title: Tekniske ferdigheter
-    subtitle: ''
-    text: |
-      ### Programmeringsspråk
-      * **Python** - Computer vision, backend-utvikling, Arduino-integrasjon
-      * **JavaScript** - Frontend-utvikling og interaktivitet
-      * **C++** - Embedded systems og Arduino-programmering
-      * **HTML5 & CSS3** - Webdesign og responsiv layout
-      * **SQL** - Database design og queries (SQLite)
-
-      ### Frameworks & Biblioteker
-      * **Flask** - Python web framework for backend API
-      * **OpenCV** - Computer vision og bildebehandling
-      * **WordPress** - CMS for nettside-administrasjon
-
-      ### Verktøy & Teknologier
-      * **Git** - Versjonskontroll og samarbeid
-      * **Arduino** - Mikrokontroller-programmering
-      * **SQLite** - Relasjonsdatabase
-      * **REST API** - API-design og implementasjon
-      * **VS Code** - Primært utviklingsverktøy
-
-      ### Kompetanseområder
-      * Fullstack webutvikling (frontend og backend)
-      * Computer vision og bildegjenkenning
-      * Hardware/software integrasjon
-      * Database design og administrasjon
-      * Sikkerhet og autentisering (password hashing, session management)
-      * Responsive web design
-      * SEO-optimalisering
-      * Prosjektstyring og teamarbeid
-
-      ### Andre ferdigheter
-      * Teknisk problemløsing og debugging
-      * Kundekontakt og servicearbeid
-      * Teknisk dokumentasjon
-      * Flytende norsk og engelsk (muntlig og skriftlig)
-    elementId: ''
+    elementId: info-technical-skills
+    groupType: skills
+    groups:
+      - title: Programmeringsspråk
+        skills:
+          - name: Python
+            detail: Computer vision, backend-utvikling, Arduino-integrasjon
+          - name: JavaScript
+            detail: Frontend-utvikling og interaktivitet
+          - name: C++
+            detail: Embedded systems og Arduino-programmering
+          - name: HTML5 & CSS3
+            detail: Webdesign og responsiv layout
+          - name: SQL
+            detail: Database design og queries (SQLite)
+      - title: Frameworks & Biblioteker
+        skills:
+          - name: Flask
+            detail: Python web framework for backend API
+          - name: OpenCV
+            detail: Computer vision og bildebehandling
+          - name: WordPress
+            detail: CMS for nettside-administrasjon
+      - title: Verktøy & Teknologier
+        skills:
+          - name: Git
+            detail: Versjonskontroll og samarbeid
+          - name: Arduino
+            detail: Mikrokontroller-programmering
+          - name: SQLite
+            detail: Relasjonsdatabase
+          - name: REST API
+            detail: API-design og implementasjon
+          - name: VS Code
+            detail: Primært utviklingsverktøy
+      - title: Kompetanseområder
+        skills:
+          - name: Fullstack webutvikling
+            detail: frontend og backend
+          - name: Computer vision
+            detail: bildegjenkenning
+          - name: Hardware/software integrasjon
+          - name: Database design og administrasjon
+          - name: Sikkerhet og autentisering
+            detail: password hashing, session management
+          - name: Responsive web design
+          - name: SEO-optimalisering
+          - name: Prosjektstyring og teamarbeid
+      - title: Andre ferdigheter
+        skills:
+          - name: Teknisk problemløsing og debugging
+          - name: Kundekontakt og servicearbeid
+          - name: Teknisk dokumentasjon
+          - name: Flytende norsk og engelsk
+            detail: muntlig og skriftlig
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         padding:
-          - pt-16
-          - pb-16
+          - pt-12
+          - pb-12
+          - sm:pt-16
+          - sm:pb-16
           - pl-4
           - pr-4
         textAlign: left
@@ -249,32 +269,32 @@ sections:
       fields:
         - name: firstName
           label: Fornavn
-          hideLabel: true
+          hideLabel: false
           placeholder: Fornavn
           isRequired: true
           width: 1/2
           type: TextFormControl
         - name: lastName
           label: Etternavn
-          hideLabel: true
+          hideLabel: false
           placeholder: Etternavn
           isRequired: false
           width: 1/2
           type: TextFormControl
         - name: email
           label: E-post
-          hideLabel: true
+          hideLabel: false
           placeholder: E-postadresse
           isRequired: true
-          width: 1/2
+          width: full
           type: EmailFormControl
         - name: address
           label: Melding
-          hideLabel: true
+          hideLabel: false
           placeholder: Hva lurer du på?
           isRequired: true
-          width: 1/2
-          type: TextFormControl
+          width: full
+          type: TextareaFormControl
       submitLabel: 'Send melding'
       styles:
         self:

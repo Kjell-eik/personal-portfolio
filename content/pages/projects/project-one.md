@@ -6,6 +6,13 @@ date: '2024'
 client: Vestfold & Viken Bygg og Eiendom
 description: >-
   Driver og vedlikeholder nettsiden til VV Bygg og Eiendom. WordPress-basert løsning hvor jeg har ansvar for innholdsoppdateringer, teknisk drift, og SEO.
+technologies:
+  - WordPress CMS
+  - HTML5 & CSS3
+  - JavaScript
+  - Responsive Design
+  - SEO-optimalisering
+  - Hosting & Sikkerhet
 featuredImage:
   type: ImageBlock
   url: /images/portfolio/moodboard.webp
@@ -22,7 +29,7 @@ Som assistent i VV Bygg og Eiendom har jeg ansvar for deres nettside. Det handle
 
 Nettsiden er bygget i WordPress, noe som gjør det enkelt å oppdatere innhold, men krever fortsatt teknisk forståelse for hosting, sikkerhet, og SEO.
 
-### Hva jeg bruker
+## Hva jeg bruker
 
 - **WordPress CMS** – Innholdsstyring og oppdateringer
 - **HTML5 & CSS3** – Tilpasninger av design
@@ -31,7 +38,7 @@ Nettsiden er bygget i WordPress, noe som gjør det enkelt å oppdatere innhold, 
 - **SEO-optimalisering** – Søkemotoroptimalisering
 - **Hosting & Sikkerhet** – SSL-sertifikat og backup
 
-### Hva nettsiden gjør
+## Hva nettsiden gjør
 
 - **Presenterer tjenester** – Oversikt over hva firmaet tilbyr
 - **Kontaktskjema** – For henvendelser fra potensielle kunder
@@ -39,13 +46,15 @@ Nettsiden er bygget i WordPress, noe som gjør det enkelt å oppdatere innhold, 
 - **Mobilvenlig** – Fungerer på alle enheter
 - **Informasjonssider** – Om selskapet og deres tjenester
 
-### Mine oppgaver
+## Mine oppgaver
 
 - **Innholdsoppdatering** – Legger til nye prosjekter og informasjon
 - **Teknisk vedlikehold** – Sikkerhetoppdateringer og backup
 - **Design** – Forbedringer av brukeropplevelsen
 - **SEO** – Sørger for at siden dukker opp i Google
 - **Support** – Hjelper til med nettside-relaterte spørsmål
+
+## Prosjektets mål
 
 > "Bedriftens digitale ansikt"
 

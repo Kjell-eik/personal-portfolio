@@ -57,6 +57,7 @@ const components = {
     FormBlock: dynamic(() => import('./molecules/FormBlock')),
     HeroSection: dynamic(() => import('./sections/HeroSection')),
     ImageBlock: dynamic(() => import('./molecules/ImageBlock')),
+    InfoGroupsSection: dynamic(() => import('./sections/InfoGroupsSection')),
     MediaGallerySection: dynamic(() => import('./sections/MediaGallerySection')),
     PostFeedSection: dynamic(() => import('./sections/PostFeedSection')),
     ProjectFeedSection: dynamic(() => import('./sections/ProjectFeedSection')),

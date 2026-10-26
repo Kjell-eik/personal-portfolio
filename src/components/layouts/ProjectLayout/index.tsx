@@ -15,6 +15,7 @@ type ComponentProps = PageComponentProps &
     ProjectLayout & {
         prevProject?: ProjectLayout;
         nextProject?: ProjectLayout;
+        technologies?: string[];
     };
 
 const Component: React.FC<ComponentProps> = (props) => {
@@ -27,53 +28,82 @@ const Component: React.FC<ComponentProps> = (props) => {
         media,
         prevProject,
         nextProject,
+        technologies = [],
         bottomSections = []
     } = props;
-    const dateTimeAttr = dayjs(date).format('YYYY-MM-DD HH:mm:ss');
-    const formattedDate = dayjs(date).format('YYYY-MM-DD');
+    const projectDate = dayjs(date);
+    const dateTimeAttr = projectDate.isValid() ? projectDate.format('YYYY-MM-DD') : undefined;
 
     return (
         <BaseLayout {...props}>
             <section data-theme="colors-f" className="content-surface">
-                <article className="px-4 py-14 lg:py-20">
-                    <header className="max-w-5xl mx-auto mb-10 sm:mb-14">
-                        <div className="flex flex-wrap items-center gap-3 text-sm opacity-80">
+                <article className="project-detail-article px-4">
+                    <nav className="project-breadcrumb mx-auto max-w-6xl" aria-label="Brødsmulesti">
+                        <ol className="flex flex-wrap items-center gap-2 text-sm">
+                            <li>
+                                <Link href="/projects/" className="underline underline-offset-4 hover:no-underline">
+                                    Prosjekter
+                                </Link>
+                            </li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" className="font-medium">
+                                {title}
+                            </li>
+                        </ol>
+                    </nav>
+                    <div className="project-detail-header mx-auto mb-8 max-w-6xl sm:mb-12">
+                        <div className="flex flex-wrap items-center gap-3 text-sm text-white/75">
                             {client && <span className="uppercase tracking-widest">{client}</span>}
-                            <span className="hidden sm:inline">•</span>
+                            {client && date && <span aria-hidden="true">•</span>}
                             <time className="uppercase tracking-widest" dateTime={dateTimeAttr}>
-                                {formattedDate}
+                                {date}
                             </time>
                         </div>
-                        <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl md:max-w-3xl leading-tight">{title}</h1>
-                    </header>
+                        <h1 className="mt-4 max-w-4xl text-4xl leading-tight sm:text-5xl md:text-6xl">{title}</h1>
+                    </div>
                     {description && (
-                        <div className="max-w-3xl mx-auto mb-10 text-lg uppercase sm:text-xl sm:mb-14">
+                        <p className="project-detail-description mx-auto mb-8 max-w-4xl text-lg leading-relaxed sm:mb-12 sm:text-xl">
                             {description}
-                        </div>
+                        </p>
                     )}
                     {media && (
-                        <figure className="max-w-5xl mx-auto mb-10 sm:mb-14">
+                        <figure className="project-detail-media mx-auto mb-10 max-w-6xl sm:mb-14">
                             <ProjectMedia media={media} />
                         </figure>
                     )}
-                    {markdownContent && (
-                        <Markdown
-                            options={{ forceBlock: true, overrides: { pre: HighlightedPreBlock } }}
-                            className="max-w-3xl mx-auto prose sm:prose-lg"
+                    {technologies.length > 0 && (
+                        <section
+                            className="project-technologies mx-auto mb-10 max-w-6xl sm:mb-14"
+                            aria-labelledby="project-technologies-heading"
                         >
-                            {markdownContent}
-                        </Markdown>
+                            <h2 id="project-technologies-heading" className="text-2xl sm:text-3xl">
+                                Teknologier og konsepter
+                            </h2>
+                            <ul
+                                aria-label="Teknologier og konsepter brukt i prosjektet"
+                                className="project-technology-list mt-5"
+                            >
+                                {technologies.map((technology) => (
+                                    <li key={technology} className="project-technology-badge">
+                                        {technology}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
+                    {markdownContent && (
+                        <ProjectContent markdownContent={markdownContent} />
                     )}
                 </article>
                 {(prevProject || nextProject) && (
-                    <nav className="px-4 mt-12 mb-20">
-                        <div className="max-w-5xl mx-auto mb-6">
-                            <h2 className="text-xl uppercase tracking-[0.2em]">Andre prosjekter</h2>
+                    <nav className="project-pagination mx-auto mb-16 mt-10 max-w-6xl px-4 sm:mb-20" aria-label="Prosjektnavigasjon">
+                        <div className="mb-6">
+                            <h2 className="text-xl uppercase tracking-[0.12em] sm:text-2xl">Andre prosjekter</h2>
                         </div>
-                        <div className="grid max-w-5xl mx-auto gap-x-6 gap-y-10 sm:grid-cols-2 lg:gap-x-8">
-                            {prevProject && <ProjectNavItem project={prevProject} className={undefined} />}
+                        <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
+                            {prevProject && <ProjectNavItem project={prevProject} direction="previous" />}
                             {nextProject && (
-                                <ProjectNavItem project={nextProject} className="sm:items-end sm:col-start-2" />
+                                <ProjectNavItem project={nextProject} direction="next" />
                             )}
                         </div>
                     </nav>
@@ -87,32 +117,109 @@ const Component: React.FC<ComponentProps> = (props) => {
 };
 export default Component;
 
-function ProjectMedia({ media }) {
-    return <DynamicComponent {...media} className={classNames({ 'w-full': media.type === 'ImageBlock' })} />;
+type ProjectContentProps = {
+    markdownContent: string;
+};
+
+function ProjectContent({ markdownContent }: ProjectContentProps) {
+    const sections = markdownContent
+        .split(/^(?=##\s+)/m)
+        .map((section) => section.trim())
+        .filter(Boolean)
+        .map((section) => {
+            const heading = section.match(/^##\s+(.+?)(?:\r?\n|$)/);
+            return heading
+                ? { title: heading[1], content: section.slice(heading[0].length).trim() }
+                : { title: 'Prosjektdetaljer', content: section };
+        });
+
+    return (
+        <div className="project-detail-copy mx-auto grid max-w-6xl gap-4 sm:gap-6 md:grid-cols-2">
+            {sections.map(({ title, content }, index) => (
+                <section
+                    key={`${title}-${index}`}
+                    aria-labelledby={`project-detail-section-${index}`}
+                    className={classNames('project-info-card', index === 0 && 'project-info-card--intro')}
+                >
+                    <div className="project-info-card-heading">
+                        <h2 id={`project-detail-section-${index}`}>{title}</h2>
+                        {title === 'På robot-siden' && <RobotClosureSymbol />}
+                    </div>
+                    <Markdown options={{ forceBlock: true, overrides: { pre: HighlightedPreBlock } }}>
+                        {content}
+                    </Markdown>
+                </section>
+            ))}
+        </div>
+    );
 }
 
-function ProjectNavItem({ project, className }) {
+function ProjectMedia({ media }: { media: NonNullable<ProjectLayout['media']> }) {
+    return (
+        <div
+            className={classNames('project-detail-media-frame', {
+                'project-detail-media-frame--portrait': media.url?.endsWith('robot-demo.jpg')
+            })}
+        >
+            {media.type === 'ImageBlock' ? (
+                <ImageBlock {...media} className="project-detail-image w-full" />
+            ) : (
+                <DynamicComponent {...media} />
+            )}
+        </div>
+    );
+}
+
+function ProjectNavItem({ project, direction }: { project: ProjectLayout; direction: 'next' | 'previous' }) {
+    const isPrevious = direction === 'previous';
+
     return (
         <Annotated content={project}>
             <Link
-                className={classNames(
-                    'group flex flex-col gap-4 items-start rounded-xl border border-white/10 p-4 bg-black/20 hover:bg-black/30 transition',
-                    className
-                )}
+                aria-label={`${isPrevious ? 'Forrige' : 'Neste'} prosjekt: ${project.title}`}
+                className={classNames('project-pagination-link group', {
+                    'sm:items-end sm:text-right': !isPrevious
+                })}
                 href={project}
             >
                 {project.featuredImage && (
-                    <div className="w-full overflow-hidden aspect-3/2">
+                    <div className="project-pagination-image">
                         <ImageBlock
                             {...project.featuredImage}
-                            className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                     </div>
                 )}
-                <span className="text-base leading-tight uppercase tracking-wider transition bottom-shadow-1 group-hover:bottom-shadow-5">
-                    {project.title}
+                <span className="text-sm font-medium uppercase tracking-widest text-[#e7d5ac]">
+                    {isPrevious ? '← Forrige prosjekt' : 'Neste prosjekt →'}
                 </span>
+                <span className="text-lg font-medium leading-snug">{project.title}</span>
             </Link>
         </Annotated>
+    );
+}
+
+function RobotClosureSymbol() {
+    return (
+        <svg
+            className="robot-closure-symbol"
+            role="img"
+            aria-label="Robotansikt med åpne kontursegmenter"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M24 10H20C15.6 10 12 13.6 12 18V26M12 38V44C12 48.4 15.6 52 20 52H25M39 52H44C48.4 52 52 48.4 52 44V38M52 26V18C52 13.6 48.4 10 44 10H40"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+            />
+            <path d="M32 5V10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+            <circle cx="32" cy="4" r="2" fill="currentColor" />
+            <circle cx="23" cy="29" r="3" fill="#e7d5ac" />
+            <circle cx="41" cy="29" r="3" fill="#e7d5ac" />
+            <path d="M24 40H40" stroke="#e7d5ac" strokeWidth="3" strokeLinecap="round" />
+        </svg>
     );
 }
